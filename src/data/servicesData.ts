@@ -547,8 +547,8 @@ export const servicesData: ServiceItem[] = [
       en: 'AI & Automated Workflows'
     },
     shortDesc: {
-      es: 'Automatización de flujos con modelos Gemini, bots en Telegram y generación de contenidos en WordPress.',
-      en: 'End-to-end AI pipelines with Gemini models, Telegram assistant bots, and automated WordPress publication.'
+      es: 'Mantener tus canales de contenido activos y actualizados a mano te consume horas valiosas cada semana. Creamos pipelines inteligentes entre Telegram, Gemini y WordPress para que generes y publiques artículos profesionales con un solo comando desde tu móvil.',
+      en: 'Manually feeding your content channels takes hours away from growing your business. We build smart Python pipelines connecting Telegram, Gemini, and WordPress, so one message from your phone becomes a polished article published to your site.'
     },
     fullDesc: {
       es: 'Diseño e implementación de cadenas de valor potenciadas por Inteligencia Artificial. Conectamos bots interactivos en Telegram con modelos Gemini para procesamiento de texto, transcripción de audios, categorización automática y publicación de borradores en CMS o bases de datos sin intervención humana.',
@@ -656,8 +656,8 @@ export const servicesData: ServiceItem[] = [
       en: 'WordPress Security & Malware Removal'
     },
     shortDesc: {
-      es: 'Desinfección forense de sitios infectados, eliminación de backdoors y blindaje preventivo contra ataques.',
-      en: 'Forensic disinfection of hacked websites, backdoor eradication, and proactive attack hardening.'
+      es: 'Un hackeo activo, las redirecciones de spam o la temida advertencia roja de Google destruyen la confianza en tu marca al instante. Realizamos una desinfección forense completa, eliminamos backdoors y blindamos tu WordPress con protocolos estrictos de seguridad.',
+      en: 'A hacked site, spam redirects, or Google\'s dreaded red warning screen can destroy your brand\'s credibility overnight. We run a complete forensic cleanup, eradicate every backdoor, and harden your WordPress with strict security protocols so your business keeps earning trust.'
     },
     fullDesc: {
       es: 'Servicio de emergencia y blindaje preventivo para sitios WordPress comprometidos con inyecciones de código malicioso, redirecciones no deseadas (Japanese SEO Spam, pharma hacks), minería oculta o inclusión en listas negras de Google Safe Browsing. Desinfectamos el núcleo, base de datos y archivos.',
