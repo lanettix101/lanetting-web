@@ -76,8 +76,8 @@ export const servicesData: ServiceItem[] = [
       en: 'WordPress Speed Optimization (Core Web Vitals)'
     },
     shortDesc: {
-      es: 'Una web lenta destruye tus ventas y te condena a la segunda página de resultados. Optimicemos tu sitio a 1.5 segundos o menos de carga, asegurando que cada visita se convierta en una oportunidad real para tu negocio.',
-      en: 'A sluggish website frustrates your visitors, kills conversions, and causes search engines to ignore you. We overhaul your entire WordPress setup to guarantee a load time of 1.5 seconds or less, transforming raw speed into a seamless user experience.'
+      es: 'Una web lenta mata tus ventas y te hunde en Google. Optimizamos tu WordPress para que cargue en 1.5 segundos o menos y cada visita se convierta en cliente.',
+      en: 'A slow site kills conversions and sinks your rankings. We optimize your WordPress to load in 1.5 seconds or less, turning visitors into customers.'
     },
     fullDesc: {
       es: 'Diagnóstico y optimización profunda del stack de WordPress para alcanzar calificaciones 90+ en Google PageSpeed Insights y superar las métricas Core Web Vitals. Se eliminan cuellos de botella en base de datos, consultas lentas de plugins, scripts bloqueantes de renderizado y assets sobredimensionados.',
@@ -202,8 +202,8 @@ export const servicesData: ServiceItem[] = [
       en: 'Web Scraping & Process Automation Bots'
     },
     shortDesc: {
-      es: 'El trabajo manual repetitivo de extraer información web o monitorear páginas consume horas valiosas. Un Scraper personalizado puede automatizar tus flujos de trabajo y ahorrarte tiempo mientras trabaja las 24 horas del día.',
-      en: "Manually extracting web data and constantly monitoring sites drains your team's time and limits growth. We build custom Python scrapers that automate your workflows 24/7, turning tedious tasks into reliable, hands-free processes."
+      es: 'Extraer datos y monitorear webs a mano te roba horas cada día. Creamos scrapers personalizados que automatizan tus flujos y trabajan por ti las 24 horas.',
+      en: 'Manual data extraction and site monitoring drain your time. We build custom scrapers that automate your workflows 24/7, hands-free.'
     },
     fullDesc: {
       es: 'Diseño de pipelines robustos de extracción de datos con manejo de proxys rotativos, bypass de captchas y ejecución desatendida. Transformamos información desestructurada de la web en bases de datos relacionales, hojas de cálculo o endpoints de API en tiempo real.',
@@ -329,8 +329,8 @@ export const servicesData: ServiceItem[] = [
       en: 'Technical SEO & Google Search Console Audits'
     },
     shortDesc: {
-      es: 'Los errores ocultos y fallos en Google Search Console hacen que tu negocio sea invisible para el público. Reparemos el corazón de tu sitio web para garantizar que tus clientes te encuentren en el menor tiempo posible.',
-      en: 'Hidden structural flaws and errors in Google Search Console keep potential customers from finding you. We run deep technical audits and fix root issues to give your site a solid foundation built to perform and sell.'
+      es: 'Los errores ocultos en Search Console te vuelven invisible para tus clientes. Reparamos la raíz del problema para que te encuentren rápido y vendas más.',
+      en: 'Hidden flaws in Search Console keep customers from finding you. We fix the root issues so your site is built to perform and sell.'
     },
     fullDesc: {
       es: 'Auditoría integral del motor de búsqueda para diagnosticar por qué tus páginas no indexan o pierden posiciones. Analizamos la arquitectura de enlaces internos, estado de sitemaps XML, directivas robots.txt, canónicos erróneos, bucles de redirección y microdatos JSON-LD estructurados.',
@@ -438,8 +438,8 @@ export const servicesData: ServiceItem[] = [
       en: 'Linux VPS Support & Zero-Downtime Migration'
     },
     shortDesc: {
-      es: 'Un fallo en un servidor y las vulnerabilidades arriesgan la operatividad de tu empresa. Un soporte especializado y a la medida protege, optimiza y sostiene tus sistemas sin interrumpir las operaciones.',
-      en: 'Server crashes and security flaws disrupt your daily operations. Our SysAdmin support hardens, optimizes, and migrates your infrastructure to guarantee maximum stability and zero downtime.'
+      es: 'Un fallo de servidor puede detener tu negocio. Nuestro soporte especializado protege y optimiza tus sistemas sin interrumpir tus operaciones.',
+      en: 'Server crashes and security flaws disrupt your business. Our SysAdmin support keeps your servers stable and fast, with zero downtime.'
     },
     fullDesc: {
       es: 'Administración profesional de sistemas Linux en proveedores cloud (AWS, Hetzner, DigitalOcean, Vultr, Linode). Realizamos migraciones completas de aplicaciones, bases de datos y correos con tiempo de inactividad cero mediante sincronización incremental rsync y TTLs controlados.',
@@ -547,8 +547,8 @@ export const servicesData: ServiceItem[] = [
       en: 'AI & Automated Workflows'
     },
     shortDesc: {
-      es: 'Mantener tus canales de contenido activos y actualizados a mano te consume horas valiosas cada semana. Creamos pipelines inteligentes entre Telegram, Gemini y WordPress para que generes y publiques artículos profesionales con un solo comando desde tu móvil.',
-      en: 'Manually feeding your content channels takes hours away from growing your business. We build smart Python pipelines connecting Telegram, Gemini, and WordPress, so one message from your phone becomes a polished article published to your site.'
+      es: 'Actualizar tus canales a mano te consume horas valiosas. Creamos pipelines con IA en WordPress para publicar artículos profesionales con un solo comando desde tu móvil.',
+      en: 'Feeding your content channels by hand eats up your week. We build smart AI pipelines that publish polished articles from a single message on your phone.'
     },
     fullDesc: {
       es: 'Diseño e implementación de cadenas de valor potenciadas por Inteligencia Artificial. Conectamos bots interactivos en Telegram con modelos Gemini para procesamiento de texto, transcripción de audios, categorización automática y publicación de borradores en CMS o bases de datos sin intervención humana.',
@@ -656,8 +656,8 @@ export const servicesData: ServiceItem[] = [
       en: 'WordPress Security & Malware Removal'
     },
     shortDesc: {
-      es: 'Un hackeo activo, las redirecciones de spam o la temida advertencia roja de Google destruyen la confianza en tu marca al instante. Realizamos una desinfección forense completa, eliminamos backdoors y blindamos tu WordPress con protocolos estrictos de seguridad.',
-      en: 'A hacked site, spam redirects, or Google\'s dreaded red warning screen can destroy your brand\'s credibility overnight. We run a complete forensic cleanup, eradicate every backdoor, and harden your WordPress with strict security protocols so your business keeps earning trust.'
+      es: 'Un sitio hackeado o la advertencia roja de Google destruye la confianza en tu marca. Desinfectamos tu WordPress y blindamos cada puerta de entrada.',
+      en: 'Spam redirects, malware, or Google\'s red warning destroy your credibility overnight. We clean your WordPress and lock it down for good.'
     },
     fullDesc: {
       es: 'Servicio de emergencia y blindaje preventivo para sitios WordPress comprometidos con inyecciones de código malicioso, redirecciones no deseadas (Japanese SEO Spam, pharma hacks), minería oculta o inclusión en listas negras de Google Safe Browsing. Desinfectamos el núcleo, base de datos y archivos.',

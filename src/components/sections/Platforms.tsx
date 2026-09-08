@@ -44,7 +44,6 @@ export default function Platforms() {
               className="group block bg-brand-bg border border-brand-border rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary"
             >
               <div className="flex items-start gap-6">
-                {/* 1:1 Logo */}
                 <div className="w-20 h-20 shrink-0 bg-brand-surface border border-brand-border rounded-lg overflow-hidden flex items-center justify-center group-hover:border-brand-primary transition-colors">
                   <img 
                     src={`${import.meta.env.BASE_URL}${platform.img}`} 
@@ -61,8 +60,8 @@ export default function Platforms() {
                   <p className="text-brand-text/70 text-sm leading-relaxed mb-4">
                     {platform.description}
                   </p>
-                  <span className="inline-flex items-center text-sm font-medium text-brand-primary group-hover:underline">
-                    View Profile / Hire Me
+                  <span className="mt-1 inline-flex items-center gap-1.5 rounded-md border border-brand-primary/40 bg-brand-primary/5 px-3 py-1.5 text-sm font-medium text-brand-primary transition-colors group-hover:border-brand-primary group-hover:bg-brand-primary group-hover:text-brand-surface">
+                    {t.platforms.viewProfile}
                   </span>
                 </div>
               </div>

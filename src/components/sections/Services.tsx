@@ -96,7 +96,7 @@ export default function Services() {
                     <h3 className="text-lg font-bold text-brand-primary mb-2 line-clamp-2 min-h-[3.5rem]">
                       {title}
                     </h3>
-                    <p className="text-brand-text/75 text-sm mb-4 line-clamp-4 text-justify">
+                    <p className="text-brand-text/75 text-sm mb-4 line-clamp-5 text-justify">
                       {shortDesc}
                     </p>
                   </div>

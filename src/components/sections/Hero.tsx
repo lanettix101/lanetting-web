@@ -39,7 +39,8 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-
+        <section className="mt-6 pb-16">
+        </section>
         {/* 16:9 Desktop Banner */}
         <div className="mt-16 w-full aspect-video rounded-lg overflow-hidden flex items-center justify-center bg-brand-surface border border-brand-border">
           <img

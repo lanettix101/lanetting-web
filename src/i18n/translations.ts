@@ -54,7 +54,8 @@ export const translations = {
     platforms: {
       command: "display --profiles",
       title: "Freelance Platforms",
-      desc: "Verified profiles on top freelance marketplaces for secure and streamlined contracting."
+      desc: "Verified profiles on top freelance marketplaces for secure and streamlined contracting.",
+      viewProfile: "View Profile"
     },
     contact: {
       command: "connect --init",
@@ -139,7 +140,8 @@ export const translations = {
     platforms: {
       command: "display --profiles",
       title: "Plataformas Freelance",
-      desc: "Perfiles verificados en los principales marketplace freelance para una contratación segura y respaldada."
+      desc: "Perfiles verificados en los principales marketplace freelance para una contratación segura y respaldada.",
+      viewProfile: "Visitar el Perfil"
     },
     contact: {
       command: "connect --init",
