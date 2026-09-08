@@ -12,7 +12,7 @@ export default function Services() {
 
   useEffect(() => {
     if (isHovered) return;
-    
+
     const interval = setInterval(() => {
       if (scrollRef.current) {
         const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
@@ -44,18 +44,18 @@ export default function Services() {
               {t.services.desc}
             </p>
           </div>
-          
+
           <div className="hidden md:flex gap-2 justify-center w-full">
-            <button 
+            <button
               onClick={() => scroll('left')}
-              className="p-2 border border-brand-border rounded-md hover:bg-brand-surface text-brand-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary cursor-pointer transition-colors" 
+              className="p-2 border border-brand-border rounded-md hover:bg-brand-surface text-brand-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary cursor-pointer transition-colors"
               aria-label="Previous service"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <button 
+            <button
               onClick={() => scroll('right')}
-              className="p-2 border border-brand-border rounded-md hover:bg-brand-surface text-brand-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary cursor-pointer transition-colors" 
+              className="p-2 border border-brand-border rounded-md hover:bg-brand-surface text-brand-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary cursor-pointer transition-colors"
               aria-label="Next service"
             >
               <ChevronRight className="w-5 h-5" />
@@ -64,13 +64,13 @@ export default function Services() {
         </div>
 
         {/* CAROUSEL CONTAINER */}
-        <div 
+        <div
           ref={scrollRef}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
           onTouchStart={() => setIsHovered(true)}
           onTouchEnd={() => setIsHovered(false)}
-          className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 hide-scrollbar" 
+          className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 hide-scrollbar"
           style={{ scrollbarWidth: 'none' }}
         >
           {servicesData.map((service) => {
@@ -78,15 +78,15 @@ export default function Services() {
             const shortDesc = service.shortDesc[language] || service.shortDesc.en;
 
             return (
-              <article 
-                key={service.id} 
+              <article
+                key={service.id}
                 className="flex-none w-[85%] md:w-[calc(33.333%-1rem)] snap-start bg-brand-surface border border-brand-border rounded-lg overflow-hidden group flex flex-col justify-between hover:border-brand-primary/40 transition-colors shadow-xs"
               >
                 <div>
                   {/* Image */}
                   <div className="w-full aspect-[4/3] bg-brand-bg flex items-center justify-center border-b border-brand-border overflow-hidden relative">
-                    <img 
-                      src={`${import.meta.env.BASE_URL}${service.img}`} 
+                    <img
+                      src={`${import.meta.env.BASE_URL}${service.img}`}
                       alt={title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
@@ -96,15 +96,15 @@ export default function Services() {
                     <h3 className="text-lg font-bold text-brand-primary mb-2 line-clamp-2 min-h-[3.5rem]">
                       {title}
                     </h3>
-                    <p className="text-brand-text/75 text-sm mb-4 line-clamp-3">
+                    <p className="text-brand-text/75 text-sm mb-4 line-clamp-4 text-justify">
                       {shortDesc}
                     </p>
                   </div>
                 </div>
 
                 <div className="px-6 pb-6 pt-0 mt-auto">
-                  <Link 
-                    to={`/service/${service.slug}`} 
+                  <Link
+                    to={`/service/${service.slug}`}
                     className="text-brand-primary font-medium text-sm hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary inline-flex items-center group/btn"
                   >
                     <span>{language === 'es' ? 'Ver especificación completa' : 'View full specification'}</span>
