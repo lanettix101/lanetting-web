@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./assets/console-divider.svg" alt="console divider — bilingual README inbound" width="100%" />
+</p>
 <a name="top"></a>
 
 <p align="center">
@@ -22,10 +25,6 @@
 
 <p align="center">
   <img src="./assets/hero-terminal.svg" alt="Lanetting — animated terminal: services, stack and projects running in a loop" width="100%" />
-</p>
-
-<p align="center">
-  <img src="./assets/console-divider.svg" alt="console divider — bilingual README inbound" width="100%" />
 </p>
 
 <details>
@@ -200,7 +199,7 @@ The icon soup floating in the header is **real usage**, not decoration. Here's w
 
 | **Area** | **Stack** |
 |------|-------|
-| 🟢 **Area** | <img src="https://cdn.simpleicons.org/react/61DAFB" width="22" height="22" alt="React" /> React <img src="https://cdn.simpleicons.org/typescript/3178C6" width="22" height="22" alt="TypeScript" /> TypeScript <img src="https://cdn.simpleicons.org/vite/646CFF" width="22" height="22" alt="Vite" /> Vite <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="22" height="22" alt="Tailwind" /> Tailwind <img src="https://cdn.simpleicons.org/html5/E34F26" width="22" height="22" alt="HTML5" /> HTML5 <img src="https://cdn.simpleicons.org/wordpress/21759B" width="22" height="22" alt="WordPress" /> WordPress <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" width="22" height="22" alt="Node.js" /> Node.js <img src="https://cdn.simpleicons.org/php/777BB4" width="22" height="22" alt="PHP" /> PHP |
+| 🟢 **Web** | <img src="https://cdn.simpleicons.org/react/61DAFB" width="22" height="22" alt="React" /> React <img src="https://cdn.simpleicons.org/typescript/3178C6" width="22" height="22" alt="TypeScript" /> TypeScript <img src="https://cdn.simpleicons.org/vite/646CFF" width="22" height="22" alt="Vite" /> Vite <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="22" height="22" alt="Tailwind" /> Tailwind <img src="https://cdn.simpleicons.org/html5/E34F26" width="22" height="22" alt="HTML5" /> HTML5 <img src="https://cdn.simpleicons.org/wordpress/21759B" width="22" height="22" alt="WordPress" /> WordPress <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" width="22" height="22" alt="Node.js" /> Node.js <img src="https://cdn.simpleicons.org/php/777BB4" width="22" height="22" alt="PHP" /> PHP |
 | 📱 **Mobile** | <img src="https://cdn.simpleicons.org/flutter/02569B" width="22" height="22" alt="Flutter" /> Flutter <img src="https://cdn.simpleicons.org/dart/0175C2" width="22" height="22" alt="Dart" /> Dart <img src="https://cdn.simpleicons.org/android/3DDC84" width="22" height="22" alt="Android" /> Android |
 | ⚙️ **Automation** | <img src="https://cdn.simpleicons.org/python/3776AB" width="22" height="22" alt="Python" /> Python <img src="https://cdn.simpleicons.org/fastapi/009688" width="22" height="22" alt="FastAPI" /> FastAPI <img src="https://cdn.simpleicons.org/gnubash/4EAA25" width="22" height="22" alt="Bash" /> Bash <img src="https://cdn.simpleicons.org/selenium/43B02A" width="22" height="22" alt="Selenium" /> Selenium <img src="https://cdn.simpleicons.org/n8n/EA4B71" width="22" height="22" alt="n8n" /> n8n <img src="https://cdn.simpleicons.org/github/24292E" width="22" height="22" alt="GitHub Actions" /> GitHub Actions |
 | 🖥️ **Infra & Cloud** | <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="22" height="22" alt="Ubuntu" /> Ubuntu <img src="https://cdn.simpleicons.org/debian/A81D33" width="22" height="22" alt="Debian" /> Debian <img src="https://cdn.simpleicons.org/nginx/009639" width="22" height="22" alt="Nginx" /> Nginx <img src="https://cdn.simpleicons.org/docker/2496ED" width="22" height="22" alt="Docker" /> Docker <img src="https://cdn.simpleicons.org/vercel/111111" width="22" height="22" alt="Vercel" /> Vercel <img src="https://cdn.simpleicons.org/googlecloud/4285F4" width="22" height="22" alt="Google Cloud" /> Google Cloud <img src="https://cdn.simpleicons.org/redis/DC382D" width="22" height="22" alt="Redis" /> Redis <img src="https://cdn.simpleicons.org/hetzner/FF9900" width="22" height="22" alt="Hetzner" /> Hetzner |
@@ -333,7 +332,9 @@ Every repo in this workspace was a real problem that became a working product. H
 > [✓] connection established — let's build something great 🚀
 > ```
 
----
+<p align="center">
+  <img src="./assets/console-divider.svg" alt="console divider — bilingual README inbound" width="100%" />
+</p>
 
 <br/>
 
@@ -486,7 +487,7 @@ La sopa de iconos que flota en el encabezado es **uso real**, no decoración. Es
 
 | **Área** | **Stack** |
 |------|-------|
-| 🟢 **Área** | <img src="https://cdn.simpleicons.org/react/61DAFB" width="22" height="22" alt="React" /> React <img src="https://cdn.simpleicons.org/typescript/3178C6" width="22" height="22" alt="TypeScript" /> TypeScript <img src="https://cdn.simpleicons.org/vite/646CFF" width="22" height="22" alt="Vite" /> Vite <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="22" height="22" alt="Tailwind" /> Tailwind <img src="https://cdn.simpleicons.org/html5/E34F26" width="22" height="22" alt="HTML5" /> HTML5 <img src="https://cdn.simpleicons.org/wordpress/21759B" width="22" height="22" alt="WordPress" /> WordPress <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" width="22" height="22" alt="Node.js" /> Node.js <img src="https://cdn.simpleicons.org/php/777BB4" width="22" height="22" alt="PHP" /> PHP |
+| 🟢 **Web** | <img src="https://cdn.simpleicons.org/react/61DAFB" width="22" height="22" alt="React" /> React <img src="https://cdn.simpleicons.org/typescript/3178C6" width="22" height="22" alt="TypeScript" /> TypeScript <img src="https://cdn.simpleicons.org/vite/646CFF" width="22" height="22" alt="Vite" /> Vite <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="22" height="22" alt="Tailwind" /> Tailwind <img src="https://cdn.simpleicons.org/html5/E34F26" width="22" height="22" alt="HTML5" /> HTML5 <img src="https://cdn.simpleicons.org/wordpress/21759B" width="22" height="22" alt="WordPress" /> WordPress <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" width="22" height="22" alt="Node.js" /> Node.js <img src="https://cdn.simpleicons.org/php/777BB4" width="22" height="22" alt="PHP" /> PHP |
 | 📱 **Móvil** | <img src="https://cdn.simpleicons.org/flutter/02569B" width="22" height="22" alt="Flutter" /> Flutter <img src="https://cdn.simpleicons.org/dart/0175C2" width="22" height="22" alt="Dart" /> Dart <img src="https://cdn.simpleicons.org/android/3DDC84" width="22" height="22" alt="Android" /> Android |
 | ⚙️ **Automatización** | <img src="https://cdn.simpleicons.org/python/3776AB" width="22" height="22" alt="Python" /> Python <img src="https://cdn.simpleicons.org/fastapi/009688" width="22" height="22" alt="FastAPI" /> FastAPI <img src="https://cdn.simpleicons.org/gnubash/4EAA25" width="22" height="22" alt="Bash" /> Bash <img src="https://cdn.simpleicons.org/selenium/43B02A" width="22" height="22" alt="Selenium" /> Selenium <img src="https://cdn.simpleicons.org/n8n/EA4B71" width="22" height="22" alt="n8n" /> n8n <img src="https://cdn.simpleicons.org/github/24292E" width="22" height="22" alt="GitHub Actions" /> GitHub Actions |
 | 🖥️ **Infra & Nube** | <img src="https://cdn.simpleicons.org/ubuntu/E95420" width="22" height="22" alt="Ubuntu" /> Ubuntu <img src="https://cdn.simpleicons.org/debian/A81D33" width="22" height="22" alt="Debian" /> Debian <img src="https://cdn.simpleicons.org/nginx/009639" width="22" height="22" alt="Nginx" /> Nginx <img src="https://cdn.simpleicons.org/docker/2496ED" width="22" height="22" alt="Docker" /> Docker <img src="https://cdn.simpleicons.org/vercel/111111" width="22" height="22" alt="Vercel" /> Vercel <img src="https://cdn.simpleicons.org/googlecloud/4285F4" width="22" height="22" alt="Google Cloud" /> Google Cloud <img src="https://cdn.simpleicons.org/redis/DC382D" width="22" height="22" alt="Redis" /> Redis <img src="https://cdn.simpleicons.org/hetzner/FF9900" width="22" height="22" alt="Hetzner" /> Hetzner |
@@ -560,7 +561,7 @@ Cada repo de este workspace fue un problema real que se convirtió en un product
 </details>
 
 <details>
-  <summary><b>✒️ veronika-con-k-web</b> — <em>portafolio para consultora de branding & RRPP</em></summary>
+  <summary><b>✒️ landing-con-k</b> — <em>portafolio para consultora de branding & RRPP</em></summary>
 
   Un landing-portafolio bilingüe para Verónika con K — consultora de branding/PR — con carrusel de servicios, línea de tiempo biográfica, CTA de WhatsApp y theming oscuro/claro completo.
 
