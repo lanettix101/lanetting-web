@@ -1,4 +1,4 @@
-import { Calendar, Github, Mail, Instagram } from 'lucide-react';
+import { Calendar, Github, Mail, Instagram, Linkedin } from 'lucide-react';
 import ConsoleHeading from '../ui/ConsoleHeading';
 import { useLanguage } from '../../i18n/LanguageContext';
 
@@ -51,11 +51,15 @@ export default function Contact() {
               <Telegram className="w-6 h-6" />
               <span>Telegram</span>
             </a>
+            <a href="https://www.linkedin.com/in/luis-lanetti/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-text font-medium hover:text-brand-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary rounded-sm">
+              <Linkedin className="w-6 h-6" />
+              <span>LinkedIn</span>
+            </a>
           </div>
-          <p className="text-sm text-brand-accent text-center md:text-right">
-            &copy; {new Date().getFullYear()} Ing. Luis Antonio Lanetti R. {t.contact.rights}
-          </p>
         </div>
+        <p className="mt-4 text-sm text-brand-accent text-center md:text-center">
+          &copy; {new Date().getFullYear()} Ing. Luis Antonio Lanetti R. {t.contact.rights}
+        </p>
       </div>
     </section>
   );

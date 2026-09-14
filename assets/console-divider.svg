@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 84" width="900" height="84">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1118"/>
+      <stop offset="1" stop-color="#141a2c"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4ade80"/>
+      <stop offset="0.5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="84" rx="14" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="82" rx="13" fill="none" stroke="#2e3748"/>
+  <rect x="1" y="1" width="898" height="82" rx="13" fill="none" stroke="#22d3ee" stroke-opacity="0.35"/>
+  <circle cx="30" cy="42" r="7" fill="#ff5f56"/>
+  <circle cx="54" cy="42" r="7" fill="#ffbd2e"/>
+  <circle cx="78" cy="42" r="7" fill="#27c93f"/>
+  <text x="110" y="48" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" fill="#4ade80">lanetting@ubuntu:~$</text>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.04;0.06;0.72;0.74;1" dur="5.5s" repeatCount="indefinite"/>
+    <text x="335" y="48" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" fill="#e8eefb">cat README.md --language=en → es --theme=dual</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.78;0.80;0.96;0.98;1" dur="5.5s" repeatCount="indefinite"/>
+    <text x="110" y="73" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="14" fill="#7be3ff">[✓] locales loaded · continue reading with the explorer below ⌄</text>
+  </g>
+  <rect x="800" y="40" width="10" height="18" rx="2" fill="#4ade80">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.05s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1" y="81" width="898" height="3" rx="1.5" fill="url(#bar)">
+    <animate attributeName="x" values="-898;0;0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>
