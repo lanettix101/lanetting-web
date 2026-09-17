@@ -5,7 +5,7 @@ import path from 'node:path';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const repoRoot = path.resolve(__dirname, '..');
 const publicDir = path.join(repoRoot, 'public');
-const sourceSvg = readFileSync(path.join(repoRoot, 'assets', 'hero-terminal.svg'), 'utf8');
+const sourceSvg = readFileSync(path.join(repoRoot, 'assets', 'hero-terminal-stack.svg'), 'utf8');
 
 const FONT = "'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace";
 const TOTAL_DUR = 44;
