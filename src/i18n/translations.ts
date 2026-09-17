@@ -7,7 +7,8 @@ export const translations = {
       title: "Systems Engineer | Automation & Technical SEO Specialist",
       desc: "I specialize in backend infrastructure, technical SEO, and automation to build high-performance systems.",
       book: "Book a consultation",
-      viewServices: "View Engineering Services"
+      viewServices: "View Engineering Services",
+      terminalAlt: "Animated terminal animation with the services of Lanetti's engineering portfolio"
     },
     timeline: {
       command: "./Professional_Journey.sh",
@@ -55,7 +56,21 @@ export const translations = {
       command: "display --profiles",
       title: "Freelance Platforms",
       desc: "Verified profiles on top freelance marketplaces for secure and streamlined contracting.",
-      viewProfile: "View Profile"
+      viewProfile: "View Profile",
+      items: [
+        {
+          name: "Legiit",
+          description: "Freelance services marketplace with secure escrow payments and verified reviews."
+        },
+        {
+          name: "Contra",
+          description: "Commission-free platform where you get paid when you do — simple, transparent contracting."
+        },
+        {
+          name: "Upwork",
+          description: "The largest global marketplace connecting freelance talent with clients."
+        }
+      ]
     },
     contact: {
       command: "connect --init",
@@ -93,7 +108,8 @@ export const translations = {
       title: "Ingeniero en Sistemas | Especialista en Automatización y SEO Técnico",
       desc: "Me especializo en infraestructura backend, SEO técnico y automatización para construir sistemas de alto rendimiento.",
       book: "Agendar una cita",
-      viewServices: "Ver servicios disponibles"
+      viewServices: "Ver servicios disponibles",
+      terminalAlt: "Animación de terminal con los servicios del portafolio de ingeniería de Lanetti"
     },
     timeline: {
       command: "./Professional_Journey.sh",
@@ -141,7 +157,21 @@ export const translations = {
       command: "display --profiles",
       title: "Plataformas Freelance",
       desc: "Perfiles verificados en los principales marketplace freelance para una contratación segura y respaldada.",
-      viewProfile: "Visitar el Perfil"
+      viewProfile: "Visitar el Perfil",
+      items: [
+        {
+          name: "Legiit",
+          description: "Marketplace de servicios freelance con pagos seguros por depósito en garantía y reseñas verificadas."
+        },
+        {
+          name: "Contra",
+          description: "Plataforma sin comisiones donde cobras cuando trabajas: contratación simple y transparente."
+        },
+        {
+          name: "Upwork",
+          description: "El marketplace freelance más grande del mundo, conectando talento independiente con clientes globales."
+        }
+      ]
     },
     contact: {
       command: "connect --init",

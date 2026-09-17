@@ -1,6 +1,5 @@
-import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Clock } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import ConsoleHeading from '../ui/ConsoleHeading';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { servicesData } from '../../data/servicesData';
@@ -35,9 +34,9 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="py-12 md:py-16">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center text-center mb-10 gap-6">
+        <div className="flex flex-col items-center text-center mb-8 gap-6">
           <div className="max-w-2xl flex flex-col items-center">
             <ConsoleHeading command={t.services.command} text={t.services.title} className="text-xl sm:text-2xl md:text-4xl font-bold text-brand-primary mb-4 text-center" />
             <p className="text-brand-accent text-center">
@@ -76,6 +75,7 @@ export default function Services() {
           {servicesData.map((service) => {
             const title = service.title[language] || service.title.en;
             const shortDesc = service.shortDesc[language] || service.shortDesc.en;
+            const sla = service.slaOrTimeline[language] || service.slaOrTimeline.en;
 
             return (
               <article
@@ -103,13 +103,10 @@ export default function Services() {
                 </div>
 
                 <div className="px-6 pb-6 pt-0 mt-auto">
-                  <Link
-                    to={`/service/${service.slug}`}
-                    className="text-brand-primary font-medium text-sm hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary inline-flex items-center group/btn"
-                  >
-                    <span>{language === 'es' ? 'Ver especificación completa' : 'View full specification'}</span>
-                    <ArrowRight className="w-4 h-4 ml-1.5 group-hover/btn:translate-x-1 transition-transform" />
-                  </Link>
+                  <span className="inline-flex items-center gap-1.5 rounded-md border border-brand-border bg-brand-bg px-3 py-1.5 text-xs font-mono font-medium text-brand-accent">
+                    <Clock className="w-3.5 h-3.5 text-brand-primary" />
+                    SLA: {sla}
+                  </span>
                 </div>
               </article>
             );

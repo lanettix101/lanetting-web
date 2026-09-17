@@ -6,9 +6,16 @@ interface ConsoleHeadingProps {
   text: string;
   className?: string;
   as?: React.ElementType;
+  onTypingDone?: () => void;
 }
 
-export default function ConsoleHeading({ command, text, className = '', as: Component = 'h2' }: ConsoleHeadingProps) {
+export default function ConsoleHeading({
+  command,
+  text,
+  className = '',
+  as: Component = 'h2',
+  onTypingDone,
+}: ConsoleHeadingProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
   const [displayedCommand, setDisplayedCommand] = useState("");
@@ -24,13 +31,14 @@ export default function ConsoleHeading({ command, text, className = '', as: Comp
           clearInterval(interval);
           setTimeout(() => {
             setShowOutput(true);
+            onTypingDone?.();
           }, 300); // PAUSE TIME
         }
       }, 70); // CHAR TIME
       
       return () => clearInterval(interval);
     }
-  }, [isInView, command, showOutput]);
+  }, [isInView, command, showOutput, onTypingDone]);
 
   return (
     <div ref={ref} className={`${className} font-mono flex flex-col`}>

@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lanetti.dev/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <loc>https://lanettix101.github.io/lanetting-web/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lanetti.dev/service/1</loc>
-    <lastmod>2026-08-27</lastmod>
+    <loc>https://lanettix101.github.io/lanetting-web/service/wordpress-speed-optimization</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lanetti.dev/service/2</loc>
-    <lastmod>2026-08-27</lastmod>
+    <loc>https://lanettix101.github.io/lanetting-web/service/web-scraping-automation-bots</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lanetti.dev/service/3</loc>
-    <lastmod>2026-08-27</lastmod>
+    <loc>https://lanettix101.github.io/lanetting-web/service/technical-seo-gsc-audits</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/service/linux-vps-support-migration</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/service/ai-pipelines-telegram-gemini-wp</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/service/wordpress-security-malware-removal</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

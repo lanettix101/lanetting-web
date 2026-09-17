@@ -12,9 +12,9 @@ export default function Timeline() {
   const { t } = useLanguage();
 
   return (
-    <section id="timeline" className="py-16 md:py-24 bg-brand-surface border-y border-brand-border">
+    <section id="timeline" className="py-12 md:py-16 bg-brand-surface border-y border-brand-border">
       <div className="container mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-16 flex flex-col items-center">
+        <div className="text-center mb-10 flex flex-col items-center">
           <ConsoleHeading command={t.timeline.command} text={t.timeline.title} className="text-xl sm:text-2xl md:text-4xl font-bold text-brand-primary mb-4" />
           <p className="text-brand-accent max-w-2xl mx-auto">
             {t.timeline.desc}

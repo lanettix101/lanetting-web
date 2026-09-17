@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lanetti.dev/sitemap.xml
+Sitemap: https://lanettix101.github.io/lanetting-web/sitemap.xml

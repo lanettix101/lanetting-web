@@ -1,312 +1,196 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0b0e18"/>
-      <stop offset="1" stop-color="#141a2c"/>
-    </linearGradient>
-    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#a78bfa" stop-opacity="0.14"/>
-      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="1200" height="780" fill="url(#bg)"/>
-  <circle cx="180" cy="140" r="320" fill="url(#glow1)"/>
-  <circle cx="1010" cy="680" r="360" fill="url(#glow2)"/>
-  <circle cx="600" cy="390" r="260" fill="#111627"/>
-  <circle cx="683" cy="170" r="1.6" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="2.4076316215952933s" begin="3.285097167965233s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="212" cy="390" r="1.8" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="6.11172747151534s" begin="0.8587927233426469s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="196" cy="460" r="1.6" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="3.2348509005462076s" begin="2.204189015165543s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="141" cy="595" r="1.2" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="3.1599275478101627s" begin="2.509732889622357s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="146" cy="606" r="1.8" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="2.4132340475760174s" begin="0.8843272938305935s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1160" cy="152" r="1.4" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="2.8202968584369814s" begin="0.47116895231347344s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="651" cy="589" r="2.1" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="2.977123433672931s" begin="2.326400654649865s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="404" cy="397" r="1.1" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.262076292708461s" begin="2.2574731725335466s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="441" cy="524" r="2.0" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="4.0386469143784325s" begin="1.256588681507166s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="948" cy="386" r="1.4" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.615831770546713s" begin="2.795977734918285s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="519" cy="99" r="1.8" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="4.458344966389241s" begin="3.5005499822937156s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="939" cy="310" r="1.9" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="2.514763730076573s" begin="2.0477313225901965s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="357" cy="366" r="1.2" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="4.302541332045964s" begin="0.15682902818975064s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="178" cy="587" r="1.8" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.964554590872819s" begin="1.254990051392387s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="737" cy="624" r="1.7" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.626635496032856s" begin="0.27505179762744225s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="211" cy="292" r="1.7" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.055854483541101s" begin="0.24267771038887886s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="654" cy="678" r="1.8" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.129319851355826s" begin="1.7825630690036869s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="810" cy="700" r="1.5" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="6.244788836578203s" begin="1.421856438161384s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="259" cy="521" r="1.1" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.503401850431839s" begin="0.5173608880747369s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="527" cy="423" r="1.5" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.947114488743088s" begin="0.3223252048005545s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="939" cy="427" r="1.8" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="5.9985504536985035s" begin="3.2771193513429653s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1146" cy="301" r="2.0" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="6.4418084483051s" begin="2.7308922375498064s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="799" cy="252" r="1.2" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="2.9577362325085925s" begin="0.927827467278143s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="497" cy="28" r="1.7" fill="#8da2c0">
-    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="4.733231066048699s" begin="1.0509864771941517s" repeatCount="indefinite"/>
-  </circle>
-  <g>
-    <rect x="150" y="120" width="900" height="560" rx="16" fill="#1d2433"/>
-    <rect x="150" y="120" width="900" height="560" rx="16" fill="none" stroke="#2e3748" stroke-width="1.5"/>
-    <rect x="150" y="120" width="900" height="44" rx="16" fill="#2b3242"/>
-    <path d="M150 164 h900" stroke="#373f53"/>
-    <circle cx="178" cy="142" r="7" fill="#ff5f56"/>
-    <circle cx="202" cy="142" r="7" fill="#ffbd2e"/>
-    <circle cx="226" cy="142" r="7" fill="#27c93f"/>
-    <text x="600.0" y="149" text-anchor="middle" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" fill="#9aa4b2">lanetting@ubuntu: ~</text>
-    <text x="178" y="250" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80">lanetting@ubuntu:~$</tspan><tspan fill="#e8eefb"> sudo su</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.02045;0.02091;0.12841;0.12886;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="280" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> shell escalated · root access granted</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.02818;0.02864;0.12841;0.12886;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="178" y="250" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80">lanetting@ubuntu:~$</tspan><tspan fill="#e8eefb"> sudo get_services</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.15682;0.15727;0.26477;0.26523;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="280" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#FBBF24" font-weight="700">[+]</tspan><tspan fill="#c5d1e2"> wordpress-speed-optimization</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.16455;0.16500;0.26477;0.26523;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="310" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#FBBF24" font-weight="700">[+]</tspan><tspan fill="#c5d1e2"> web-scraping-automation-bots</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.17227;0.17273;0.26477;0.26523;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="340" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#FBBF24" font-weight="700">[+]</tspan><tspan fill="#c5d1e2"> technical-seo-gsc-audits</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.18000;0.18045;0.26477;0.26523;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="370" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#FBBF24" font-weight="700">[+]</tspan><tspan fill="#c5d1e2"> linux-vps-support-migration</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.18773;0.18818;0.26477;0.26523;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="400" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#FBBF24" font-weight="700">[+]</tspan><tspan fill="#c5d1e2"> ai-pipelines-telegram-gemini-wp</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.19545;0.19591;0.26477;0.26523;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="430" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#FBBF24" font-weight="700">[+]</tspan><tspan fill="#c5d1e2"> wordpress-security-malware-removal</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.20318;0.20364;0.26477;0.26523;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="178" y="250" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80">lanetting@ubuntu:~$</tspan><tspan fill="#e8eefb"> python3 enelruedo_wp_tg_bridge.py --deploy</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.29318;0.29364;0.40114;0.40159;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="280" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> telegram ⇄ wordpress bridge online</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.30091;0.30136;0.40114;0.40159;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="310" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> scheduler · publisher · media uploader</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.30864;0.30909;0.40114;0.40159;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="340" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> seo metadata &amp; autopost notifications</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.31636;0.31682;0.40114;0.40159;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="370" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#22D3EE" font-weight="700">[i]</tspan><tspan fill="#c5d1e2"> production ready · 24/7 uptime</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.32409;0.32455;0.40114;0.40159;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="178" y="250" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80">lanetting@ubuntu:~$</tspan><tspan fill="#e8eefb"> python3 esclabot_instaloader.py --watch</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.42955;0.43000;0.53750;0.53795;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="280" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> monitoring 3 instagram profiles</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.43727;0.43773;0.53750;0.53795;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="310" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> new post ⤵ te_estoy_viendo_o.o</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.44500;0.44545;0.53750;0.53795;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="340" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#22D3EE" font-weight="700">[i]</tspan><tspan fill="#c5d1e2"> next check scheduled in ~12 min</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.45273;0.45318;0.53750;0.53795;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="370" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#22D3EE" font-weight="700">[i]</tspan><tspan fill="#c5d1e2"> rare user-agent rotation engaged</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.46045;0.46091;0.53750;0.53795;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="178" y="250" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80">lanetting@ubuntu:~$</tspan><tspan fill="#e8eefb"> flutter build apk --release &amp;&amp; npm run build</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.56591;0.56636;0.67386;0.67432;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="280" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> built app-release.apk → android/</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.57364;0.57409;0.67386;0.67432;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="310" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> web bundle · vite + tailwind · dist/</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.58136;0.58182;0.67386;0.67432;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="340" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> flutter targets: ios · macos · linux · windows</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.58909;0.58955;0.67386;0.67432;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="370" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#22D3EE" font-weight="700">[i]</tspan><tspan fill="#c5d1e2"> calculadora-creativa v1.1.3 shipped</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.59682;0.59727;0.67386;0.67432;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="178" y="250" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80">lanetting@ubuntu:~$</tspan><tspan fill="#e8eefb"> sudo get_status --all</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.70227;0.70273;0.81023;0.81068;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="280" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> core web vitals 90+ · wordpress</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.71000;0.71045;0.81023;0.81068;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="310" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> vps hardened · zero-downtime migrations</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.71773;0.71818;0.81023;0.81068;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="340" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#FBBF24" font-weight="700">[+]</tspan><tspan fill="#c5d1e2"> gemini × telegram × wordpress ai-pipeline</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.72545;0.72591;0.81023;0.81068;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="370" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#A78BFA" font-weight="700">[&gt;]</tspan><tspan fill="#c5d1e2"> auto-scaling available on request</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.73318;0.73364;0.81023;0.81068;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="178" y="250" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80">lanetting@ubuntu:~$</tspan><tspan fill="#e8eefb"> display --profiles &amp;&amp; connect --init</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.83864;0.83909;0.94659;0.94705;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="280" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#A78BFA" font-weight="700">[&gt;]</tspan><tspan fill="#c5d1e2"> fiverr · upwork · contra · legiit</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.84636;0.84682;0.94659;0.94705;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="310" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#7BE3FF" font-weight="700">[→]</tspan><tspan fill="#c5d1e2"> @lanetting_</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.85409;0.85455;0.94659;0.94705;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="340" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#7BE3FF" font-weight="700">[→]</tspan><tspan fill="#c5d1e2"> wa.me/573103032400</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.86182;0.86227;0.94659;0.94705;1.00000" values="0;0;1;1;0;0"/></text>
-    <text x="200" y="370" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="18" opacity="0">
-      <tspan fill="#4ADE80" font-weight="700">[✓]</tspan><tspan fill="#c5d1e2"> connection established · thanks for visiting!</tspan>
-      <animate attributeName="opacity" dur="44.0s" repeatCount="indefinite" keyTimes="0.00000;0.86955;0.87000;0.94659;0.94705;1.00000" values="0;0;1;1;0;0"/></text>
-  </g>
-      <g transform="translate(40,90)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="1200" height="540" preserveAspectRatio="xMidYMid meet">
+  <g transform="translate(40,90)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z" fill="#61dafb"/></g>
     </g>
   </g>
-    <g transform="translate(40,170)">
+  <g transform="translate(40,170)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z" fill="#ffd43b"/></g>
     </g>
   </g>
-    <g transform="translate(40,250)">
+  <g transform="translate(40,250)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z" fill="#3178c6"/></g>
     </g>
   </g>
-    <g transform="translate(40,330)">
+  <g transform="translate(40,330)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" fill="#e34f26"/></g>
     </g>
   </g>
-    <g transform="translate(1160,90)">
+  <g transform="translate(1160,90)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
-      <g transform="translate(-12,-12) scale(1.15)"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#e6edf3"/></g>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
+      <g transform="translate(-12,-12) scale(1.15)"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#24292E"/></g>
     </g>
   </g>
-    <g transform="translate(1160,170)">
+  <g transform="translate(1160,170)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0" fill="#21759b"/></g>
     </g>
   </g>
-    <g transform="translate(1160,250)">
+  <g transform="translate(1160,250)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z" fill="#2496ed"/></g>
     </g>
   </g>
-    <g transform="translate(1160,330)">
+  <g transform="translate(1160,330)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="#26a5e4"/></g>
     </g>
   </g>
-    <g transform="translate(300,44)">
+  <g transform="translate(300,44)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -11;0 0" dur="5.3s" begin="0.9s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z" fill="#FF9900"/></g>
     </g>
   </g>
-    <g transform="translate(600,44)">
+  <g transform="translate(600,44)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -13;0 0" dur="5.7s" begin="1.6s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" fill="#5FA04E"/></g>
     </g>
   </g>
-    <g transform="translate(900,44)">
+  <g transform="translate(900,44)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M11.04 19.32Q12 21.51 12 24q0-2.49.93-4.68.96-2.19 2.58-3.81t3.81-2.55Q21.51 12 24 12q-2.49 0-4.68-.93a12.3 12.3 0 0 1-3.81-2.58 12.3 12.3 0 0 1-2.58-3.81Q12 2.49 12 0q0 2.49-.96 4.68-.93 2.19-2.55 3.81a12.3 12.3 0 0 1-3.81 2.58Q2.49 12 0 12q2.49 0 4.68.96 2.19.93 3.81 2.55t2.55 3.81" fill="#a78bfa"/></g>
     </g>
   </g>
-    <g transform="translate(230,476)">
+  <g transform="translate(230,476)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -10;0 0" dur="6s" begin="2.1s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M18.481 17.196C18.481 16.487 17.904 15.910 17.195 15.910C16.486 15.910 15.909 16.487 15.909 17.196C15.909 17.904 16.486 18.481 17.195 18.481C17.904 18.481 18.481 17.904 18.481 17.196L18.481 17.196ZM19.338 17.196C19.338 18.377 18.377 19.338 17.195 19.338C16.014 19.338 15.052 18.377 15.052 17.196C15.052 16.014 16.014 15.053 17.195 15.053C18.377 15.053 19.338 16.014 19.338 17.196L19.338 17.196ZM7.882 11.011C7.882 10.302 7.305 9.725 6.597 9.725C5.887 9.725 5.311 10.302 5.311 11.011C5.311 11.720 5.887 12.297 6.597 12.297C7.305 12.297 7.882 11.720 7.882 11.011L7.882 11.011ZM8.739 11.011C8.739 12.192 7.778 13.154 6.597 13.154C5.415 13.154 4.454 12.192 4.454 11.011C4.454 9.829 5.415 8.868 6.597 8.868C7.778 8.868 8.739 9.829 8.739 11.011L8.739 11.011ZM11.884 4.289C11.884 4.998 12.461 5.574 13.170 5.574C13.879 5.574 14.456 4.998 14.456 4.289C14.456 3.579 13.879 3.003 13.170 3.003C12.461 3.003 11.884 3.579 11.884 4.289L11.884 4.289ZM11.027 4.289C11.027 3.107 11.989 2.146 13.170 2.146C14.352 2.146 15.313 3.107 15.313 4.289C15.313 5.470 14.352 6.432 13.170 6.432C11.989 6.432 11.027 5.470 11.027 4.289L11.027 4.289ZM23.143 12.000C23.143 8.026 21.012 4.349 17.577 2.361C16.961 2.485 16.365 2.655 15.622 2.924L15.330 2.118C15.718 1.978 16.065 1.865 16.400 1.768C15.020 1.173 13.521 0.857 12.000 0.857C11.276 0.857 10.564 0.932 9.868 1.068C10.372 1.363 10.819 1.657 11.253 1.986L10.735 2.669C10.123 2.205 9.489 1.812 8.656 1.376C4.448 2.699 1.417 6.411 0.936 10.769C1.818 10.590 2.665 10.493 3.606 10.470L3.627 11.327C2.641 11.351 1.794 11.456 0.869 11.659C0.865 11.773 0.857 11.888 0.857 12.000C0.857 15.711 2.693 19.130 5.712 21.192C5.175 19.593 4.907 18.081 4.907 16.605C4.907 15.764 5.052 15.072 5.205 14.341C5.241 14.172 5.277 13.999 5.312 13.821L6.153 13.986C6.117 14.168 6.080 14.344 6.044 14.517C5.894 15.234 5.764 15.852 5.764 16.605C5.764 18.280 6.132 20.012 6.880 21.893C8.474 22.720 10.195 23.143 12.000 23.143C13.181 23.143 14.334 22.954 15.434 22.592C15.865 21.740 16.185 20.937 16.453 20.014L17.276 20.253C17.081 20.925 16.857 21.537 16.590 22.147C17.281 21.836 17.936 21.451 18.550 21.002C18.402 20.640 18.243 20.279 18.068 19.928L18.835 19.545C18.984 19.843 19.121 20.148 19.251 20.455C21.731 18.332 23.143 15.283 23.143 12.000L23.143 12.000ZM24.000 12.000C24.000 15.740 22.300 19.200 19.338 21.492C18.604 22.062 17.808 22.536 16.967 22.917C16.610 23.079 16.246 23.229 15.873 23.355C14.638 23.783 13.334 24.000 12.000 24.000C10.029 24.000 8.071 23.509 6.338 22.580C2.429 20.488 0.000 16.434 0.000 12.000C0.000 11.706 0.008 11.482 0.025 11.275C0.317 6.268 3.753 1.934 8.572 0.500C9.669 0.168 10.824 0.000 12.000 0.000C14.061 0.000 16.088 0.531 17.865 1.534C21.648 3.654 24.000 7.665 24.000 12.000L24.000 12.000ZM10.849 5.770L10.286 5.124C9.325 5.962 8.577 6.852 7.704 8.197L8.424 8.664C9.250 7.390 9.953 6.552 10.849 5.770L10.849 5.770ZM9.546 11.326L9.268 12.136C11.236 12.812 12.954 13.890 14.672 15.530L15.264 14.910C13.452 13.182 11.636 12.043 9.546 11.326L9.546 11.326ZM15.277 6.286C16.885 8.739 17.790 11.430 17.968 14.288L17.112 14.341C16.944 11.634 16.086 9.082 14.561 6.756L15.277 6.286Z" fill="#8C4FFF"/></g>
     </g>
   </g>
-    <g transform="translate(460,476)">
+  <g transform="translate(460,476)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" fill="#06b6d4"/></g>
     </g>
   </g>
-    <g transform="translate(690,476)">
+  <g transform="translate(690,476)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M18.4395 5.5586c-.675 1.1664-1.352 2.3318-2.0274 3.498-.0366-.0155-.0742-.0286-.1113-.043-1.8249-.6957-3.484-.8-4.42-.787-1.8551.0185-3.3544.4643-4.2597.8203-.084-.1494-1.7526-3.021-2.0215-3.4864a1.1451 1.1451 0 0 0-.1406-.1914c-.3312-.364-.9054-.4859-1.379-.203-.475.282-.7136.9361-.3886 1.5019 1.9466 3.3696-.0966-.2158 1.9473 3.3593.0172.031-.4946.2642-1.3926 1.0177C2.8987 12.176.452 14.772 0 18.9902h24c-.119-1.1108-.3686-2.099-.7461-3.0683-.7438-1.9118-1.8435-3.2928-2.7402-4.1836a12.1048 12.1048 0 0 0-2.1309-1.6875c.6594-1.122 1.312-2.2559 1.9649-3.3848.2077-.3615.1886-.7956-.0079-1.1191a1.1001 1.1001 0 0 0-.8515-.5332c-.5225-.0536-.9392.3128-1.0488.5449zm-.0391 8.461c.3944.5926.324 1.3306-.1563 1.6503-.4799.3197-1.188.0985-1.582-.4941-.3944-.5927-.324-1.3307.1563-1.6504.4727-.315 1.1812-.1086 1.582.4941zM7.207 13.5273c.4803.3197.5506 1.0577.1563 1.6504-.394.5926-1.1038.8138-1.584.4941-.48-.3197-.5503-1.0577-.1563-1.6504.4008-.6021 1.1087-.8106 1.584-.4941z" fill="#3ddc84"/></g>
     </g>
   </g>
-    <g transform="translate(920,476)">
+  <g transform="translate(920,476)">
     <g>
       <animateTransform attributeName="transform" type="translate" values="0 0;0 -12;0 0" dur="5.5s" begin="0s" repeatCount="indefinite"/>
-      <circle r="30" fill="#151b29" stroke="#2a3350" stroke-width="1.4"/>
+      <circle r="30" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
       <g transform="translate(-12,-12) scale(1.15)"><path d="M12.504 0c-.155 0-.315.008-.48.021-4.226.333-3.105 4.807-3.17 6.298-.076 1.092-.3 1.953-1.05 3.02-.885 1.051-2.127 2.75-2.716 4.521-.278.832-.41 1.684-.287 2.489a.424.424 0 00-.11.135c-.26.268-.45.6-.663.839-.199.199-.485.267-.797.4-.313.136-.658.269-.864.68-.09.189-.136.394-.132.602 0 .199.027.4.055.536.058.399.116.728.04.97-.249.68-.28 1.145-.106 1.484.174.334.535.47.94.601.81.2 1.91.135 2.774.6.926.466 1.866.67 2.616.47.526-.116.97-.464 1.208-.946.587-.003 1.23-.269 2.26-.334.699-.058 1.574.267 2.577.2.025.134.063.198.114.333l.003.003c.391.778 1.113 1.132 1.884 1.071.771-.06 1.592-.536 2.257-1.306.631-.765 1.683-1.084 2.378-1.503.348-.199.629-.469.649-.853.023-.4-.2-.811-.714-1.376v-.097l-.003-.003c-.17-.2-.25-.535-.338-.926-.085-.401-.182-.786-.492-1.046h-.003c-.059-.054-.123-.067-.188-.135a.357.357 0 00-.19-.064c.431-1.278.264-2.55-.173-3.694-.533-1.41-1.465-2.638-2.175-3.483-.796-1.005-1.576-1.957-1.56-3.368.026-2.152.236-6.133-3.544-6.139zm.529 3.405h.013c.213 0 .396.062.584.198.19.135.33.332.438.533.105.259.158.459.166.724 0-.02.006-.04.006-.06v.105a.086.086 0 01-.004-.021l-.004-.024a1.807 1.807 0 01-.15.706.953.953 0 01-.213.335.71.71 0 00-.088-.042c-.104-.045-.198-.064-.284-.133a1.312 1.312 0 00-.22-.066c.05-.06.146-.133.183-.198.053-.128.082-.264.088-.402v-.02a1.21 1.21 0 00-.061-.4c-.045-.134-.101-.2-.183-.333-.084-.066-.167-.132-.267-.132h-.016c-.093 0-.176.03-.262.132a.8.8 0 00-.205.334 1.18 1.18 0 00-.09.4v.019c.002.089.008.179.02.267-.193-.067-.438-.135-.607-.202a1.635 1.635 0 01-.018-.2v-.02a1.772 1.772 0 01.15-.768c.082-.22.232-.406.43-.533a.985.985 0 01.594-.2zm-2.962.059h.036c.142 0 .27.048.399.135.146.129.264.288.344.465.09.199.14.4.153.667v.004c.007.134.006.2-.002.266v.08c-.03.007-.056.018-.083.024-.152.055-.274.135-.393.2.012-.09.013-.18.003-.267v-.015c-.012-.133-.04-.2-.082-.333a.613.613 0 00-.166-.267.248.248 0 00-.183-.064h-.021c-.071.006-.13.04-.186.132a.552.552 0 00-.12.27.944.944 0 00-.023.33v.015c.012.135.037.2.08.334.046.134.098.2.166.268.01.009.02.018.034.024-.07.057-.117.07-.176.136a.304.304 0 01-.131.068 2.62 2.62 0 01-.275-.402 1.772 1.772 0 01-.155-.667 1.759 1.759 0 01.08-.668 1.43 1.43 0 01.283-.535c.128-.133.26-.2.418-.2zm1.37 1.706c.332 0 .733.065 1.216.399.293.2.523.269 1.052.468h.003c.255.136.405.266.478.399v-.131a.571.571 0 01.016.47c-.123.31-.516.643-1.063.842v.002c-.268.135-.501.333-.775.465-.276.135-.588.292-1.012.267a1.139 1.139 0 01-.448-.067 3.566 3.566 0 01-.322-.198c-.195-.135-.363-.332-.612-.465v-.005h-.005c-.4-.246-.616-.512-.686-.71-.07-.268-.005-.47.193-.6.224-.135.38-.271.483-.336.104-.074.143-.102.176-.131h.002v-.003c.169-.202.436-.47.839-.601.139-.036.294-.065.466-.065zm2.8 2.142c.358 1.417 1.196 3.475 1.735 4.473.286.534.855 1.659 1.102 3.024.156-.005.33.018.513.064.646-1.671-.546-3.467-1.089-3.966-.22-.2-.232-.335-.123-.335.59.534 1.365 1.572 1.646 2.757.13.535.16 1.104.021 1.67.067.028.135.06.205.067 1.032.534 1.413.938 1.23 1.537v-.043c-.06-.003-.12 0-.18 0h-.016c.151-.467-.182-.825-1.065-1.224-.915-.4-1.646-.336-1.77.465-.008.043-.013.066-.018.135-.068.023-.139.053-.209.064-.43.268-.662.669-.793 1.187-.13.533-.17 1.156-.205 1.869v.003c-.02.334-.17.838-.319 1.35-1.5 1.072-3.58 1.538-5.348.334a2.645 2.645 0 00-.402-.533 1.45 1.45 0 00-.275-.333c.182 0 .338-.03.465-.067a.615.615 0 00.314-.334c.108-.267 0-.697-.345-1.163-.345-.467-.931-.995-1.788-1.521-.63-.4-.986-.87-1.15-1.396-.165-.534-.143-1.085-.015-1.645.245-1.07.873-2.11 1.274-2.763.107-.065.037.135-.408.974-.396.751-1.14 2.497-.122 3.854a8.123 8.123 0 01.647-2.876c.564-1.278 1.743-3.504 1.836-5.268.048.036.217.135.289.202.218.133.38.333.59.465.21.201.477.335.876.335.039.003.075.006.11.006.412 0 .73-.134.997-.268.29-.134.52-.334.74-.4h.005c.467-.135.835-.402 1.044-.7zm2.185 8.958c.037.6.343 1.245.882 1.377.588.134 1.434-.333 1.791-.765l.211-.01c.315-.007.577.01.847.268l.003.003c.208.199.305.53.391.876.085.4.154.78.409 1.066.486.527.645.906.636 1.14l.003-.007v.018l-.003-.012c-.015.262-.185.396-.498.595-.63.401-1.746.712-2.457 1.57-.618.737-1.37 1.14-2.036 1.191-.664.053-1.237-.2-1.574-.898l-.005-.003c-.21-.4-.12-1.025.056-1.69.176-.668.428-1.344.463-1.897.037-.714.076-1.335.195-1.814.12-.465.308-.797.641-.984l.045-.022zm-10.814.049h.01c.053 0 .105.005.157.014.376.055.706.333 1.023.752l.91 1.664.003.003c.243.533.754 1.064 1.189 1.637.434.598.77 1.131.729 1.57v.006c-.057.744-.48 1.148-1.125 1.294-.645.135-1.52.002-2.395-.464-.968-.536-2.118-.469-2.857-.602-.369-.066-.61-.2-.723-.4-.11-.2-.113-.602.123-1.23v-.004l.002-.003c.117-.334.03-.752-.027-1.118-.055-.401-.083-.71.043-.94.16-.334.396-.4.69-.533.294-.135.64-.202.915-.47h.002v-.002c.256-.268.445-.601.668-.838.19-.201.38-.336.663-.336zm7.159-9.074c-.435.201-.945.535-1.488.535-.542 0-.97-.267-1.28-.466-.154-.134-.28-.268-.373-.335-.164-.134-.144-.333-.074-.333.109.016.129.134.199.2.096.066.215.2.36.333.292.2.68.467 1.167.467.485 0 1.053-.267 1.398-.466.195-.135.445-.334.648-.467.156-.136.149-.267.279-.267.128.016.034.134-.147.332a8.097 8.097 0 01-.69.468zm-1.082-1.583V5.64c-.006-.02.013-.042.029-.05.074-.043.18-.027.26.004.063 0 .16.067.15.135-.006.049-.085.066-.135.066-.055 0-.092-.043-.141-.068-.052-.018-.146-.008-.163-.065zm-.551 0c-.02.058-.113.049-.166.066-.047.025-.086.068-.14.068-.05 0-.13-.02-.136-.068-.01-.066.088-.133.15-.133.08-.031.184-.047.259-.005.019.009.036.03.03.05v.02h.003z" fill="#fcc624"/></g>
     </g>
   </g>
-
-
-  <text x="1184" y="768" text-anchor="end" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="15" fill="#556078">@lanetting_</text>
+  <g>
+    <rect x="110" y="60" width="980" height="340" rx="14" fill="#FFFFFF"/>
+    <rect x="110" y="60" width="980" height="340" rx="14" fill="none" stroke="#E5E7EB" stroke-width="1.5"/>
+    <rect x="110" y="60" width="980" height="44" rx="14" fill="#F8F1F1"/>
+    <path d="M110 104 h980" stroke="#E5E7EB"/>
+    <circle cx="146" cy="82" r="7" fill="#ff5f56"/>
+    <circle cx="170" cy="82" r="7" fill="#ffbd2e"/>
+    <circle cx="194" cy="82" r="7" fill="#27c93f"/>
+    <text x="600" y="89" text-anchor="middle" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" fill="#4A2327">lanetting@ubuntu: ~</text>
+    <text x="132" y="132" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.02500;0.03000;0.12000;0.12500;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#4A2327">lanetting@ubuntu:~$</tspan><tspan fill="#111827"> sudo su</tspan>
+    </text>
+      <text x="132" y="160" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.03300;0.03800;0.12000;0.12500;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#16a34a" font-weight="700">[✓]</tspan><tspan fill="#374151"> shell escalated · root access granted</tspan>
+    </text>
+      <text x="132" y="132" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.14500;0.15000;0.27500;0.28000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#4A2327">lanetting@ubuntu:~$</tspan><tspan fill="#111827"> ./Professional_Journey.sh</tspan>
+    </text>
+      <text x="132" y="160" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.15300;0.15800;0.27500;0.28000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#16a34a" font-weight="700">[✓]</tspan><tspan fill="#374151"> 2017 bank security → 2021 global infra</tspan>
+    </text>
+      <text x="132" y="188" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.16100;0.16600;0.27500;0.28000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#b45309" font-weight="700">[+]</tspan><tspan fill="#374151"> 2023 UX+SEO · 2025 AI workflows</tspan>
+    </text>
+      <text x="132" y="216" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.16900;0.17400;0.27500;0.28000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#0891b2" font-weight="700">[i]</tspan><tspan fill="#374151"> 2026 · senior sysadmin · automation & AI</tspan>
+    </text>
+      <text x="132" y="132" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.30000;0.30500;0.58300;0.58800;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#4A2327">lanetting@ubuntu:~$</tspan><tspan fill="#111827"> sudo get_services</tspan>
+    </text>
+      <text x="132" y="160" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.30800;0.31300;0.58300;0.58800;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#b45309" font-weight="700">[+]</tspan><tspan fill="#374151"> wordpress-speed-optimization · 2–4 days</tspan>
+    </text>
+      <text x="132" y="188" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.31600;0.32100;0.58300;0.58800;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#b45309" font-weight="700">[+]</tspan><tspan fill="#374151"> web-scraping-automation-bots · 3–7 days</tspan>
+    </text>
+      <text x="132" y="216" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.32400;0.32900;0.58300;0.58800;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#b45309" font-weight="700">[+]</tspan><tspan fill="#374151"> technical-seo-gsc-audits · 3–5 days</tspan>
+    </text>
+      <text x="132" y="244" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.33200;0.33700;0.58300;0.58800;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#b45309" font-weight="700">[+]</tspan><tspan fill="#374151"> linux-vps-support-migration · 1–3 days</tspan>
+    </text>
+      <text x="132" y="272" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.34000;0.34500;0.58300;0.58800;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#b45309" font-weight="700">[+]</tspan><tspan fill="#374151"> ai-pipelines-telegram-gemini-wp · 4–8 days</tspan>
+    </text>
+      <text x="132" y="300" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.34800;0.35300;0.58300;0.58800;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#b45309" font-weight="700">[+]</tspan><tspan fill="#374151"> wordpress-security-malware-removal · 24–48 h</tspan>
+    </text>
+      <text x="132" y="132" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.60800;0.61300;0.72500;0.73000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#4A2327">lanetting@ubuntu:~$</tspan><tspan fill="#111827"> display --profiles</tspan>
+    </text>
+      <text x="132" y="160" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.61600;0.62100;0.72500;0.73000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#7c3aed" font-weight="700">[→]</tspan><tspan fill="#374151"> legit · contra · upwork</tspan>
+    </text>
+      <text x="132" y="188" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.62400;0.62900;0.72500;0.73000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#16a34a" font-weight="700">[✓]</tspan><tspan fill="#374151"> verified freelance profiles</tspan>
+    </text>
+      <text x="132" y="132" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.75000;0.75500;0.94500;0.95000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#4A2327">lanetting@ubuntu:~$</tspan><tspan fill="#111827"> connect --init</tspan>
+    </text>
+      <text x="132" y="160" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.75800;0.76300;0.94500;0.95000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#7c3aed" font-weight="700">[→]</tspan><tspan fill="#374151"> email · whatsapp · telegram · calendly</tspan>
+    </text>
+      <text x="132" y="188" font-family="'Ubuntu Mono','JetBrains Mono',Menlo,Consolas,monospace" font-size="17" opacity="0">
+      <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.76600;0.77100;0.94500;0.95000;1.00000" values="0;0;1;1;0;0"/>
+      <tspan fill="#16a34a" font-weight="700">[✓]</tspan><tspan fill="#374151"> connection established · let’s build something great</tspan>
+    </text>
+    <rect x="462" y="119" width="9" height="16" rx="2" fill="#4A2327" opacity="0">
+    <animate attributeName="opacity" dur="44s" repeatCount="indefinite" keyTimes="0.00000;0.75000;0.76100;0.77200;0.78300;0.79400;0.80500;0.81600;0.82700;0.83800;0.84900;0.86000;0.87100;0.88200;0.89300;0.90400;0.91500;0.92600;0.93000;1.00000" values="0;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;0;0"/>
+  </rect>
+  </g>
 </svg>

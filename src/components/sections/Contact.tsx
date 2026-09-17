@@ -12,10 +12,10 @@ export default function Contact() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-16 md:py-24">
+    <section id="contact" className="py-12 md:py-16">
       <div className="container mx-auto px-4 max-w-4xl text-center flex flex-col items-center">
         <ConsoleHeading command={t.contact.command} text={t.contact.title} className="text-xl sm:text-2xl md:text-4xl font-bold text-brand-primary mb-6" />
-        <p className="text-brand-accent text-lg mb-12 max-w-2xl mx-auto">
+        <p className="text-brand-accent text-lg mb-10 max-w-2xl mx-auto">
           {t.contact.desc}
         </p>
 

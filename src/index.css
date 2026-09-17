@@ -11,9 +11,9 @@
 
 @layer base {
   :root {
-    --brand-primary: #4A2327; 
-    --brand-accent: #B57B7F;  
-    --brand-bg: #F8F1F1;      
+    --brand-primary: #4A2327;
+    --brand-accent: #B57B7F;
+    --brand-bg: #F8F1F1;
     --brand-surface: #FFFFFF;
     --brand-border: #E5E7EB;
     --brand-text: #111827;
@@ -22,9 +22,9 @@
   .dark {
     --brand-primary: #F9FAFB;
     --brand-accent: #9CA3AF;
-    --brand-bg: #030712;     
-    --brand-surface: #111827; 
-    --brand-border: #374151;  
+    --brand-bg: #030712;
+    --brand-surface: #111827;
+    --brand-border: #374151;
     --brand-text: #F3F4F6;
   }
 
@@ -49,11 +49,11 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     background-color: var(--brand-bg);
     color: var(--brand-text);
-    font-family: "Neue Haas Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", "JetBrains Mono", "Helvetica Neue", Helvetica, Arial, sans-serif;
     @apply antialiased transition-colors duration-300;
   }
 }
