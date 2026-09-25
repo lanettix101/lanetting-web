@@ -69,6 +69,10 @@ export const translations = {
         {
           name: "Upwork",
           description: "The largest global marketplace connecting freelance talent with clients."
+        },
+        {
+          name: "Workana",
+          description: "Leading Latin American platform connecting freelance talent with hiring clients."
         }
       ]
     },
@@ -170,6 +174,10 @@ export const translations = {
         {
           name: "Upwork",
           description: "El marketplace freelance más grande del mundo, conectando talento independiente con clientes globales."
+        },
+        {
+          name: "Workana",
+          description: "Plataforma líder en América Latina para conectar freelancers de alto valor con empresas."
         }
       ]
     },

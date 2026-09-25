@@ -14,6 +14,10 @@ const platformMeta: Record<string, { img: string; link: string }> = {
   Upwork: {
     img: 'img_platform_upwork_1x1.webp',
     link: 'https://www.upwork.com/freelancers/~01eee7a32f933b7192'
+  },
+  Workana: {
+    img: 'img_platform_workana_1x1.webp',
+    link: 'https://www.workana.com/freelancer/792227c4dfc8973ca689e30178d2899d'
   }
 };
 
@@ -55,7 +59,7 @@ export default function Platforms() {
                       <h3 className="text-xl font-bold text-brand-primary">{platform.name}</h3>
                       <ExternalLink className="w-5 h-5 text-brand-accent group-hover:text-brand-primary transition-colors" />
                     </div>
-                    <p className="text-brand-text/70 text-sm leading-relaxed mb-4">
+                    <p  className="text-brand-text/70 text-sm leading-relaxed mb-4">
                       {platform.description}
                     </p>
                     <span className="mt-1 inline-flex items-center gap-1.5 rounded-md border border-brand-primary/40 bg-brand-primary/5 px-3 py-1.5 text-sm font-medium text-brand-primary transition-colors group-hover:border-brand-primary group-hover:bg-brand-primary group-hover:text-brand-surface">
