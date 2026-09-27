@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from 'motion/react';
-import { ICON_FILL_OVERRIDES, TERMINAL_ICONS, type TerminalThemeName } from './heroTerminalData';
+import { ICON_FILL_OVERRIDES, TERMINAL_ICONS } from './terminalIcons';
+import type { TerminalThemeName } from './heroTerminalData';
 
 const ICON_CIRCLE: Record<TerminalThemeName, { fill: string; stroke: string }> = {
   light: { fill: '#FFFFFF', stroke: '#E5E7EB' },

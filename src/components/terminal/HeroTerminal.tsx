@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { motion, useInView, useReducedMotion } from 'motion/react';
 import {
   TERMINAL_CONTENT,
@@ -10,7 +10,8 @@ import {
   type TerminalThemeName,
 } from './heroTerminalData';
 import TerminalWindow, { type CursorState, type LineState } from './TerminalWindow';
-import FloatingTechIcons from './FloatingTechIcons';
+
+const FloatingTechIcons = lazy(() => import('./FloatingTechIcons'));
 
 interface TimelineStep {
   at: number;
@@ -186,7 +187,11 @@ export default function HeroTerminal({ theme, language, ariaLabel }: HeroTermina
       animate={{ opacity: inView ? 1 : 0 }}
       transition={{ duration: 0.8 }}
     >
-      <FloatingTechIcons theme={theme} />
+      {inView && (
+        <Suspense fallback={null}>
+          <FloatingTechIcons theme={theme} />
+        </Suspense>
+      )}
       <TerminalWindow
         color={color}
         scenes={scenes}
