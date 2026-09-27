@@ -46,7 +46,6 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
           </p>
         </div>
 
-        {/* Tab Filters */}
         {tabs.length > 2 && (
           <div className="flex flex-wrap gap-1.5 p-1 bg-brand-bg rounded-lg border border-brand-border">
             {tabs.map((tab) => (
@@ -65,7 +64,6 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
         )}
       </div>
 
-      {/* Grid of Samples */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {filteredSamples.map((sample) => {
           const sampleTitle = sample.title[language] || sample.title.en;
@@ -78,7 +76,6 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
                 key={sample.id}
                 className="md:col-span-2 bg-brand-surface border border-brand-border rounded-lg overflow-hidden shadow-sm flex flex-col"
               >
-                {/* Terminal / Browser Chrome Header */}
                 <div className="bg-brand-bg px-4 py-2.5 border-b border-brand-border flex items-center justify-between gap-4">
                   <div className="flex items-center gap-2">
                     <div className="flex gap-1.5">
@@ -86,14 +83,14 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
                       <span className="w-2.5 h-2.5 rounded-full bg-yellow-400/80 inline-block"></span>
                       <span className="w-2.5 h-2.5 rounded-full bg-green-400/80 inline-block"></span>
                     </div>
-                    <span className="text-xs font-mono text-brand-accent ml-2 truncate max-w-[200px] sm:max-w-md">
+                    <span className="text-xs font-mono text-brand-accent ml-2 truncate max-w-[12.5rem] sm:max-w-md">
                       {sample.url}
                     </span>
                   </div>
 
                   <div className="flex items-center gap-2">
                     {sampleBadge && (
-                      <span className="px-2 py-0.5 text-[10px] font-mono font-bold bg-brand-primary/10 text-brand-primary rounded">
+                      <span className="px-2 py-0.5 text-[0.625rem] font-mono font-bold bg-brand-primary/10 text-brand-primary rounded">
                         {sampleBadge}
                       </span>
                     )}
@@ -109,8 +106,7 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
                   </div>
                 </div>
 
-                {/* iFrame Container */}
-                <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] bg-brand-bg min-h-[300px]">
+                <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] bg-brand-bg min-h-[18.75rem]">
                   <iframe
                     src={sample.url}
                     title={sampleTitle}
@@ -142,7 +138,7 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
                     </span>
                   </div>
                   {sampleBadge && (
-                    <span className="px-2 py-0.5 text-[10px] font-mono font-bold bg-brand-primary/10 text-brand-primary rounded">
+                    <span className="px-2 py-0.5 text-[0.625rem] font-mono font-bold bg-brand-primary/10 text-brand-primary rounded">
                       {sampleBadge}
                     </span>
                   )}
@@ -185,7 +181,7 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
                     </span>
                   </div>
                   {sampleBadge && (
-                    <span className="absolute top-3 left-3 px-2 py-0.5 text-[10px] font-mono font-bold bg-brand-surface/90 text-brand-primary rounded shadow-xs">
+                    <span className="absolute top-3 left-3 px-2 py-0.5 text-[0.625rem] font-mono font-bold bg-brand-surface/90 text-brand-primary rounded shadow-xs">
                       {sampleBadge}
                     </span>
                   )}
@@ -225,7 +221,7 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
                       <Globe className="w-4 h-4" />
                     </div>
                     {sampleBadge && (
-                      <span className="px-2 py-0.5 text-[10px] font-mono font-bold bg-brand-primary/10 text-brand-primary rounded">
+                      <span className="px-2 py-0.5 text-[0.625rem] font-mono font-bold bg-brand-primary/10 text-brand-primary rounded">
                         {sampleBadge}
                       </span>
                     )}
@@ -240,7 +236,7 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
                 </div>
 
                 <div className="mt-4 pt-3 border-t border-brand-border flex items-center justify-between text-xs text-brand-accent group-hover:text-brand-primary font-medium">
-                  <span className="truncate max-w-[200px] font-mono">{sample.url.replace(/^https?:\/\//, '')}</span>
+                  <span className="truncate max-w-[12.5rem] font-mono">{sample.url.replace(/^https?:\/\//, '')}</span>
                   <ExternalLink className="w-3.5 h-3.5 shrink-0 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </div>
               </a>
@@ -251,7 +247,6 @@ export default function ServicePortfolioSamples({ samples }: ServicePortfolioSam
         })}
       </div>
 
-      {/* Lightbox modal for full size images */}
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"

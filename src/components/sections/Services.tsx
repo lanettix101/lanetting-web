@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import ConsoleHeading from '../ui/ConsoleHeading';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { servicesData } from '../../data/servicesData';
+import { serviceImageSrcSet, serviceCardSizes } from '../../data/serviceImages';
 
 export default function Services() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -85,12 +86,14 @@ export default function Services() {
                 <div>
                   {/* Image */}
                   <div className="w-full aspect-[4/3] bg-brand-bg flex items-center justify-center border-b border-brand-border overflow-hidden relative">
-                    <img
-                      src={`${import.meta.env.BASE_URL}${service.img}`}
-                      alt={title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
+                <img
+                  src={`${import.meta.env.BASE_URL}${service.img}`}
+                  srcSet={serviceImageSrcSet(service.img, service.imgWidth)}
+                  sizes={serviceCardSizes}
+                  alt={title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
                   </div>
                   <div className="p-6">
                     <h3 className="text-lg font-bold text-brand-primary mb-2 line-clamp-2 min-h-[3.5rem]">

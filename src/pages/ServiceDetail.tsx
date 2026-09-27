@@ -12,13 +12,17 @@ import {
   Sparkles,
   ChevronRight
 } from 'lucide-react';
-import { useMemo } from 'react';
+import { lazy, Suspense, useMemo } from 'react';
 import ConsoleHeading from '../components/ui/ConsoleHeading';
-import ServicePortfolioSamples from '../components/ui/ServicePortfolioSamples';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import { servicesData } from '../data/servicesData';
+import { serviceImageSrcSet, serviceDetailSizes } from '../data/serviceImages';
+
+const ServicePortfolioSamples = lazy(
+  () => import('../components/ui/ServicePortfolioSamples')
+);
 
 export default function ServiceDetail() {
   const { id } = useParams<{ id: string }>();
@@ -85,7 +89,6 @@ export default function ServiceDetail() {
 
   return (
     <div className="container mx-auto px-4 py-16 md:py-24 max-w-5xl">
-      {/* Breadcrumb & Navigation */}
       <div className="flex items-center justify-between gap-4 mb-8">
         <Link
           to="/#services"
@@ -95,7 +98,6 @@ export default function ServiceDetail() {
         </Link>
       </div>
 
-      {/* Terminal Title Heading */}
       <ConsoleHeading
         as="h1"
         command={`${t.serviceDetail.commandPrefix}${service.slug}.spec`}
@@ -103,7 +105,6 @@ export default function ServiceDetail() {
         className="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-primary mb-6"
       />
 
-      {/* Badges Bar */}
       <div className="flex flex-wrap items-center gap-3 mb-8">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-brand-primary/10 text-brand-primary text-xs font-mono font-bold uppercase tracking-wider rounded-full">
           <Terminal className="w-3.5 h-3.5" />
@@ -115,16 +116,17 @@ export default function ServiceDetail() {
         </div>
       </div>
 
-      {/* Main Content Layout */}
       <div className="space-y-10">
-        {/* Hero Card with Visual Header & Description */}
         <div className="bg-brand-surface border border-brand-border rounded-xl overflow-hidden shadow-xs">
           <div className="w-full aspect-[4/3] bg-brand-bg border-b border-brand-border overflow-hidden flex items-center justify-center">
             <img
               src={`${import.meta.env.BASE_URL}${service.img}`}
+              srcSet={serviceImageSrcSet(service.img, service.imgWidth)}
+              sizes={serviceDetailSizes}
               alt={title}
               className="w-full h-full object-cover"
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
 
@@ -137,7 +139,6 @@ export default function ServiceDetail() {
               {fullDesc}
             </p>
 
-            {/* Methodology Section */}
             <div className="mt-8 p-6 bg-brand-bg rounded-lg border border-brand-border">
               <h3 className="text-sm font-mono font-bold text-brand-primary uppercase tracking-wider mb-2 flex items-center gap-2">
                 <Terminal className="w-4 h-4" />
@@ -151,9 +152,7 @@ export default function ServiceDetail() {
           </div>
         </div>
 
-        {/* Features & Deliverables Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Key Features */}
           <div className="bg-brand-surface border border-brand-border rounded-xl p-6 sm:p-8 shadow-xs flex flex-col justify-between">
             <div>
               <h2 className="text-lg font-bold text-brand-primary mb-5 flex items-center gap-2">
@@ -171,7 +170,6 @@ export default function ServiceDetail() {
             </div>
           </div>
 
-          {/* Guaranteed Deliverables */}
           <div className="bg-brand-surface border border-brand-border rounded-xl p-6 sm:p-8 shadow-xs flex flex-col justify-between">
             <div>
               <h2 className="text-lg font-bold text-brand-primary mb-5 flex items-center gap-2">
@@ -190,7 +188,6 @@ export default function ServiceDetail() {
           </div>
         </div>
 
-        {/* Tech Stack & Tools */}
         <div className="bg-brand-surface border border-brand-border rounded-xl p-6 sm:p-8 shadow-xs">
           <h2 className="text-lg font-bold text-brand-primary mb-4 flex items-center gap-2">
             <Cpu className="w-5 h-5 text-brand-primary" />
@@ -208,11 +205,12 @@ export default function ServiceDetail() {
           </div>
         </div>
 
-        {/* PORTFOLIO SAMPLES & EVIDENCE SECTION */}
-        {/* Rendered ONLY in the detailed view, not on the carousel */}
-        <ServicePortfolioSamples samples={service.samples} />
+        {service.samples && service.samples.length > 0 && (
+          <Suspense fallback={null}>
+            <ServicePortfolioSamples samples={service.samples} />
+          </Suspense>
+        )}
 
-        {/* Direct CTA / Consultation Box */}
         <div className="bg-brand-primary text-white dark:bg-brand-surface dark:text-brand-text border dark:border-brand-border rounded-xl p-8 sm:p-10 shadow-md">
           <div className="max-w-2xl">
             <h2 className="text-xl sm:text-2xl font-bold mb-3">
@@ -240,7 +238,6 @@ export default function ServiceDetail() {
           </div>
         </div>
 
-        {/* Next / Previous Service Footer Navigation */}
         <div className="pt-8 border-t border-brand-border grid grid-cols-1 sm:grid-cols-2 gap-4">
           {prevService && (
             <Link

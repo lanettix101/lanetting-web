@@ -18,7 +18,6 @@ export default function Home() {
     path: '/',
   });
 
-  // Y sin hash, el hook no colisiona con el efecto de anclas de abajo.
   useScrollToTop();
 
   useEffect(() => {

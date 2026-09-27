@@ -265,7 +265,6 @@ function buildSvg(themeName, lang) {
     })
     .join('\n      ');
 
-  // Cursor sits right after the last prompt line of the final scene.
   const lastPromptY = cy + titleH + 28;
   const blink = buildCursorBlink(SCENES[4].start, SCENES[4].end - 0.02);
   const cursor = `<rect x="462" y="${lastPromptY - 13}" width="9" height="16" rx="2" fill="${color.promptUser}" opacity="0">

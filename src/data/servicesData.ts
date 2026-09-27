@@ -26,6 +26,7 @@ export interface ServiceItem {
   id: number;
   slug: string;
   img: string;
+  imgWidth: number;
   category: {
     es: string;
     en: string;
@@ -67,6 +68,7 @@ export const servicesData: ServiceItem[] = [
     id: 1,
     slug: 'wordpress-speed-optimization',
     img: 'img_service_wp-speed_4x3.webp',
+    imgWidth: 4096,
     category: {
       es: 'Core Web Vitals',
       en: 'Core Web Vitals'
@@ -193,6 +195,7 @@ export const servicesData: ServiceItem[] = [
     id: 2,
     slug: 'web-scraping-automation-bots',
     img: 'img_service_automation_4x3.webp',
+    imgWidth: 4096,
     category: {
       es: 'Automatización & Extracción de Datos',
       en: 'Automation & Data Extraction'
@@ -320,6 +323,7 @@ export const servicesData: ServiceItem[] = [
     id: 3,
     slug: 'technical-seo-gsc-audits',
     img: 'img_service_tech-seo_4x3.webp',
+    imgWidth: 2560,
     category: {
       es: 'SEO Técnico & Indexabilidad',
       en: 'Technical SEO & Crawlability'
@@ -429,6 +433,7 @@ export const servicesData: ServiceItem[] = [
     id: 4,
     slug: 'linux-vps-support-migration',
     img: 'img_service_linux-vps_4x3.webp',
+    imgWidth: 4096,
     category: {
       es: 'Infraestructura & SysAdmin Linux',
       en: 'Infrastructure & Linux SysAdmin'
@@ -538,6 +543,7 @@ export const servicesData: ServiceItem[] = [
     id: 5,
     slug: 'ai-pipelines-telegram-gemini-wp',
     img: 'img_service_ai-pipelines_4x3.webp',
+    imgWidth: 4096,
     category: {
       es: 'Inteligencia Artificial & Automatización',
       en: 'AI & Automated Workflows'
@@ -647,6 +653,7 @@ export const servicesData: ServiceItem[] = [
     id: 6,
     slug: 'wordpress-security-malware-removal',
     img: 'img_service_wp-security_4x3.webp',
+    imgWidth: 2560,
     category: {
       es: 'Ciberseguridad & Respuesta a Incidentes',
       en: 'Cybersecurity & Incident Response'

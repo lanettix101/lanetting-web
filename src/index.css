@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
@@ -6,6 +7,7 @@
   font-display: swap;
   src: url("/webfonts/JetBrainsMono-Regular.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
@@ -13,6 +15,7 @@
   font-display: swap;
   src: url("/webfonts/JetBrainsMono-Medium.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
@@ -20,6 +23,7 @@
   font-display: swap;
   src: url("/webfonts/JetBrainsMono-SemiBold.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
@@ -27,20 +31,15 @@
   font-display: swap;
   src: url("/webfonts/JetBrainsMono-Bold.woff2") format("woff2");
 }
-@font-face {
-  font-family: "JetBrains Mono";
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("/webfonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("/webfonts/Montserrat-Regular.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -48,6 +47,7 @@
   font-display: swap;
   src: url("/webfonts/Montserrat-Medium.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -55,6 +55,7 @@
   font-display: swap;
   src: url("/webfonts/Montserrat-SemiBold.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -112,7 +113,20 @@
     text-shadow: 0 0 2px rgba(0, 255, 65, 0.4);
   }
 
+  @media (min-width: 769px) {
+    html {
+      font-size: max(16px, min(calc(100vw / 64), 40px));
+    }
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
   html {
+    overflow-x: clip;
     scroll-behavior: smooth;
   }
 
