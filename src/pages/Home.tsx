@@ -5,9 +5,21 @@ import Timeline from '../components/sections/Timeline';
 import Services from '../components/sections/Services';
 import Platforms from '../components/sections/Platforms';
 import Contact from '../components/sections/Contact';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { useScrollToTop } from '../hooks/useScrollToTop';
 
 export default function Home() {
   const location = useLocation();
+
+  useDocumentMeta({
+    title: 'Systems Engineer & Technical SEO',
+    metaDescription:
+      'Systems Engineer specializing in backend infrastructure, technical SEO, and automation to build high-performance scalable systems.',
+    path: '/',
+  });
+
+  // Y sin hash, el hook no colisiona con el efecto de anclas de abajo.
+  useScrollToTop();
 
   useEffect(() => {
     if (location.hash) {

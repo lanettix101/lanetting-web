@@ -81,8 +81,19 @@ export const translations = {
       title: "Let's Build Something Great",
       desc: "Ready to optimize your infrastructure? Reach out directly via email or schedule a meeting.",
       email: "Email Me",
-      book: "Book a Meeting",
-      rights: "All rights reserved."
+      book: "Book a Meeting"
+    },
+    footer: {
+      rights: "All rights reserved.",
+      legalLabel: "Legal",
+      privacy: "Privacy Policy",
+      terms: "Terms of Service"
+    },
+    notFound: {
+      code: "ERROR 404",
+      title: "Resource Not Found",
+      desc: "The page or resource you requested does not exist, or it has been moved.",
+      back: "Return to Home"
     },
     serviceDetail: {
       back: "Back to Services",
@@ -186,8 +197,19 @@ export const translations = {
       title: "Construyamos Algo Increíble Juntos",
       desc: "¿Listo para optimizar tus proyectos? Contáctame por correo o agenda una reunión.",
       email: "Envíame un Correo",
-      book: "Agendar tu Reunión",
-      rights: "Todos los derechos reservados."
+      book: "Agendar tu Reunión"
+    },
+    footer: {
+      rights: "Todos los derechos reservados.",
+      legalLabel: "Legal",
+      privacy: "Política de Privacidad",
+      terms: "Términos y Condiciones"
+    },
+    notFound: {
+      code: "ERROR 404",
+      title: "Recurso No Encontrado",
+      desc: "La página o el recurso solicitado no existe, o fue movido.",
+      back: "Volver al Inicio"
     },
     serviceDetail: {
       back: "Volver a Servicios",

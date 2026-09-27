@@ -12,19 +12,19 @@ import {
   Sparkles,
   ChevronRight
 } from 'lucide-react';
-import { useEffect, useMemo } from 'react';
+import { useMemo } from 'react';
 import ConsoleHeading from '../components/ui/ConsoleHeading';
 import ServicePortfolioSamples from '../components/ui/ServicePortfolioSamples';
 import { useLanguage } from '../i18n/LanguageContext';
+import { useDocumentMeta } from '../hooks/useDocumentMeta';
+import { useScrollToTop } from '../hooks/useScrollToTop';
 import { servicesData } from '../data/servicesData';
 
 export default function ServiceDetail() {
   const { id } = useParams<{ id: string }>();
   const { t, language } = useLanguage();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [id]);
+  useScrollToTop();
 
   const { service, prevService, nextService } = useMemo(() => {
     if (!id) return { service: null, prevService: null, nextService: null };
@@ -43,6 +43,15 @@ export default function ServiceDetail() {
 
     return { service: current, prevService: prev, nextService: next };
   }, [id]);
+
+  useDocumentMeta({
+    title: service ? (service.title[language] || service.title.en) : t.serviceDetail.notFoundTitle,
+    metaDescription: service
+      ? (service.shortDesc[language] || service.shortDesc.en)
+      : t.serviceDetail.notFoundDesc,
+    path: service ? `/service/${service.slug}` : '/',
+    noindex: !service,
+  });
 
   if (!service) {
     return (

@@ -2,7 +2,8 @@
   "name": "lanetti-dev",
   "description": "Professional services website of Eng. Luis Antonio Lanetti R. — Systems Engineer & Technical SEO.",
   "private": true,
-  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port=21001 --host=0.0.0.0",
@@ -10,6 +11,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "generate:hero": "node scripts/generate-hero-terminals.mjs",
+    "verify:privacy": "node scripts/verify-no-trackers.mjs",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
