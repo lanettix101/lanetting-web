@@ -14,7 +14,7 @@ const Portfolio = lazy(() => import('./pages/Portfolio'));
 const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 
 function RouteFallback() {
-  return <div className="min-h-[60vh]" aria-busy="true" />;
+  return <div className="min-h-[100svh]" aria-busy="true" />;
 }
 
 export default function App() {
