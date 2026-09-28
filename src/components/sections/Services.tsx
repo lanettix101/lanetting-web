@@ -4,6 +4,7 @@ import ConsoleHeading from '../ui/ConsoleHeading';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { servicesData } from '../../data/servicesData';
 import { serviceImageSrcSet, serviceCardSizes } from '../../data/serviceImages';
+import PortfolioPromoCard from '../portfolio/PortfolioPromoCard';
 
 export default function Services() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -73,6 +74,8 @@ export default function Services() {
           className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 hide-scrollbar"
           style={{ scrollbarWidth: 'none' }}
         >
+          <PortfolioPromoCard />
+
           {servicesData.map((service) => {
             const title = service.title[language] || service.title.en;
             const shortDesc = service.shortDesc[language] || service.shortDesc.en;

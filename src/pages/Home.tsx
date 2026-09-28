@@ -16,6 +16,9 @@ export default function Home() {
     metaDescription:
       'Systems Engineer specializing in backend infrastructure, technical SEO, and automation to build high-performance scalable systems.',
     path: '/',
+    ogImage: 'thumbnail.webp',
+    ogImageWidth: 900,
+    ogImageHeight: 1124,
   });
 
   useScrollToTop();

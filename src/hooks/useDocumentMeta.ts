@@ -11,6 +11,10 @@ function upsertMeta(key: 'name' | 'property', keyValue: string, content: string)
   el.setAttribute('content', content);
 }
 
+function removeMeta(key: 'name' | 'property', keyValue: string) {
+  document.head.querySelector(`meta[${key}="${keyValue}"]`)?.remove();
+}
+
 function upsertCanonical(href: string) {
   let el = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
   if (!el) {
@@ -26,9 +30,20 @@ export interface DocumentMeta {
   metaDescription: string;
   path: string;
   noindex?: boolean;
+  ogImage?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
 }
 
-export function useDocumentMeta({ title, metaDescription, path, noindex = false }: DocumentMeta) {
+export function useDocumentMeta({
+  title,
+  metaDescription,
+  path,
+  noindex = false,
+  ogImage,
+  ogImageWidth,
+  ogImageHeight,
+}: DocumentMeta) {
   useEffect(() => {
     const fullTitle = `${title} | ${contactInfo.fullName}`;
     const canonical = `${SITE_URL}${path}`;
@@ -43,5 +58,23 @@ export function useDocumentMeta({ title, metaDescription, path, noindex = false 
     upsertMeta('name', 'twitter:title', fullTitle);
     upsertMeta('name', 'twitter:description', metaDescription);
     upsertMeta('name', 'twitter:url', canonical);
-  }, [title, metaDescription, path, noindex]);
+
+    if (ogImage) {
+      const absoluteImage = ogImage.startsWith('http') ? ogImage : `${SITE_URL}/${ogImage}`;
+      upsertMeta('property', 'og:image', absoluteImage);
+      upsertMeta('name', 'twitter:image', absoluteImage);
+      if (ogImageWidth && ogImageHeight) {
+        upsertMeta('property', 'og:image:width', String(ogImageWidth));
+        upsertMeta('property', 'og:image:height', String(ogImageHeight));
+      } else {
+        removeMeta('property', 'og:image:width');
+        removeMeta('property', 'og:image:height');
+      }
+    } else {
+      removeMeta('property', 'og:image');
+      removeMeta('property', 'og:image:width');
+      removeMeta('property', 'og:image:height');
+      removeMeta('name', 'twitter:image');
+    }
+  }, [title, metaDescription, path, noindex, ogImage, ogImageWidth, ogImageHeight]);
 }

@@ -43,6 +43,48 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio/landing-con-k</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio/instagram-telegram-bot</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio/creative-pricing-calculator</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio/prize-wheel-promo</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio/traffic-analytics-simulator</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio/wordpress-telegram-bridge</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lanettix101.github.io/lanetting-web/privacy</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>yearly</changefreq>

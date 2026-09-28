@@ -20,6 +20,8 @@ import { useScrollToTop } from '../hooks/useScrollToTop';
 import { servicesData } from '../data/servicesData';
 import { serviceImageSrcSet, serviceDetailSizes } from '../data/serviceImages';
 
+const RelatedProjects = lazy(() => import('../components/portfolio/RelatedProjects'));
+
 const ServicePortfolioSamples = lazy(
   () => import('../components/ui/ServicePortfolioSamples')
 );
@@ -237,6 +239,10 @@ export default function ServiceDetail() {
             </div>
           </div>
         </div>
+
+        <Suspense fallback={null}>
+          <RelatedProjects serviceId={service.id} />
+        </Suspense>
 
         <div className="pt-8 border-t border-brand-border grid grid-cols-1 sm:grid-cols-2 gap-4">
           {prevService && (

@@ -10,8 +10,10 @@ import { LanguageProvider } from './i18n/LanguageContext';
 
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const ProjectDetail = lazy(() => import('./pages/ProjectDetail'));
 
-function LegalFallback() {
+function RouteFallback() {
   return <div className="min-h-[60vh]" aria-busy="true" />;
 }
 
@@ -22,10 +24,12 @@ export default function App() {
         <div className="min-h-screen flex flex-col font-sans">
           <Header />
           <main className="flex-1">
-            <Suspense fallback={<LegalFallback />}>
+            <Suspense fallback={<RouteFallback />}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/service/:id" element={<ServiceDetail />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/portfolio/:slug" element={<ProjectDetail />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/terms" element={<Terms />} />
                 <Route path="*" element={<NotFound />} />

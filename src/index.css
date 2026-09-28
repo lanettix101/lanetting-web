@@ -76,6 +76,11 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
+@utility first-viewport {
+  height: calc(100vh - 4rem);
+  height: calc(100dvh - 4rem);
+}
+
 @layer base {
   :root {
     --brand-primary: #4A2327;

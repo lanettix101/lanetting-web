@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    nav: { journey: "Journey", services: "Services", platforms: "Platforms", contact: "Contact" },
+    nav: { journey: "Journey", services: "Services", portfolio: "Portfolio", platforms: "Platforms", contact: "Contact" },
     hero: {
       subtitle: "Eng. Luis Antonio Lanetti R.",
       command: "sudo su",
@@ -89,12 +89,16 @@ export const translations = {
       privacy: "Privacy Policy",
       terms: "Terms of Service"
     },
-    notFound: {
-      code: "ERROR 404",
-      title: "Resource Not Found",
-      desc: "The page or resource you requested does not exist, or it has been moved.",
-      back: "Return to Home"
-    },
+      notFound: {
+        code: "ERROR 404",
+        title: "Resource Not Found",
+        desc: "The page or resource you requested does not exist, or it has been moved.",
+        back: "Return to Home"
+      },
+      portfolioPromo: {
+        title: "See My Projects",
+        shortDesc: "Products, landing pages and automation bots I designed and built from scratch. Browse the repository, the live demo and the technical breakdown of each one."
+      },
     serviceDetail: {
       back: "Back to Services",
       commandPrefix: "cat service_module_v1.0_",
@@ -116,7 +120,7 @@ export const translations = {
     }
   },
   es: {
-    nav: { journey: "Trayectoria", services: "Servicios", platforms: "Plataformas", contact: "Contacto" },
+    nav: { journey: "Trayectoria", services: "Servicios", portfolio: "Portfolio", platforms: "Plataformas", contact: "Contacto" },
     hero: {
       subtitle: "Ing. Luis Antonio Lanetti R.",
       command: "sudo su",
@@ -205,12 +209,16 @@ export const translations = {
       privacy: "Política de Privacidad",
       terms: "Términos y Condiciones"
     },
-    notFound: {
-      code: "ERROR 404",
-      title: "Recurso No Encontrado",
-      desc: "La página o el recurso solicitado no existe, o fue movido.",
-      back: "Volver al Inicio"
-    },
+      notFound: {
+        code: "ERROR 404",
+        title: "Recurso No Encontrado",
+        desc: "La página o el recurso solicitado no existe, o no lo he creado aún.",
+        back: "Volver a la realidad"
+      },
+      portfolioPromo: {
+        title: "Conoce Mis Proyectos",
+        shortDesc: "Productos, landing pages y bots de automatización que diseñé y construí desde cero. Revisa el código, mira demos en vivo y el desglose técnico de cada uno."
+      },
     serviceDetail: {
       back: "Volver a Servicios",
       commandPrefix: "cat service_module_v1.0_",
