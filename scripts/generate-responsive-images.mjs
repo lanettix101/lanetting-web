@@ -131,10 +131,6 @@ const processBase = async (stem, widths, quality, { rewriteLossless, effort }) =
   let baseBytes = 0;
   let baseGenerated = false;
 
-  // El base es el master: solo se reescribe al convertir un origen con perdida (VP8L) a
-  // WebP con perdida. Nunca se re-codifica desde si mismo, porque cada corrida --force
-  // acumularia una generacion mas de compresion. Para cambiarle la calidad hay que
-  // reemplazar el master en su lugar.
   const mustRewriteBase = srcExt !== '.webp' || (rewriteLossless && isLosslessWebp(basePath));
 
   if (mustRewriteBase) {
