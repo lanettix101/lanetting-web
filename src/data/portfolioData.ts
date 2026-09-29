@@ -37,6 +37,8 @@ export interface Project {
   stack: Bilingual;
   img: string;
   imgWidth: number;
+  imgMobile?: string;
+  imgMobileWidth?: number;
   githubUrl?: string;
   demoUrl?: string;
   relatedServices: number[];
@@ -89,6 +91,8 @@ export const portfolioData: Project[] = [
     },
     img: 'portfolio/landing-con-k-cover.webp',
     imgWidth: 3072,
+    imgMobile: 'portfolio/landing-con-k-cover_mobile.webp',
+    imgMobileWidth: 1439,
     demoUrl: 'https://veronikaconk.vercel.app',
     relatedServices: [],
     order: 1,
@@ -137,6 +141,8 @@ export const portfolioData: Project[] = [
     },
     img: 'portfolio/instagram-telegram-bot-cover.webp',
     imgWidth: 3072,
+    imgMobile: 'portfolio/instagram-telegram-bot-cover_mobile.webp',
+    imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/instagram-telegram-bot',
     relatedServices: [],
     order: 2,
@@ -244,6 +250,8 @@ export const portfolioData: Project[] = [
     },
     img: 'portfolio/creative-pricing-calculator-cover.webp',
     imgWidth: 3072,
+    imgMobile: 'portfolio/creative-pricing-calculator-cover_mobile.webp',
+    imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/creative-pricing-calculator',
     demoUrl: 'https://creative-pricing-calculator.vercel.app',
     relatedServices: [],
@@ -353,6 +361,8 @@ export const portfolioData: Project[] = [
     },
     img: 'portfolio/prize-wheel-promo-cover.webp',
     imgWidth: 3072,
+    imgMobile: 'portfolio/prize-wheel-promo-cover_mobile.webp',
+    imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/prize-wheel-promo',
     demoUrl: 'https://ruleta-tienda-wheat.vercel.app/',
     relatedServices: [],
@@ -453,6 +463,8 @@ export const portfolioData: Project[] = [
     },
     img: 'portfolio/traffic-analytics-simulator-cover.webp',
     imgWidth: 3072,
+    imgMobile: 'portfolio/traffic-analytics-simulator-cover_mobile.webp',
+    imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/traffic-analytics-simulator',
     demoUrl: 'https://traffic-sim-pro.vercel.app/',
     relatedServices: [],

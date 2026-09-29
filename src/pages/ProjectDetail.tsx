@@ -5,7 +5,7 @@ import PortfolioWorkflow from '../components/portfolio/PortfolioWorkflow';
 import { useLanguage } from '../i18n/LanguageContext';
 import { portfolioTranslations } from '../i18n/portfolioTranslations';
 import { getProjectBySlug, getServiceById, getServiceIdsForProject } from '../data/projectRelations';
-import { serviceImageSrcSet } from '../data/serviceImages';
+import { serviceImageSrcSet, mobileCoverSrcSet, MOBILE_PORTRAIT_MEDIA, projectHeroSizes } from '../data/serviceImages';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import NotFound from './NotFound';
@@ -46,16 +46,25 @@ export default function ProjectDetail() {
   return (
     <article>
       <header className="relative w-full overflow-hidden">
-        <img
-          src={`${import.meta.env.BASE_URL}${project.img}`}
-          srcSet={serviceImageSrcSet(project.img, project.imgWidth)}
-          sizes="100vw"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
-        />
+        <picture className="absolute inset-0 block">
+          {project.imgMobile && project.imgMobileWidth && (
+            <source
+              media={MOBILE_PORTRAIT_MEDIA}
+              srcSet={mobileCoverSrcSet(project.imgMobile, project.imgMobileWidth)}
+              sizes={projectHeroSizes}
+            />
+          )}
+          <img
+            src={`${import.meta.env.BASE_URL}${project.img}`}
+            srcSet={serviceImageSrcSet(project.img, project.imgWidth)}
+            sizes={projectHeroSizes}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </picture>
         <div
           className="absolute inset-x-0 bottom-0 h-90 bg-gradient-to-t from-black/90 via-black/75 to-transparent"
           aria-hidden="true"

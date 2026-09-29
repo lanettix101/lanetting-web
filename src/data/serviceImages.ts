@@ -1,4 +1,5 @@
 const WIDTHS = [640, 1024, 1280, 1440, 1920, 2560, 3072] as const;
+const MOBILE_WIDTHS = [480, 640, 828, 1080, 1280] as const;
 
 const base = import.meta.env.BASE_URL;
 
@@ -15,9 +16,22 @@ export const serviceDetailSizes = DETAIL_SIZES;
 export const serviceCardSizes = CARD_SIZES;
 export const portfolioCardSizes = PORTFOLIO_CARD_SIZES;
 
+export const MOBILE_PORTRAIT_MEDIA = '(max-width: 768px) and (orientation: portrait)';
+
+export const projectHeroSizes = '100vw';
+
 export function serviceImageSrcSet(img: string, naturalWidth: number): string {
   const stem = img.replace(/\.webp$/, '');
   const candidates = WIDTHS.filter((w) => w < naturalWidth).map(
+    (w) => `${base}${stem}_${w}.webp ${w}w`,
+  );
+  candidates.push(`${base}${img} ${naturalWidth}w`);
+  return candidates.join(', ');
+}
+
+export function mobileCoverSrcSet(img: string, naturalWidth: number): string {
+  const stem = img.replace(/\.webp$/, '');
+  const candidates = MOBILE_WIDTHS.filter((w) => w < naturalWidth).map(
     (w) => `${base}${stem}_${w}.webp ${w}w`,
   );
   candidates.push(`${base}${img} ${naturalWidth}w`);
