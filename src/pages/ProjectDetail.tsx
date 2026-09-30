@@ -2,10 +2,10 @@ import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, CircleDot, Target, Wrench, ListChecks, Boxes } from 'lucide-react';
 import ProjectLinks from '../components/portfolio/ProjectLinks';
 import PortfolioWorkflow from '../components/portfolio/PortfolioWorkflow';
+import ProjectHeroCover from '../components/portfolio/ProjectHeroCover';
 import { useLanguage } from '../i18n/LanguageContext';
 import { portfolioTranslations } from '../i18n/portfolioTranslations';
 import { getProjectBySlug, getServiceById, getServiceIdsForProject } from '../data/projectRelations';
-import { serviceImageSrcSet, mobileCoverSrcSet, MOBILE_PORTRAIT_MEDIA, projectHeroSizes } from '../data/serviceImages';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import NotFound from './NotFound';
@@ -46,25 +46,12 @@ export default function ProjectDetail() {
   return (
     <article>
       <header className="relative w-full overflow-hidden">
-        <picture className="absolute inset-0 block">
-          {project.imgMobile && project.imgMobileWidth && (
-            <source
-              media={MOBILE_PORTRAIT_MEDIA}
-              srcSet={mobileCoverSrcSet(project.imgMobile, project.imgMobileWidth)}
-              sizes={projectHeroSizes}
-            />
-          )}
-          <img
-            src={`${import.meta.env.BASE_URL}${project.img}`}
-            srcSet={serviceImageSrcSet(project.img, project.imgWidth)}
-            sizes={projectHeroSizes}
-            alt=""
-            aria-hidden="true"
-            className="w-full h-full object-cover"
-            loading="eager"
-            fetchPriority="high"
-          />
-        </picture>
+        <ProjectHeroCover
+          img={project.img}
+          imgWidth={project.imgWidth}
+          imgMobile={project.imgMobile}
+          imgMobileWidth={project.imgMobileWidth}
+        />
         <div
           className="absolute inset-x-0 bottom-0 h-90 bg-gradient-to-t from-black/90 via-black/75 to-transparent"
           aria-hidden="true"

@@ -81,6 +81,20 @@
   height: calc(100dvh - 4rem);
 }
 
+@utility cover-portrait {
+  opacity: 0;
+  @media (max-width: 768px) and (orientation: portrait) {
+    opacity: 1;
+  }
+}
+
+@utility cover-landscape {
+  opacity: 0;
+  @media (min-width: 769px), (max-width: 768px) and (orientation: landscape) {
+    opacity: 1;
+  }
+}
+
 @layer base {
   :root {
     --brand-primary: #4A2327;
@@ -133,13 +147,18 @@
   html {
     overflow-x: clip;
     scroll-behavior: smooth;
+    text-size-adjust: 100%;
   }
 
   body {
     background-color: var(--brand-bg);
     color: var(--brand-text);
     font-family: var(--font-sans);
-    @apply antialiased transition-colors duration-300;
+    -webkit-font-smoothing: antialiased;
+    @supports (-moz-osx-font-smoothing: grayscale) {
+      -moz-osx-font-smoothing: grayscale;
+    }
+    @apply transition-colors duration-300;
   }
 
   h1,

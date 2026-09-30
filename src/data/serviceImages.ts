@@ -16,7 +16,10 @@ export const serviceDetailSizes = DETAIL_SIZES;
 export const serviceCardSizes = CARD_SIZES;
 export const portfolioCardSizes = PORTFOLIO_CARD_SIZES;
 
-export const MOBILE_PORTRAIT_MEDIA = '(max-width: 768px) and (orientation: portrait)';
+export const COVER_SMALL_MEDIA = '(max-width: 768px)';
+
+export const COVER_PINNED_MOBILE_WIDTH = 1080 satisfies (typeof MOBILE_WIDTHS)[number];
+export const COVER_PINNED_DESKTOP_WIDTH = 1280 satisfies (typeof WIDTHS)[number];
 
 export const projectHeroSizes = '100vw';
 
@@ -29,11 +32,6 @@ export function serviceImageSrcSet(img: string, naturalWidth: number): string {
   return candidates.join(', ');
 }
 
-export function mobileCoverSrcSet(img: string, naturalWidth: number): string {
-  const stem = img.replace(/\.webp$/, '');
-  const candidates = MOBILE_WIDTHS.filter((w) => w < naturalWidth).map(
-    (w) => `${base}${stem}_${w}.webp ${w}w`,
-  );
-  candidates.push(`${base}${img} ${naturalWidth}w`);
-  return candidates.join(', ');
+export function pinnedImageSrcSet(img: string, width: number): string {
+  return `${base}${img.replace(/\.webp$/, '')}_${width}.webp ${width}w`;
 }
