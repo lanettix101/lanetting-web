@@ -35,3 +35,8 @@ export function serviceImageSrcSet(img: string, naturalWidth: number): string {
 export function pinnedImageSrcSet(img: string, width: number): string {
   return `${base}${img.replace(/\.webp$/, '')}_${width}.webp ${width}w`;
 }
+
+export function heroPinnedSrcSet(img: string, naturalWidth: number, pin: number): string {
+  if (naturalWidth <= pin) return `${base}${img} ${naturalWidth}w`;
+  return pinnedImageSrcSet(img, pin);
+}

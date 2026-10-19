@@ -1,6 +1,6 @@
 import {
   serviceImageSrcSet,
-  pinnedImageSrcSet,
+  heroPinnedSrcSet,
   projectHeroSizes,
   COVER_SMALL_MEDIA,
   COVER_PINNED_MOBILE_WIDTH,
@@ -40,7 +40,7 @@ export default function ProjectHeroCover({ img, imgWidth, imgMobile, imgMobileWi
       <picture className="absolute inset-0 block">
         <source
           media={COVER_SMALL_MEDIA}
-          srcSet={pinnedImageSrcSet(imgMobile, COVER_PINNED_MOBILE_WIDTH)}
+          srcSet={heroPinnedSrcSet(imgMobile, imgMobileWidth, COVER_PINNED_MOBILE_WIDTH)}
           sizes={projectHeroSizes}
         />
         <img
@@ -58,7 +58,7 @@ export default function ProjectHeroCover({ img, imgWidth, imgMobile, imgMobileWi
       <picture className="absolute inset-0 block">
         <source
           media={COVER_SMALL_MEDIA}
-          srcSet={pinnedImageSrcSet(img, COVER_PINNED_DESKTOP_WIDTH)}
+          srcSet={heroPinnedSrcSet(img, imgWidth, COVER_PINNED_DESKTOP_WIDTH)}
           sizes={projectHeroSizes}
         />
         <img

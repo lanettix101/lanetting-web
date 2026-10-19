@@ -85,6 +85,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio/catastro-app</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lanettix101.github.io/lanetting-web/portfolio/basic-web-scraper</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lanettix101.github.io/lanetting-web/privacy</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>yearly</changefreq>
