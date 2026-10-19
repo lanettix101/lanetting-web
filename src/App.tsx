@@ -1,7 +1,8 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
+import PortfolioTransition from './components/layout/PortfolioTransition';
 import Home from './pages/Home';
 import ServiceDetail from './pages/ServiceDetail';
 import NotFound from './pages/NotFound';
@@ -17,6 +18,26 @@ function RouteFallback() {
   return <div className="min-h-[100svh]" aria-busy="true" />;
 }
 
+function AppRoutes() {
+  const location = useLocation();
+
+  return (
+    <PortfolioTransition>
+      <Suspense fallback={<RouteFallback />}>
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/service/:id" element={<ServiceDetail />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/:slug" element={<ProjectDetail />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </PortfolioTransition>
+  );
+}
+
 export default function App() {
   return (
     <LanguageProvider>
@@ -24,17 +45,7 @@ export default function App() {
         <div className="min-h-screen flex flex-col font-sans">
           <Header />
           <main className="flex-1">
-            <Suspense fallback={<RouteFallback />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/service/:id" element={<ServiceDetail />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/portfolio/:slug" element={<ProjectDetail />} />
-                <Route path="/privacy" element={<Privacy />} />
-                <Route path="/terms" element={<Terms />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
+            <AppRoutes />
           </main>
           <Footer />
           <WhatsAppButton />

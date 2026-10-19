@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import type { Project } from '../../data/portfolioData';
 import { serviceImageSrcSet } from '../../data/serviceImages';
+import { preloadProjectDetail } from '../../lib/routePreload';
 import { portfolioTranslations } from '../../i18n/portfolioTranslations';
 
 const SKIN =
@@ -60,7 +61,12 @@ export default function ProjectCard({ project, language, sizes, to, className = 
   }
 
   return (
-    <Link to={to} className={`${FOCUS} ${className} h-full`}>
+    <Link
+      to={to}
+      onPointerEnter={preloadProjectDetail}
+      onFocus={preloadProjectDetail}
+      className={`${FOCUS} ${className} h-full`}
+    >
       {body}
     </Link>
   );

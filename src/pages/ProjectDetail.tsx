@@ -7,6 +7,7 @@ import ProjectHeroCover from '../components/portfolio/ProjectHeroCover';
 import { useLanguage } from '../i18n/LanguageContext';
 import { portfolioTranslations } from '../i18n/portfolioTranslations';
 import { getProjectBySlug, getServiceById, getServiceIdsForProject } from '../data/projectRelations';
+import { preloadPortfolio } from '../lib/routePreload';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import NotFound from './NotFound';
@@ -62,6 +63,8 @@ export default function ProjectDetail() {
         <div className="first-viewport relative w-full flex flex-col justify-between p-5 sm:p-8 md:p-12">
           <Link
             to="/portfolio"
+            onPointerEnter={preloadPortfolio}
+            onFocus={preloadPortfolio}
             className="inline-flex items-center gap-2 self-start rounded-full border border-white/25 bg-black/20 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm hover:border-brand-primary hover:bg-brand-primary hover:text-brand-bg transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
