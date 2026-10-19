@@ -41,6 +41,7 @@ export interface Project {
   imgMobileWidth?: number;
   githubUrl?: string;
   demoUrl?: string;
+  contactCta?: 'hire' | 'license';
   relatedServices: number[];
   workflow?: WorkflowSpec;
   order: number;
@@ -94,6 +95,7 @@ export const portfolioData: Project[] = [
     imgMobile: 'portfolio/landing-con-k-cover_mobile.webp',
     imgMobileWidth: 1439,
     demoUrl: 'https://veronikaconk.vercel.app',
+    contactCta: 'hire',
     relatedServices: [],
     order: 1,
   },
@@ -254,6 +256,7 @@ export const portfolioData: Project[] = [
     imgWidth: 987,
     imgMobile: 'portfolio/basic-web-scraper-cover_mobile.webp',
     imgMobileWidth: 480,
+    contactCta: 'license',
     relatedServices: [],
     order: 3,
     workflow: {
@@ -372,6 +375,7 @@ export const portfolioData: Project[] = [
     imgMobile: 'portfolio/catastro-app-cover_mobile.webp',
     imgMobileWidth: 480,
     demoUrl: 'https://catastro-app.vercel.app/',
+    contactCta: 'license',
     relatedServices: [],
     order: 4,
     workflow: {
@@ -484,6 +488,7 @@ export const portfolioData: Project[] = [
     imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/traffic-analytics-simulator',
     demoUrl: 'https://traffic-sim-pro.vercel.app/',
+    contactCta: 'hire',
     relatedServices: [],
     order: 5,
     workflow: {
@@ -601,6 +606,7 @@ export const portfolioData: Project[] = [
     img: 'portfolio/wordpress-telegram-bridge-cover.webp',
     imgWidth: 3072,
     githubUrl: 'https://github.com/lanettix101/wordpress-telegram-bridge',
+    contactCta: 'hire',
     relatedServices: [],
     order: 6,
     workflow: {
@@ -729,6 +735,7 @@ export const portfolioData: Project[] = [
     imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/creative-pricing-calculator',
     demoUrl: 'https://creative-pricing-calculator.vercel.app',
+    contactCta: 'hire',
     relatedServices: [],
     order: 7,
     workflow: {
@@ -840,6 +847,7 @@ export const portfolioData: Project[] = [
     imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/prize-wheel-promo',
     demoUrl: 'https://ruleta-tienda-wheat.vercel.app/',
+    contactCta: 'hire',
     relatedServices: [],
     order: 8,
     workflow: {

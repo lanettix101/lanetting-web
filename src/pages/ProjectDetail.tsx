@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, CircleDot, Target, Wrench, ListChecks, Boxes } from 'lucide-react';
 import ProjectLinks from '../components/portfolio/ProjectLinks';
+import ProjectContact from '../components/portfolio/ProjectContact';
 import PortfolioWorkflow from '../components/portfolio/PortfolioWorkflow';
 import ProjectHeroCover from '../components/portfolio/ProjectHeroCover';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -76,8 +77,9 @@ export default function ProjectDetail() {
       </header>
 
       <div className="container mx-auto px-4 py-10 md:py-14">
-        <div className="mb-10">
+        <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start">
           <ProjectLinks githubUrl={project.githubUrl} demoUrl={project.demoUrl} language={language} />
+          <ProjectContact project={project} />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
