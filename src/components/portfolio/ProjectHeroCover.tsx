@@ -1,5 +1,4 @@
 import {
-  serviceImageSrcSet,
   heroPinnedSrcSet,
   projectHeroSizes,
   COVER_SMALL_MEDIA,
@@ -15,14 +14,14 @@ const LAYER =
 
 export default function ProjectHeroCover({ img, imgWidth, imgMobile, imgMobileWidth }: HeroCoverProps) {
   const base = import.meta.env.BASE_URL;
-  const responsive = serviceImageSrcSet(img, imgWidth);
+  const pinnedDesktop = heroPinnedSrcSet(img, imgWidth, COVER_PINNED_DESKTOP_WIDTH);
 
   if (!imgMobile || !imgMobileWidth) {
     return (
       <picture className="absolute inset-0 block">
         <img
           src={`${base}${img}`}
-          srcSet={responsive}
+          srcSet={pinnedDesktop}
           sizes={projectHeroSizes}
           alt=""
           aria-hidden="true"
@@ -45,7 +44,7 @@ export default function ProjectHeroCover({ img, imgWidth, imgMobile, imgMobileWi
         />
         <img
           src={`${base}${img}`}
-          srcSet={responsive}
+          srcSet={pinnedDesktop}
           sizes={projectHeroSizes}
           alt=""
           aria-hidden="true"
@@ -56,14 +55,9 @@ export default function ProjectHeroCover({ img, imgWidth, imgMobile, imgMobileWi
         />
       </picture>
       <picture className="absolute inset-0 block">
-        <source
-          media={COVER_SMALL_MEDIA}
-          srcSet={heroPinnedSrcSet(img, imgWidth, COVER_PINNED_DESKTOP_WIDTH)}
-          sizes={projectHeroSizes}
-        />
         <img
           src={`${base}${img}`}
-          srcSet={responsive}
+          srcSet={pinnedDesktop}
           sizes={projectHeroSizes}
           alt=""
           aria-hidden="true"

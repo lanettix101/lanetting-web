@@ -37,7 +37,7 @@ interface PortfolioStrings {
 export const portfolioTranslations: { en: PortfolioStrings; es: PortfolioStrings } = {
   en: {
     command: 'ls ./portfolio',
-    title: 'Selected Projects',
+    title: 'My Projects',
     desc: 'Products, tools and automation I designed, built and maintain end to end.',
     metaDescription:
       'Selected projects by Luis Lanetti: web design, automation bots and technical tooling.',
@@ -75,7 +75,7 @@ export const portfolioTranslations: { en: PortfolioStrings; es: PortfolioStrings
   },
   es: {
     command: 'ls ./portfolio',
-    title: 'Proyectos Seleccionados',
+    title: 'Conoce mis Proyectos',
     desc: 'Productos, herramientas y automatizaciones que diseñé, construí y mantengo vigentes.',
     metaDescription:
       'Proyectos de Luis Lanetti: diseño web, bots de automatización y herramientas técnicas.',
