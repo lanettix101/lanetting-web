@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <meta name="color-scheme" content="light only">
+    <meta name="supported-color-schemes" content="light only">
+    <title>Ing. Luis Lanetti | Automatización, Desarrollo de Software & Diseño Web</title>
+    <!--[if !mso]><!-->
+    <style type="text/css">
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            mso-generic-font-family: swiss;
+            mso-font-alt: Arial;
+            src: url('https://lanettix101.github.io/lanetting-web/webfonts/Montserrat-Regular.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            mso-generic-font-family: swiss;
+            mso-font-alt: Arial;
+            src: url('https://lanettix101.github.io/lanetting-web/webfonts/Montserrat-Medium.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            mso-generic-font-family: swiss;
+            mso-font-alt: Arial;
+            src: url('https://lanettix101.github.io/lanetting-web/webfonts/Montserrat-SemiBold.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            mso-generic-font-family: swiss;
+            mso-font-alt: Arial;
+            src: url('https://lanettix101.github.io/lanetting-web/webfonts/Montserrat-Bold.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            mso-generic-font-family: modern;
+            mso-font-alt: Consolas;
+            src: url('https://lanettix101.github.io/lanetting-web/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            mso-generic-font-family: modern;
+            mso-font-alt: Consolas;
+            src: url('https://lanettix101.github.io/lanetting-web/webfonts/JetBrainsMono-SemiBold.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            mso-generic-font-family: modern;
+            mso-font-alt: Consolas;
+            src: url('https://lanettix101.github.io/lanetting-web/webfonts/JetBrainsMono-Bold.woff2') format('woff2');
+        }
+    </style>
+    <!--<![endif]-->
+
+    <style type="text/css">
+        :root {
+            color-scheme: light only;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #F8F1F1;
+            color-scheme: light only;
+        }
+
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0;
+            mso-table-rspace: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+            display: block;
+            height: auto;
+            line-height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .cta-link-primary:hover {
+            background-color: #35171A !important;
+            border-color: #35171A !important;
+            color: #FFFFFF !important;
+        }
+
+        .cta-link-outline:hover {
+            background-color: #4A2327 !important;
+            border-color: #4A2327 !important;
+            color: #F8F1F1 !important;
+        }
+
+        .link-row:hover {
+            background-color: #F8F1F1 !important;
+            color: #35171A !important;
+        }
+
+        .project-card:hover {
+            border-color: #B57B7F !important;
+        }
+
+        @media screen and (max-width:600px) {
+            .email-container {
+                width: 100% !important;
+            }
+
+            .fluid-img {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            .mobile-padding {
+                padding-left: 18px !important;
+                padding-right: 18px !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                border-right: 0 !important;
+            }
+
+            .h1 {
+                font-size: 24px !important;
+                line-height: 1.25 !important;
+            }
+
+            .h2 {
+                font-size: 20px !important;
+                line-height: 1.3 !important;
+            }
+
+            .mobile-text-up p,
+            .mobile-text-up {
+                font-size: 15px !important;
+                line-height: 1.7 !important;
+            }
+
+            .cta-inner {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .cta-inner td {
+                display: block !important;
+                width: 100% !important;
+                padding: 6px 0 !important;
+            }
+
+            .cta-inner a {
+                display: block !important;
+                width: auto !important;
+                text-align: center !important;
+            }
+
+            .section-pad {
+                padding-top: 30px !important;
+                padding-bottom: 30px !important;
+            }
+
+            .metric-item {
+                display: block !important;
+                width: 100% !important;
+                padding: 10px 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0;padding:0;background-color:#F8F1F1;">
+    <div
+        style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;font-family:'Montserrat','Avenir Next','Century Gothic',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#F8F1F1;">
+        Desarrollo de software a medida, diseño web especializado y optimización de infraestructura para escalar tus
+        proyectos técnicos.
+    </div>
+
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+        style="table-layout:fixed;background-color:#F8F1F1;">
+        <tr>
+            <td align="center" style="padding:24px 12px;">
+
+                <table role="presentation" class="email-container" width="600" cellpadding="0" cellspacing="0"
+                    border="0"
+                    style="width:600px;max-width:600px;background-color:#FFFFFF;border-radius:12px;overflow:hidden;border:1px solid #E5E7EB;">
+
+                    <tr>
+                        <td align="center" bgcolor="#4A2327" style="padding:26px 20px 22px;background-color:#4A2327;">
+                            <div
+                                style="font-family:'JetBrains Mono',Consolas,monospace;font-size:11px;font-weight:400;letter-spacing:1.5px;color:#B57B7F;padding-bottom:14px;">
+                                ¿No ves bien este correo? <a
+                                    href="https://lanettix101.github.io/lanetting-web/landing-mail/" target="_blank"
+                                    style="text-decoration:underline;color:#F8F1F1;">Ábrelo en el
+                                    navegador</a>.
+                            </div>
+                            <a href="https://lanettix101.github.io/lanetting-web/" target="_blank"
+                                style="text-decoration:none;display:inline-block;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                                    <tr>
+                                        <td align="center"
+                                            style="border:1.5px solid #B57B7F;border-radius:6px;padding:6px 14px;background-color:#35171A;">
+                                            <span
+                                                style="font-family:'JetBrains Mono',Consolas,monospace;font-size:18px;font-weight:700;letter-spacing:3px;color:#F8F1F1;">LANETTING/DEV</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
+                            <div
+                                style="font-family:'Montserrat','Avenir Next',Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:2.2px;text-transform:uppercase;color:#E5E7EB;padding-top:12px;">
+                                Diseño Web &middot; Desarrollo &middot; Automatización
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" bgcolor="#FFFFFF"
+                            style="padding:36px 0 10px;background-color:#FFFFFF;text-align:center;">
+                            <h1 class="h1"
+                                style="margin:8px 0 16px;padding:0 24px;font-family:'JetBrains Mono',Consolas,monospace;font-size:26px;font-weight:700;line-height:1.3;color:#111827;">
+                                Impulsa la capacidad de tu equipo sin inflar tus costos
+                            </h1>
+                            <div class="mobile-padding" style="padding:0 32px;">
+                                <p class="mobile-text-up"
+                                    style="margin:0 auto;max-width:500px;font-family:'Montserrat','Avenir Next',Arial,sans-serif;font-size:15px;font-weight:400;line-height:1.7;color:#4B5563;">
+                                    Hola, {{first_name}}. Soy <strong>Luis Lanetti</strong>, ingeniero y
+                                    desarrollador
+                                    de software. Ayudo a agencias, empresas y equipos a <strong>resolver sus cuellos
+                                        de
+                                        botella en desarrollo web, investigación de mercado y mantenimiento de
+                                        plataformas</strong>,
+                                    entregando soluciones limpias, probadas y listas para producción.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="mobile-padding" bgcolor="#F8F1F1"
+                            style="padding:22px 20px 20px;background-color:#F8F1F1;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td class="metric-item" width="33.33%" align="center" valign="top"
+                                        style="padding:4px 8px;">
+                                        <div
+                                            style="font-family:'JetBrains Mono',Consolas,monospace;font-size:26px;font-weight:700;line-height:1;color:#4A2327;">
+                                            +9</div>
+                                        <div
+                                            style="font-family:'Montserrat',Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#6B7280;padding-top:6px;">
+                                            Años de experiencia</div>
+                                    </td>
+                                    <td class="metric-item" width="33.33%" align="center" valign="top"
+                                        style="padding:4px 8px;">
+                                        <div
+                                            style="font-family:'JetBrains Mono',Consolas,monospace;font-size:26px;font-weight:700;line-height:1;color:#4A2327;">
+                                            100%</div>
+                                        <div
+                                            style="font-family:'Montserrat',Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#6B7280;padding-top:6px;">
+                                            Clientes satisfechos</div>
+                                    </td>
+                                    <td class="metric-item" width="33.33%" align="center" valign="top"
+                                        style="padding:4px 8px;">
+                                        <div
+                                            style="font-family:'JetBrains Mono',Consolas,monospace;font-size:26px;font-weight:700;line-height:1;color:#4A2327;">
+                                            +50</div>
+                                        <div
+                                            style="font-family:'Montserrat',Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#6B7280;padding-top:6px;">
+                                            Proyectos realizados</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="section-pad" bgcolor="#FFFFFF"
+                            style="padding:34px 0 16px;background-color:#FFFFFF;text-align:center;">
+                            <div class="mobile-padding" style="padding:0 30px;">
+                                <h2 class="h2"
+                                    style="margin:0 0 14px;font-family:'JetBrains Mono',Consolas,monospace;font-size:22px;font-weight:700;line-height:1.3;color:#111827;">
+                                    Una nueva oportunidad nunca debe desaprovecharse
+                                </h2>
+                                <p class="mobile-text-up"
+                                    style="margin:0 auto 24px;max-width:500px;font-family:'Montserrat','Avenir Next',Arial,sans-serif;font-size:14.5px;font-weight:400;line-height:1.7;color:#4B5563;">
+                                    El mercado ha cambiado y la tecnología también. Los clientes quieren más presencia
+                                    en línea, servicios estables y entregas rápidas de alta calidad. <strong>Tu nomina
+                                        no tiene que pagar esa carga.</strong>
+                                </p>
+                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                    style="max-width:480px;margin:0 auto;text-align:left;">
+                                    <tr>
+                                        <td
+                                            style="padding:7px 0;font-family:'Montserrat',Arial,sans-serif;font-size:14px;line-height:1.55;color:#1F2937;">
+                                            <span
+                                                style="color:#4A2327;font-family:'JetBrains Mono',monospace;font-weight:700;">[x]</span>&nbsp;
+                                            <strong>La IA no puede con todo sola</strong>, pero su costo sube
+                                            cada día.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding:7px 0;font-family:'Montserrat',Arial,sans-serif;font-size:14px;line-height:1.55;color:#1F2937;">
+                                            <span
+                                                style="color:#4A2327;font-family:'JetBrains Mono',monospace;font-weight:700;">[x]</span>&nbsp;
+                                            <strong>Las plantillas no venden</strong>, y un Senior extra dispara tu
+                                            nómina.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="padding:7px 0;font-family:'Montserrat',Arial,sans-serif;font-size:14px;line-height:1.55;color:#1F2937;">
+                                            <span
+                                                style="color:#4A2327;font-family:'JetBrains Mono',monospace;font-weight:700;">[x]</span>&nbsp;
+                                            <strong>Cuando bajan las ventas</strong>, todo tu equipo aún espera
+                                            su pago.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#4A2327" style="padding:32px 0 30px;background-color:#4A2327;text-align:center;">
+                            <div class="mobile-padding" style="padding:0 32px;">
+                                <h2 class="h2"
+                                    style="margin:0 0 14px;font-family:'JetBrains Mono',Consolas,monospace;font-size:22px;font-weight:700;line-height:1.3;color:#F8F1F1;">
+                                    ¿Mi modelo? Pagas por proyecto y entregas bajo tu propia marca
+                                </h2>
+                                <p class="mobile-text-up"
+                                    style="margin:0 auto 20px;max-width:490px;font-family:'Montserrat','Avenir Next',Arial,sans-serif;font-size:14.5px;font-weight:400;line-height:1.7;color:#F8F1F1;">
+                                    Trabajo contigo como consultor externo o bajo modalidad de <strong>marca
+                                        blanca</strong>: yo desarrollo la solución y la arquitectura.<br>
+                                    Tú conservas el crédito y el margen de tu agencia.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="section-pad" bgcolor="#FFFFFF"
+                            style="padding:34px 0 10px;background-color:#FFFFFF;text-align:center;">
+                            <div class="mobile-padding" style="padding:0 30px;">
+                                <h2 class="h2"
+                                    style="margin:0 0 8px;font-family:'JetBrains Mono',Consolas,monospace;font-size:22px;font-weight:700;line-height:1.3;color:#111827;">
+                                    Mis especialidades a tu disposición
+                                </h2>
+                                <p
+                                    style="margin:0 auto 26px;max-width:470px;font-family:'Montserrat',Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.65;color:#6B7280;">
+                                    Tres frentes de choque listos para incorporarse a tus proyectos.
+                                </p>
+                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td class="stack-column" width="33.33%" valign="top"
+                                            style="width:33.33%;padding:0 6px 14px;">
+                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                                border="0"
+                                                style="background-color:#F8F1F1;border:1px solid #E5E7EB;border-radius:10px;height:100%;">
+                                                <tr>
+                                                    <td valign="top" style="padding:18px 16px;">
+                                                        <div
+                                                            style="font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;font-weight:700;color:#B57B7F;letter-spacing:1px; margin-bottom:6px;">
+                                                            1er Frente
+                                                        </div>
+                                                        <h3
+                                                            style="margin:0 0 10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:14.5px;font-weight:700;line-height:1.35;color:#4A2327;">
+                                                            Desarrollo Web & Landings
+                                                        </h3>
+                                                        <p
+                                                            style="margin:0 0 14px;font-family:'Montserrat',Arial,sans-serif;font-size:12.5px;font-weight:400;line-height:1.65;color:#4B5563;">
+                                                            Arquitectura frontend moderna, diseño responsivo y prácticas
+                                                            de alta conversión sin plantillas genéricas.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="stack-column" width="33.33%" valign="top"
+                                            style="width:33.33%;padding:0 6px 14px;">
+                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                                border="0"
+                                                style="background-color:#F8F1F1;border:1px solid #E5E7EB;border-radius:10px;height:100%;">
+                                                <tr>
+                                                    <td valign="top" style="padding:18px 16px;">
+                                                        <div
+                                                            style="font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;font-weight:700;color:#B57B7F;letter-spacing:1px; margin-bottom:6px;">
+                                                            2do Frente
+                                                        </div>
+                                                        <h3
+                                                            style="margin:0 0 10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:14.5px;font-weight:700;line-height:1.35;color:#4A2327;">
+                                                            Automatizaciones & Bots
+                                                        </h3>
+                                                        <p
+                                                            style="margin:0 0 14px;font-family:'Montserrat',Arial,sans-serif;font-size:12.5px;font-weight:400;line-height:1.65;color:#4B5563;">
+                                                            Búsqueda, extracción y validación automática de leads y
+                                                            herramientas para potenciar tus proyectos.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="stack-column" width="33.33%" valign="top"
+                                            style="width:33.33%;padding:0 6px 14px;">
+                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                                                border="0"
+                                                style="background-color:#F8F1F1;border:1px solid #E5E7EB;border-radius:10px;height:100%;">
+                                                <tr>
+                                                    <td valign="top" style="padding:18px 16px;">
+                                                        <div
+                                                            style="font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;font-weight:700;color:#B57B7F;letter-spacing:1px; margin-bottom:6px;">
+                                                            3er Frente
+                                                        </div>
+                                                        <h3
+                                                            style="margin:0 0 10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:14.5px;font-weight:700;line-height:1.35;color:#4A2327;">
+                                                            Servidores & Optimización
+                                                        </h3>
+                                                        <p
+                                                            style="margin:0 0 14px;font-family:'Montserrat',Arial,sans-serif;font-size:12.5px;font-weight:400;line-height:1.65;color:#4B5563;">
+                                                            SysAdmin, migración de servidores y mejoras de
+                                                            sitios para notas óptimas en PageSpeed.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="section-pad" bgcolor="#F8F1F1"
+                            style="padding:36px 0 30px;background-color:#F8F1F1;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;">
+                            <div class="mobile-padding" style="padding:0 30px;">
+                                <div style="text-align:center;margin-bottom:26px;">
+                                    <h2 class="h2"
+                                        style="margin:0 0 8px;font-family:'JetBrains Mono',Consolas,monospace;font-size:22px;font-weight:700;line-height:1.3;color:#111827;">
+                                        Algunos de mis proyectos
+                                    </h2>
+                                    <p
+                                        style="margin:0 auto;max-width:480px;font-family:'Montserrat',Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.65;color:#4B5563;">
+                                        Te comparto algunos proyectos que muestran mi enfoque y resultados, todos en
+                                        producción y con estabilidad garantizada:
+                                    </p>
+                                </div>
+
+                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                    class="project-card"
+                                    style="background-color:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;margin-bottom:20px;overflow:hidden;">
+                                    <tr>
+                                        <td align="center" style="background-color:#4A2327;padding:0;">
+                                            <a href="https://lanettix101.github.io/lanetting-web/portfolio/landing-con-k"
+                                                target="_blank" style="text-decoration:none;display:block;">
+                                                <img class="fluid-img"
+                                                    src="https://lanettix101.github.io/lanetting-web/portfolio/landing-con-k-cover.webp"
+                                                    alt="Verónika con K - Landing Page de alta fidelidad" width="538"
+                                                    style="display:block;width:100%;max-width:538px;height:auto;border:0;">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:22px 24px;">
+                                            <div
+                                                style="font-family:'JetBrains Mono',Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:1.2px;color:#B57B7F;text-transform:uppercase;margin-bottom:6px;">
+                                                Diseño web responsivo con escalado proporcional
+                                            </div>
+                                            <h3
+                                                style="margin:0 0 10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:17px;font-weight:700;color:#111827;line-height:1.35;">
+                                                Verónika con K - Landing page profesional
+                                            </h3>
+                                            <p
+                                                style="margin:0 0 16px;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;font-weight:400;line-height:1.65;color:#4B5563;">
+                                                Landing page dedicada de nueve secciones, con integración de modo
+                                                claro/oscuro y <strong>un sistema de escala proporcional nativo</strong>
+                                                que mantiene la
+                                                composición visual intacta desde 1024px hasta 4K.
+                                            </p>
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://lanettix101.github.io/lanetting-web/portfolio/landing-con-k"
+                                                            target="_blank"
+                                                            style="display:inline-block;padding:9px 20px;background-color:#4A2327;color:#FFFFFF;border-radius:9999px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;font-weight:600;letter-spacing:0.5px;text-decoration:none;">
+                                                            Conoce más del proyecto &rarr;
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                    class="project-card"
+                                    style="background-color:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;margin-bottom:20px;overflow:hidden;">
+                                    <tr>
+                                        <td align="center" style="background-color:#111827;padding:0;">
+                                            <a href="https://lanettix101.github.io/lanetting-web/portfolio/basic-web-scraper"
+                                                target="_blank" style="text-decoration:none;display:block;">
+                                                <img class="fluid-img"
+                                                    src="https://lanettix101.github.io/lanetting-web/portfolio/basic-web-scraper-cover.webp"
+                                                    alt="Buscador de leads inteligente con web scraping" width="538"
+                                                    style="display:block;width:100%;max-width:538px;height:auto;border:0;">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:22px 24px;">
+                                            <div
+                                                style="font-family:'JetBrains Mono',Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:1.2px;color:#B57B7F;text-transform:uppercase;margin-bottom:6px;">
+                                                Automatización de búsquedas de leads
+                                            </div>
+                                            <h3
+                                                style="margin:0 0 10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:17px;font-weight:700;color:#111827;line-height:1.35;">
+                                                SMART Leads - Buscador inteligente de clientes
+                                            </h3>
+                                            <p
+                                                style="margin:0 0 16px;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;font-weight:400;line-height:1.65;color:#4B5563;">
+                                                Herramienta de escritorio que <strong>descubre empresas, extrae y valida
+                                                    datos de contacto de forma masiva</strong>, con interfaz de revisión
+                                                para
+                                                comodidad del usuario y exportación de datos.
+                                            </p>
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://lanettix101.github.io/lanetting-web/portfolio/basic-web-scraper"
+                                                            target="_blank"
+                                                            style="display:inline-block;padding:9px 20px;background-color:#4A2327;color:#FFFFFF;border-radius:9999px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;font-weight:600;letter-spacing:0.5px;text-decoration:none;">
+                                                            Conoce más del proyecto &rarr;
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                    class="project-card"
+                                    style="background-color:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;margin-bottom:24px;overflow:hidden;">
+                                    <tr>
+                                        <td align="center" style="background-color:#1E293B;padding:0;">
+                                            <a href="https://lanettix101.github.io/lanetting-web/portfolio/catastro-app"
+                                                target="_blank" style="text-decoration:none;display:block;">
+                                                <img class="fluid-img"
+                                                    src="https://lanettix101.github.io/lanetting-web/portfolio/catastro-app-cover.webp"
+                                                    alt="CatastroApp - Asistente de planos topográficos en línea"
+                                                    width="538"
+                                                    style="display:block;width:100%;max-width:538px;height:auto;border:0;">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:22px 24px;">
+                                            <div
+                                                style="font-family:'JetBrains Mono',Consolas,monospace;font-size:11px;font-weight:600;letter-spacing:1.2px;color:#B57B7F;text-transform:uppercase;margin-bottom:6px;">
+                                                Web App para cálculos geoespaciales (SIG)
+                                            </div>
+                                            <h3
+                                                style="margin:0 0 10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:17px;font-weight:700;color:#111827;line-height:1.35;">
+                                                CatastroApp - Asistente de planos topográficos
+                                            </h3>
+                                            <p
+                                                style="margin:0 0 16px;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;font-weight:400;line-height:1.65;color:#4B5563;">
+                                                Aplicación SIG web de asistencia para evaluación de terrenos que calcula
+                                                espacios, distancias y geocodificación,
+                                                exportando el informe listo para trámites en PDF.
+                                            </p>
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td>
+                                                        <a href="https://lanettix101.github.io/lanetting-web/portfolio/catastro-app"
+                                                            target="_blank"
+                                                            style="display:inline-block;padding:9px 20px;background-color:#4A2327;color:#FFFFFF;border-radius:9999px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;font-weight:600;letter-spacing:0.5px;text-decoration:none;">
+                                                            Conoce más del proyecto &rarr;
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                    style="background-color:#FFFFFF;border:2px dashed #B57B7F;border-radius:12px;">
+                                    <tr>
+                                        <td align="center" style="padding:24px 20px;text-align:center;">
+                                            <div
+                                                style="font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;font-weight:700;color:#4A2327;margin-bottom:18px;text-transform:uppercase;letter-spacing:1px;">
+                                                &iquest;Deseas ver más desarrollos y casos de estudio?
+                                            </div>
+                                            <a href="https://lanettix101.github.io/lanetting-web/portfolio"
+                                                target="_blank" class="cta-link-primary"
+                                                style="display:inline-block;padding:12px 28px;background-color:#4A2327;border:2px solid #4A2327;border-radius:9999px;font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;font-weight:700;letter-spacing:1px;color:#FFFFFF;text-decoration:none;text-transform:uppercase;">
+                                                Visita mi portfolio &rarr;
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="mobile-padding" bgcolor="#4A2327"
+                            style="padding:32px 30px;background-color:#4A2327;text-align:center;">
+                            <h2 class="h2"
+                                style="margin:0 0 14px;font-family:'JetBrains Mono',Consolas,monospace;font-size:22px;font-weight:700;line-height:1.3;color:#F8F1F1;">
+                                Ventajas que ganas trabajando conmigo
+                            </h2>
+                            <p class="mobile-text-up"
+                                style="margin:0 auto 22px;max-width:480px;font-family:'Montserrat','Avenir Next',Arial,sans-serif;font-size:14.5px;font-weight:400;line-height:1.7;color:#F8F1F1;">
+                                Sumo experiencia en metodología e ingeniería, sin burocracia, con comunicación directa
+                                como desarrollador que <strong>entiende a los clientes y el mercado actual</strong>.
+                            </p>
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+                                style="max-width:460px;margin:0 auto;text-align:left;">
+                                <tr>
+                                    <td
+                                        style="padding:6px 0;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;line-height:1.55;color:#F8F1F1;">
+                                        <span
+                                            style="color:#B57B7F;font-family:'JetBrains Mono',monospace;font-weight:700;">&#10003;</span>&nbsp;
+                                        <strong>Sin nómina fija:</strong> pagas por proyecto, requerimiento o metas.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="padding:6px 0;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;line-height:1.55;color:#F8F1F1;">
+                                        <span
+                                            style="color:#B57B7F;font-family:'JetBrains Mono',monospace;font-weight:700;">&#10003;</span>&nbsp;
+                                        <strong>Arquitectura limpia:</strong> optimizada para las necesidades
+                                        actuales.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        style="padding:6px 0;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;line-height:1.55;color:#F8F1F1;">
+                                        <span
+                                            style="color:#B57B7F;font-family:'JetBrains Mono',monospace;font-weight:700;">&#10003;</span>&nbsp;
+                                        <strong>Confidencialidad:</strong> compromiso absoluto con la privacidad.
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td bgcolor="#FFFFFF" style="padding:36px 0 32px;background-color:#FFFFFF;text-align:center;">
+                            <div class="mobile-padding" style="padding:0 30px;">
+                                <h2 class="h2"
+                                    style="margin:0 0 12px;font-family:'JetBrains Mono',Consolas,monospace;font-size:22px;font-weight:700;line-height:1.3;color:#111827;">
+                                    &iquest;Tienes un proyecto sobre la mesa?
+                                </h2>
+                                <p class="mobile-text-up"
+                                    style="margin:0 auto 26px;max-width:470px;font-family:'Montserrat',Arial,sans-serif;font-size:14.5px;font-weight:400;line-height:1.7;color:#4B5563;">
+                                    Conversemos brevemente sobre el alcance, tus necesidades y la solución que mejor se
+                                    ajuste a ti sin compromiso.
+                                </p>
+                                <table role="presentation" cellpadding="8" cellspacing="0" border="0" align="center"
+                                    class="cta-inner">
+                                    <tr>
+                                        <td align="center">
+                                            <a class="cta-link-primary"
+                                                href="https://wa.me/573103032400?text=Hola%20ingeniero%20Lanetti%2C%20le%C3%AD%20tu%20correo%20y%20me%20gustar%C3%ADa%20evaluar%20un%20proyecto%20contigo."
+                                                target="_blank"
+                                                style="display:inline-block;padding:14px 30px;border:2px solid #4A2327;border-radius:9999px;background-color:#4A2327;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:#FFFFFF;text-decoration:none;">
+                                                Hablemos por WhatsApp
+                                            </a>
+                                        </td>
+                                        <td align="center">
+                                            <a class="cta-link-outline"
+                                                href="mailto:lanettix101@gmail.com?subject=Consulta%20sobre%20servicios%20de%20desarrollo"
+                                                target="_blank"
+                                                style="display:inline-block;padding:14px 30px;border:2px solid #4A2327;border-radius:9999px;background-color:#FFFFFF;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:#4A2327;text-decoration:none;">
+                                                Escríbeme un correo
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="mobile-padding" bgcolor="#4A2327"
+                            style="padding:36px 30px 28px;background-color:#4A2327;text-align:center;">
+                            <p
+                                style="margin:0 0 6px;font-family:'JetBrains Mono',Consolas,monospace;font-size:17px;font-weight:700;letter-spacing:2px;color:#F8F1F1;text-transform:uppercase;">
+                                Ing. Luis Lanetti
+                            </p>
+                            <p
+                                style="margin:0 0 16px;font-family:'Montserrat',Arial,sans-serif;font-size:11.5px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:#B57B7F;">
+                                Ingeniero &middot; Desarrollador &middot; SysAdmin
+                            </p>
+                            <p
+                                style="margin:0 0 20px;font-family:'Montserrat',Arial,sans-serif;font-size:13.5px;font-weight:400;line-height:1.65;color:#F8F1F1;">
+                                Construyendo software moderno, automatizaciones eficientes e infraestructura de alto
+                                rendimiento, solo con café y un teclado.
+                            </p>
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center" style="padding:0 6px 12px;">
+                                        <a href="https://calendly.com/lanettix101/30min" target="_blank"
+                                            style="display:inline-block;padding:10px 22px;border:1.5px solid #B57B7F;border-radius:9999px;font-family:'JetBrains Mono',Consolas,monospace;font-size:11.5px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#F8F1F1;text-decoration:none;">
+                                            Agendar consulta
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <p
+                                style="margin:20px 0 0;font-family:'Montserrat',Arial,sans-serif;font-size:11px;font-weight:400;line-height:1.6;color:#D1B4B6;">
+                                Recibes este correo en <a href="mailto:{{contact.email}}"
+                                    style="color:#FFFFFF;text-decoration:underline;">{{contact.email}}</a> como contacto
+                                profesional.<br>
+                                Ing. Luis Lanetti &middot; Valencia, Carabobo, Venezuela
+                            </p>
+                            <p
+                                style="margin:12px 0 0;font-family:'Montserrat',Arial,sans-serif;font-size:11px;font-weight:400;color:#B57B7F;">
+                                <a href="{{opt_out_message}} " style="color:#F8F1F1;text-decoration:underline;">Darse de
+                                    baja</a>
+                                &middot; <a href="https://lanettix101.github.io/lanetting-web/landing-mail/"
+                                    style="color:#F8F1F1;text-decoration:underline;">Ver en
+                                    navegador</a>
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
