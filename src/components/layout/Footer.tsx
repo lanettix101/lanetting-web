@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
 
         <p className="text-sm text-brand-accent text-center">
-          &copy; {new Date().getFullYear()} {contactInfo.fullName} {t.footer.rights}
+          &copy; {new Date().getFullYear()} {contactInfo.fullName}. {t.footer.rights}
         </p>
 
         <nav aria-label={t.footer.legalLabel} className="mt-1 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
