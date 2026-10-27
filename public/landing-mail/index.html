@@ -152,7 +152,29 @@
             border-color: #B57B7F !important;
         }
 
-        @media screen and (max-width:600px) {
+        .cta-inner {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            gap: 15px !important;
+            width: 100% !important;
+        }
+
+        .metric-item {
+            display: flex !important;
+            flex-direction: row !important;
+            justify-content: space-around !important;
+            align-items: flex-start !important;
+            width: 100% !important;
+        }
+
+        .item {
+            flex: 1;
+            text-align: center;
+            padding: 0 5px;
+        }
+
+        @media screen and (max-width:768px) {
             .email-container {
                 width: 100% !important;
             }
@@ -192,8 +214,8 @@
             }
 
             .cta-inner {
-                display: block !important;
-                width: 100% !important;
+                flex-direction: row !important;
+                justify-content: center !important;
             }
 
             .cta-inner td {
@@ -211,12 +233,6 @@
             .section-pad {
                 padding-top: 30px !important;
                 padding-bottom: 30px !important;
-            }
-
-            .metric-item {
-                display: block !important;
-                width: 100% !important;
-                padding: 10px 0 !important;
             }
         }
     </style>
@@ -282,8 +298,8 @@
                         <td class="mobile-padding" bgcolor="#F8F1F1"
                             style="padding:22px 20px 20px;background-color:#F8F1F1;border-top:1px solid #E5E7EB;border-bottom:1px solid #E5E7EB;">
                             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                <tr>
-                                    <td class="metric-item" width="33.33%" align="center" valign="top"
+                                <tr class="metric-item">
+                                    <td class="item" width="33.33%" align="center" valign="top"
                                         style="padding:4px 8px;">
                                         <div
                                             style="font-family:'JetBrains Mono',Consolas,monospace;font-size:26px;font-weight:700;line-height:1;color:#4A2327;">
@@ -292,7 +308,7 @@
                                             style="font-family:'Montserrat',Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#6B7280;padding-top:6px;">
                                             Años de experiencia</div>
                                     </td>
-                                    <td class="metric-item" width="33.33%" align="center" valign="top"
+                                    <td class="item" width="33.33%" align="center" valign="top"
                                         style="padding:4px 8px;">
                                         <div
                                             style="font-family:'JetBrains Mono',Consolas,monospace;font-size:26px;font-weight:700;line-height:1;color:#4A2327;">
@@ -301,7 +317,7 @@
                                             style="font-family:'Montserrat',Arial,sans-serif;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#6B7280;padding-top:6px;">
                                             Clientes satisfechos</div>
                                     </td>
-                                    <td class="metric-item" width="33.33%" align="center" valign="top"
+                                    <td class="item" width="33.33%" align="center" valign="top"
                                         style="padding:4px 8px;">
                                         <div
                                             style="font-family:'JetBrains Mono',Consolas,monospace;font-size:26px;font-weight:700;line-height:1;color:#4A2327;">
@@ -373,8 +389,8 @@
                                 <p class="mobile-text-up"
                                     style="margin:0 auto 20px;max-width:490px;font-family:'Montserrat','Avenir Next',Arial,sans-serif;font-size:14.5px;font-weight:400;line-height:1.7;color:#F8F1F1;">
                                     Trabajo contigo como consultor externo o bajo modalidad de <strong>marca
-                                        blanca</strong>: yo desarrollo la solución y la arquitectura.<br>
-                                    Tú conservas el crédito y el margen de tu agencia.
+                                        blanca</strong>: yo desarrollo la solución y la arquitectura. Tú conservas el
+                                    crédito y el margen de tu agencia.
                                 </p>
                             </div>
                         </td>
@@ -702,7 +718,7 @@
                                     Conversemos brevemente sobre el alcance, tus necesidades y la solución que mejor se
                                     ajuste a ti sin compromiso.
                                 </p>
-                                <table role="presentation" cellpadding="8" cellspacing="0" border="0" align="center"
+                                <table strole="presentation" cellpadding="8" cellspacing="0" border="0" align="center"
                                     class="cta-inner">
                                     <tr>
                                         <td align="center">
