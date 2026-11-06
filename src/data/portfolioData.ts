@@ -207,7 +207,7 @@ export const portfolioData: Project[] = [
     },
   },
   { //basic-web-scraper
-    slug: 'basic-web-scraper',
+    slug: 'smart-leads-generator',
     title: {
       es: 'Buscador de leads inteligente',
       en: 'Intelligent lead finder',
