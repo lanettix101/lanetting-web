@@ -24,6 +24,9 @@ export const COVER_PINNED_DESKTOP_WIDTH = 1280 satisfies (typeof WIDTHS)[number]
 export const projectHeroSizes = '100vw';
 
 export function serviceImageSrcSet(img: string, naturalWidth: number): string {
+  if (!img.endsWith('.webp')) {
+    return `${base}${img} ${naturalWidth}w`;
+  }
   const stem = img.replace(/\.webp$/, '');
   const candidates = WIDTHS.filter((w) => w < naturalWidth).map(
     (w) => `${base}${stem}_${w}.webp ${w}w`,
@@ -37,6 +40,6 @@ export function pinnedImageSrcSet(img: string, width: number): string {
 }
 
 export function heroPinnedSrcSet(img: string, naturalWidth: number, pin: number): string {
-  if (naturalWidth <= pin) return `${base}${img} ${naturalWidth}w`;
+  if (!img.endsWith('.webp') || naturalWidth <= pin) return `${base}${img} ${naturalWidth}w`;
   return pinnedImageSrcSet(img, pin);
 }

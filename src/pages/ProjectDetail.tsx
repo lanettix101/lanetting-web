@@ -31,7 +31,7 @@ export default function ProjectDetail() {
     noindex: !project,
     ogImage: project?.img,
     ogImageWidth: project?.imgWidth,
-    ogImageHeight: project ? Math.round((project.imgWidth * 3) / 4) : undefined,
+    ogImageHeight: project ? project.imgHeight ?? Math.round((project.imgWidth * 3) / 4) : undefined,
   });
 
   if (!project) return <NotFound />;
@@ -44,6 +44,7 @@ export default function ProjectDetail() {
   const stack = project.stack[language] || project.stack.en;
   const stackItems = stack.split(' · ');
   const benefits = project.benefits[language] || project.benefits.en;
+  const workflows = project.workflows ?? (project.workflow ? [project.workflow] : []);
 
   return (
     <article>
@@ -103,13 +104,20 @@ export default function ProjectDetail() {
           </section>
         </div>
 
-        {project.workflow && (
-          <section className="mb-10">
-            <h2 className="flex items-center gap-2 text-lg font-bold text-brand-primary mb-4">
+        {workflows.length > 0 && (
+          <section className="mb-10 space-y-6">
+            <h2 className="flex items-center gap-2 text-lg font-bold text-brand-primary">
               <CircleDot className="h-5 w-5" aria-hidden="true" />
               {pt.detail.workflowTitle}
             </h2>
-            <PortfolioWorkflow workflow={project.workflow} language={language} idPrefix={project.slug} />
+            {workflows.map((workflow, index) => (
+              <PortfolioWorkflow
+                key={`${project.slug}-workflow-${index}`}
+                workflow={workflow}
+                language={language}
+                idPrefix={`${project.slug}-${index}`}
+              />
+            ))}
           </section>
         )}
 

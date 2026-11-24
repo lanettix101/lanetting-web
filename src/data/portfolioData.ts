@@ -17,6 +17,8 @@ export interface WorkflowEdge {
   to: string;
   label?: Bilingual;
   tone?: 'neutral' | 'positive' | 'muted';
+  dashed?: boolean;
+  route?: 'auto' | 'bottom';
 }
 
 export interface WorkflowSpec {
@@ -37,6 +39,7 @@ export interface Project {
   stack: Bilingual;
   img: string;
   imgWidth: number;
+  imgHeight?: number;
   imgMobile?: string;
   imgMobileWidth?: number;
   githubUrl?: string;
@@ -44,6 +47,7 @@ export interface Project {
   contactCta?: 'hire' | 'license';
   relatedServices: number[];
   workflow?: WorkflowSpec;
+  workflows?: WorkflowSpec[];
   order: number;
 }
 
@@ -147,7 +151,7 @@ export const portfolioData: Project[] = [
     imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/instagram-telegram-bot',
     relatedServices: [],
-    order: 2,
+    order: 4,
     workflow: {
       title: {
         es: 'Flujo de monitoreo y entrega',
@@ -377,7 +381,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://catastro-app.vercel.app/',
     contactCta: 'license',
     relatedServices: [],
-    order: 4,
+    order: 5,
     workflow: {
       title: {
         es: 'Del levantamiento al informe',
@@ -490,7 +494,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://traffic-sim-pro.vercel.app/',
     contactCta: 'hire',
     relatedServices: [],
-    order: 5,
+    order: 4,
     workflow: {
       title: {
         es: 'Flujo de la simulación',
@@ -900,6 +904,387 @@ export const portfolioData: Project[] = [
       ],
     },
   },
+  { //ai-visual-object-detection
+    slug: 'ai-visual-object-detection',
+    title: {
+      es: 'Visión por IA: objetos, formas y distancias',
+      en: 'AI Vision: Objects, Shapes & Distances',
+    },
+    category: {
+      es: 'Automatización & IA',
+      en: 'Automation & AI',
+    },
+    summary: {
+      es: 'Plataforma de visión por computadora que detecta objetos y personas en video en vivo, reconoce formas y mide la distancia entre elementos para registrar cada evento con contexto. Combina segmentación visual, orquestación multi-agente, caché Redis y un asistente RAG sobre documentación operativa.',
+      en: 'Computer-vision platform that detects objects and people in live video, recognizes shapes and measures the distance between them, then logs each event with context. It combines visual segmentation, multi-agent orchestration, Redis caching and a RAG assistant grounded in operational documentation.',
+    },
+    challenge: {
+      es: 'Revisar varias cámaras a la vez a ojo deja puntos ciegos: un objeto que entra en una zona restringida o dos personas que se acercan demasiado pueden pasar inadvertidos, y cuando alguien lo nota el evento rara vez queda documentado. Añadir consultas frecuentes sobre estado y protocolos, sin saturar la base de datos ni aceptar respuestas inventadas, obliga a integrar visión, backend y agentes en un solo flujo auditable.',
+      en: 'Watching several camera feeds at once leaves blind spots: an object entering a restricted area or two people getting too close can go unnoticed, and by the time someone spots it the event is rarely documented. Add frequent status and protocol queries — without overloading the database or accepting made-up answers — and vision, backend and agents have to run as one auditable flow.',
+    },
+    solution: {
+      es: 'Un pipeline de detección y segmentación sobre el video en vivo delimita objetos y personas, reconoce formas y calcula distancias métricas con la calibración de cada cámara; los umbrales se ajustan por zona. Cada evento se registra con marca temporal y severidad. La plataforma se aai-visual-object-detectionpoya en cuatro capas: un grafo de agentes con herramientas y una secuencia de escritura protegida para que solo se registren eventos verificados; un API Gateway con Redis para las lecturas frecuentes y PostgreSQL como historial; un motor RAG con embeddings y búsqueda vectorial sobre manuales y registros; y una base de código compartida para desplegar en Android, iOS y web.',
+      en: "A detection and segmentation pipeline works on live video to outline objects and people, recognize shapes and compute metric distances using each camera's calibration; thresholds are set per zone. Every event is timestamped and classified by severity. The platform rests on four layers: an agent graph with tools and a guarded write sequence so only verified events are recorded; an API Gateway with Redis for frequent reads and PostgreSQL as the audit history; a RAG engine with embeddings and vector search over manuals and past records; and a shared codebase that ships to Android, iOS and web.",
+    },
+    benefits: {
+      es: [
+        'Detección y segmentación de objetos y personas sobre video en vivo, sin revisión cuadro por cuadro.',
+        'Distancias métricas calculadas con la calibración de cada cámara y umbrales ajustables por zona.',
+        'Eventos registrados con marca temporal, severidad y evidencia visual.',
+        'Solo los eventos verificados pasan a la secuencia de escritura, lo que evita falsas alertas en el historial.',
+        'Lecturas de estado resueltas en Redis y un historial consistente en PostgreSQL.',
+        'Asistente RAG que responde con manuales y registros reales, sin inventar respuestas.',
+        'Una sola base de código y un solo equipo para Android, iOS y la consola web.',
+      ],
+      en: [
+        'Object and person detection and segmentation on live video, with no frame-by-frame review.',
+        "Metric distances from each camera's calibration, with thresholds you can adjust per zone.",
+        'Events logged with a timestamp, severity and visual evidence.',
+        'Only verified events enter the write sequence, keeping false alerts out of the record.',
+        'Status reads served from Redis, with a consistent audit history in PostgreSQL.',
+        'RAG assistant answers from real manuals and records instead of making things up.',
+        'One codebase and one team for Android, iOS and the web console.',
+      ],
+    },
+    stack: {
+      es: 'Computer Vision · Instance Segmentation · LangGraph · GPT-4 / Claude / Llama · FAISS / Pinecone · Redis · PostgreSQL · API Gateway · Flutter · React Native · Kotlin · .NET',
+      en: 'Computer Vision · Instance Segmentation · LangGraph · GPT-4 / Claude / Llama · FAISS / Pinecone · Redis · PostgreSQL · API Gateway · Flutter · React Native · Kotlin · .NET',
+    },
+    img: 'portfolio/ai-visual-object-detection-cover.webp',
+    imgWidth: 2048,
+    imgHeight: 1151,
+    imgMobile: 'portfolio/ai-visual-object-detection-cover_mobile.webp',
+    imgMobileWidth: 2303,
+    contactCta: 'hire',
+    relatedServices: [],
+    order: 2,
+    workflows: [
+      {
+        title: {
+          es: '1. Orquestación multi-agente con escritura protegida',
+          en: '1. Multi-agent orchestration with guarded writes',
+        },
+        caption: {
+          es: 'El asistente consulta detecciones, distancias e historial con sus herramientas. Solo los eventos que requieren registro entran en la secuencia de escritura protegida; el resto se descarta sin tocar la base de datos.',
+          en: 'The assistant checks detections, distances and history through its tools. Only events that need a record enter the guarded write sequence; the rest are discarded without touching the database.',
+        },
+        nodes: [
+          {
+            id: 'start',
+            kind: 'terminal',
+            col: 1,
+            row: 1,
+            label: { es: '__START__', en: '__START__' },
+            detail: { es: 'evento de cámara', en: 'camera event' },
+          },
+          {
+            id: 'assistant',
+            kind: 'step',
+            col: 1,
+            row: 2,
+            label: { es: 'assistant', en: 'assistant' },
+            detail: { es: 'analiza el evento', en: 'triage & reasoning' },
+          },
+          {
+            id: 'assistant_tools',
+            kind: 'step',
+            col: 2,
+            row: 2,
+            label: { es: 'assistant_tools', en: 'assistant_tools' },
+            detail: { es: 'detecciones · distancias · historial', en: 'detections · distances · history' },
+          },
+          {
+            id: 'route',
+            kind: 'decision',
+            col: 1,
+            row: 3,
+            label: { es: '¿Requiere registro?', en: 'Needs a record?' },
+            detail: { es: 'evento verificado', en: 'verified event' },
+          },
+          {
+            id: 'discard',
+            kind: 'terminal',
+            col: 2,
+            row: 3,
+            label: { es: 'Descartar evento', en: 'Discard event' },
+            detail: { es: 'sin escritura', en: 'no write' },
+          },
+          {
+            id: 'enter_write',
+            kind: 'step',
+            col: 1,
+            row: 4,
+            label: { es: 'enter_write_sequence', en: 'enter_write_sequence' },
+            detail: { es: 'bloquea la escritura', en: 'acquire write lock' },
+          },
+          {
+            id: 'write_assistant',
+            kind: 'step',
+            col: 1,
+            row: 5,
+            label: { es: 'write_assistant', en: 'write_assistant' },
+            detail: { es: 'redacta el evento', en: 'writes the event' },
+          },
+          {
+            id: 'writer_tools',
+            kind: 'step',
+            col: 2,
+            row: 5,
+            label: { es: 'writer_sensitive_tools', en: 'writer_sensitive_tools' },
+            detail: { es: 'alerta · evidencia', en: 'alert · evidence' },
+          },
+          {
+            id: 'leave_write',
+            kind: 'step',
+            col: 1,
+            row: 6,
+            label: { es: 'leave_write_sequence', en: 'leave_write_sequence' },
+            detail: { es: 'libera la escritura', en: 'release write lock' },
+          },
+          {
+            id: 'end',
+            kind: 'terminal',
+            col: 1,
+            row: 7,
+            label: { es: '__END__', en: '__END__' },
+            detail: { es: 'evento registrado', en: 'event recorded' },
+          },
+        ],
+        edges: [
+          { from: 'start', to: 'assistant', tone: 'positive' },
+          { from: 'assistant', to: 'assistant_tools', dashed: true, tone: 'muted' },
+          { from: 'assistant_tools', to: 'assistant', dashed: true, tone: 'positive' },
+          { from: 'assistant', to: 'route', tone: 'positive' },
+          { from: 'route', to: 'discard', label: { es: 'no', en: 'no' }, dashed: true, tone: 'muted' },
+          { from: 'route', to: 'enter_write', label: { es: 'sí', en: 'yes' }, tone: 'positive' },
+          { from: 'enter_write', to: 'write_assistant', tone: 'positive' },
+          { from: 'write_assistant', to: 'writer_tools', dashed: true, tone: 'muted' },
+          { from: 'writer_tools', to: 'write_assistant', dashed: true, tone: 'positive' },
+          { from: 'write_assistant', to: 'leave_write', tone: 'positive' },
+          { from: 'leave_write', to: 'end', tone: 'positive' },
+        ],
+      },
+      {
+        title: {
+          es: '2. API, caché y persistencia',
+          en: '2. API, cache and persistence',
+        },
+        caption: {
+          es: 'Las lecturas de estado y eventos recientes salen de Redis. Si falta la clave, el servicio consulta PostgreSQL y deja la respuesta cacheada para la siguiente petición.',
+          en: 'Status and recent-event reads come from Redis. On a cache miss, the service queries PostgreSQL and keeps the response cached for the next request.',
+        },
+        nodes: [
+          {
+            id: 'client',
+            kind: 'terminal',
+            col: 1,
+            row: 1,
+            label: { es: 'Cliente', en: 'Client' },
+            detail: { es: 'consola · móvil', en: 'console · mobile' },
+          },
+          {
+            id: 'gateway',
+            kind: 'step',
+            col: 2,
+            row: 1,
+            label: { es: 'API Gateway', en: 'API Gateway' },
+            detail: { es: 'autenticación · límites', en: 'auth · rate limits' },
+          },
+          {
+            id: 'redis',
+            kind: 'decision',
+            col: 3,
+            row: 1,
+            label: { es: 'Redis', en: 'Redis' },
+            detail: { es: 'estado y eventos calientes', en: 'hot status & events' },
+          },
+          {
+            id: 'backend',
+            kind: 'step',
+            col: 4,
+            row: 1,
+            label: { es: 'Backend Service', en: 'Backend Service' },
+            detail: { es: 'reglas de visión y eventos', en: 'vision & event rules' },
+          },
+          {
+            id: 'postgres',
+            kind: 'terminal',
+            col: 5,
+            row: 1,
+            label: { es: 'PostgreSQL', en: 'PostgreSQL' },
+            detail: { es: 'historial e incidentes', en: 'history & incidents' },
+          },
+        ],
+        edges: [
+          { from: 'client', to: 'gateway', label: { es: 'Request', en: 'Request' }, tone: 'neutral' },
+          { from: 'gateway', to: 'redis', tone: 'neutral' },
+          { from: 'redis', to: 'client', label: { es: 'Cache Hit', en: 'Cache Hit' }, dashed: true, tone: 'positive', route: 'bottom' },
+          { from: 'redis', to: 'backend', label: { es: 'Cache Miss', en: 'Cache Miss' }, tone: 'muted' },
+          { from: 'backend', to: 'postgres', tone: 'neutral' },
+          { from: 'backend', to: 'redis', label: { es: 'cachea', en: 'caches' }, dashed: true, tone: 'muted' },
+        ],
+      },
+      {
+        title: {
+          es: '3. Arquitectura RAG (generación aumentada por recuperación)',
+          en: '3. RAG architecture (retrieval-augmented generation)',
+        },
+        caption: {
+          es: 'La ingesta indexa manuales y registros en una base vectorial. En cada consulta, el sistema recupera los fragmentos más cercanos, los adjunta a la pregunta y el LLM responde solo con ese contexto.',
+          en: 'Ingestion indexes manuals and records into a vector store. At query time, the system retrieves the closest chunks, attaches them to the question and the LLM answers from that context alone.',
+        },
+        nodes: [
+          {
+            id: 'sources',
+            kind: 'terminal',
+            col: 1,
+            row: 1,
+            label: { es: '1. Fuentes', en: '1. Sources' },
+            detail: { es: 'PDF · web · base de datos', en: 'PDFs · web · database' },
+          },
+          {
+            id: 'splitter',
+            kind: 'step',
+            col: 1,
+            row: 2,
+            label: { es: '2. Fragmentación', en: '2. Chunking' },
+            detail: { es: 'chunks con solapamiento', en: 'chunks with overlap' },
+          },
+          {
+            id: 'embedModel',
+            kind: 'step',
+            col: 1,
+            row: 3,
+            label: { es: '3. Embeddings', en: '3. Embeddings' },
+            detail: { es: 'un vector por fragmento', en: 'one vector per chunk' },
+          },
+          {
+            id: 'vectorDb',
+            kind: 'terminal',
+            col: 1,
+            row: 4,
+            label: { es: '4. Base vectorial', en: '4. Vector store' },
+            detail: { es: 'FAISS · Pinecone', en: 'FAISS · Pinecone' },
+          },
+          {
+            id: 'query',
+            kind: 'terminal',
+            col: 2,
+            row: 1,
+            label: { es: 'Consulta', en: 'Query' },
+            detail: { es: 'pregunta del operador', en: 'operator question' },
+          },
+          {
+            id: 'queryEmbed',
+            kind: 'step',
+            col: 2,
+            row: 2,
+            label: { es: 'Embedding de consulta', en: 'Query embedding' },
+            detail: { es: 'mismo modelo', en: 'same model' },
+          },
+          {
+            id: 'similarity',
+            kind: 'step',
+            col: 2,
+            row: 4,
+            label: { es: 'Búsqueda por similitud', en: 'Similarity search' },
+            detail: { es: 'coseno · top-k', en: 'cosine · top-k' },
+          },
+          {
+            id: 'context',
+            kind: 'step',
+            col: 2,
+            row: 5,
+            label: { es: 'Contexto aumentado', en: 'Augmented context' },
+            detail: { es: 'consulta + fragmentos', en: 'query + retrieved chunks' },
+          },
+          {
+            id: 'llm',
+            kind: 'step',
+            col: 3,
+            row: 5,
+            label: { es: 'LLM', en: 'LLM' },
+            detail: { es: 'GPT-4 · Claude · Llama', en: 'GPT-4 · Claude · Llama' },
+          },
+          {
+            id: 'response',
+            kind: 'step',
+            col: 3,
+            row: 6,
+            label: { es: 'Respuesta', en: 'Response' },
+            detail: { es: 'con fuentes citadas', en: 'with cited sources' },
+          },
+          {
+            id: 'answer',
+            kind: 'terminal',
+            col: 3,
+            row: 7,
+            label: { es: 'Operador', en: 'Operator' },
+            detail: { es: 'respuesta verificable', en: 'verifiable answer' },
+          },
+        ],
+        edges: [
+          { from: 'sources', to: 'splitter', tone: 'neutral' },
+          { from: 'splitter', to: 'embedModel', tone: 'neutral' },
+          { from: 'embedModel', to: 'vectorDb', tone: 'neutral' },
+          { from: 'query', to: 'queryEmbed', tone: 'positive' },
+          { from: 'queryEmbed', to: 'similarity', tone: 'positive' },
+          { from: 'vectorDb', to: 'similarity', label: { es: 'recupera', en: 'retrieve' }, dashed: true, tone: 'muted' },
+          { from: 'similarity', to: 'context', label: { es: 'top-k', en: 'top-k' }, tone: 'positive' },
+          { from: 'context', to: 'llm', tone: 'positive' },
+          { from: 'llm', to: 'response', tone: 'positive' },
+          { from: 'response', to: 'answer', tone: 'positive' },
+        ],
+      },
+      {
+        title: {
+          es: '4. Android, iOS y web desde una base de código',
+          en: '4. Android, iOS and web from one codebase',
+        },
+        caption: {
+          es: 'Un solo equipo mantiene la interfaz y la lógica de dominio compartidas con Flutter, React Native, Kotlin o .NET. Cada plataforma recibe su adaptador y la consola web consume la misma API de eventos.',
+          en: 'A single team maintains the shared UI and domain logic with Flutter, React Native, Kotlin or .NET. Each platform gets its adapter, and the web console consumes the same event API.',
+        },
+        nodes: [
+          {
+            id: 'shared',
+            kind: 'step',
+            col: 2,
+            row: 1,
+            label: { es: 'Base compartida', en: 'Shared codebase' },
+            detail: { es: 'UI + lógica de dominio', en: 'UI + domain logic' },
+          },
+          {
+            id: 'android',
+            kind: 'terminal',
+            col: 1,
+            row: 2,
+            label: { es: 'Android', en: 'Android' },
+            detail: { es: 'adaptador nativo', en: 'native adapter' },
+          },
+          {
+            id: 'ios',
+            kind: 'terminal',
+            col: 2,
+            row: 2,
+            label: { es: 'iOS', en: 'iOS' },
+            detail: { es: 'adaptador nativo', en: 'native adapter' },
+          },
+          {
+            id: 'web',
+            kind: 'terminal',
+            col: 3,
+            row: 2,
+            label: { es: 'Consola web', en: 'Web console' },
+            detail: { es: 'alertas · Event Log', en: 'alerts · Event Log' },
+          },
+        ],
+        edges: [
+          { from: 'shared', to: 'android', tone: 'positive' },
+          { from: 'shared', to: 'ios', tone: 'positive' },
+          { from: 'shared', to: 'web', tone: 'positive' },
+        ],
+      },
+    ],
+  },
 ];
-
-export const portfolioSlugs = portfolioData.map((p) => p.slug);

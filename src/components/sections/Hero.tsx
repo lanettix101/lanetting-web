@@ -17,7 +17,7 @@ export default function Hero() {
   const showVisual = terminalReady || reducedMotion || visualInView;
 
   return (
-    <section id="hero" className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+    <section id="hero" className="relative pt-3 pb-16 md:pt-3 md:pb-24 overflow-hidden">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <motion.div
           className="max-w-4xl flex flex-col items-center"

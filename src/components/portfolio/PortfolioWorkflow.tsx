@@ -122,26 +122,46 @@ function layout(nodes: WorkflowNode[]): { boxes: Box[]; vbW: number; vbH: number
   const boxes = nodes.map((node) => {
     const m = measured.get(node.id)!;
     const x = PAD + (node.col - 1) * (NODE_W + H_GAP);
-    const y = rowTops[node.row - 1];
+    const y = rowTops[node.row - 1] + (rowHeights[node.row - 1] - m.h) / 2;
     return { id: node.id, x, y, w: NODE_W, h: m.h, node };
   });
 
   return { boxes, vbW, vbH };
 }
 
-function buildEdge(from: Box, to: Box) {
+function buildEdge(from: Box, to: Box, edge: WorkflowEdge, hasReverse: boolean) {
+  if (edge.route === 'bottom') {
+    const startX = from.x + from.w / 2;
+    const startY = from.y + from.h;
+    const endX = to.x + to.w / 2;
+    const endY = to.y + to.h;
+    const laneY = Math.max(startY, endY) + 28;
+    return {
+      d: `M ${startX} ${startY} V ${laneY} H ${endX} V ${endY + ARROW}`,
+      arrow: { x: endX, y: endY, dir: 'up' as ArrowDir },
+      label: { x: (startX + endX) / 2, y: laneY - LABEL_NUDGE, anchor: 'middle' as const },
+      bottomExtent: laneY + PAD,
+    };
+  }
+
   const sameColumn = Math.abs(from.x - to.x) < 1;
   const sameRow = Math.abs(from.y + from.h / 2 - (to.y + to.h / 2)) < 1;
 
   if (sameColumn) {
-    const lineX = from.x + from.w / 2;
-    const startY = from.y + from.h;
-    const endY = to.y;
-    const goingDown = endY > startY;
+    const goingDown = to.y > from.y;
+    const xShift = hasReverse ? (goingDown ? -16 : 16) : 0;
+    const lineX = from.x + from.w / 2 + xShift;
+    const startY = goingDown ? from.y + from.h : from.y;
+    const endY = goingDown ? to.y : to.y + to.h;
     return {
       d: `M ${lineX} ${startY} V ${goingDown ? endY - ARROW : endY + ARROW}`,
       arrow: { x: lineX, y: endY, dir: (goingDown ? 'down' : 'up') as ArrowDir },
-      label: { x: lineX + LABEL_NUDGE, y: (startY + endY) / 2, anchor: 'start' as const },
+      label: {
+        x: hasReverse && goingDown ? lineX - LABEL_NUDGE : lineX + LABEL_NUDGE,
+        y: (startY + endY) / 2,
+        anchor: (hasReverse && goingDown ? 'end' : 'start') as 'start' | 'end',
+      },
+      bottomExtent: 0,
     };
   }
 
@@ -149,25 +169,30 @@ function buildEdge(from: Box, to: Box) {
     const goingRight = to.x > from.x;
     const startX = goingRight ? from.x + from.w : from.x;
     const endX = goingRight ? to.x : to.x + to.w;
-    const lineY = from.y + from.h / 2;
+    const yShift = hasReverse ? (goingRight ? -10 : 10) : 0;
+    const lineY = from.y + from.h / 2 + yShift;
     return {
       d: `M ${startX} ${lineY} H ${goingRight ? endX - ARROW : endX + ARROW}`,
       arrow: { x: endX, y: lineY, dir: (goingRight ? 'right' : 'left') as ArrowDir },
       label: { x: (startX + endX) / 2, y: lineY - LABEL_NUDGE, anchor: 'middle' as const },
+      bottomExtent: 0,
     };
   }
 
   const goingRight = to.x > from.x;
   const startX = goingRight ? from.x + from.w : from.x;
-  const startY = from.y + from.h / 2;
   const endX = goingRight ? to.x : to.x + to.w;
-  const endY = to.y + to.h / 2;
-  const midX = startX + (endX - startX) / 2;
+  const yShift = hasReverse ? (goingRight ? 10 : -10) : 0;
+  const midShift = hasReverse ? (goingRight ? 12 : -12) : 0;
+  const startY = from.y + from.h / 2 + yShift;
+  const endY = to.y + to.h / 2 + yShift;
+  const midX = startX + (endX - startX) / 2 + midShift;
 
   return {
     d: `M ${startX} ${startY} H ${midX} V ${endY} H ${goingRight ? endX - ARROW : endX + ARROW}`,
     arrow: { x: endX, y: endY, dir: (goingRight ? 'right' : 'left') as ArrowDir },
     label: { x: midX, y: (startY + endY) / 2, anchor: 'middle' as const },
+    bottomExtent: 0,
   };
 }
 
@@ -183,8 +208,20 @@ export default function PortfolioWorkflow({
   const titleId = `${idPrefix}-workflow-title`;
   const descId = `${idPrefix}-workflow-desc`;
 
-  const { boxes, vbW, vbH } = layout(workflow.nodes);
+  const { boxes, vbW, vbH: baseVbH } = layout(workflow.nodes);
   const boxById = new Map(boxes.map((b) => [b.id, b]));
+  const edgePairSet = new Set(workflow.edges.map((e) => `${e.from}->${e.to}`));
+  const builtEdges = workflow.edges.map((edge) => {
+    const from = boxById.get(edge.from);
+    const to = boxById.get(edge.to);
+    if (!from || !to) return null;
+    const hasReverse = edgePairSet.has(`${edge.to}->${edge.from}`);
+    return { edge, geometry: buildEdge(from, to, edge, hasReverse) };
+  });
+  const vbH = Math.max(
+    baseVbH,
+    ...builtEdges.map((item) => item?.geometry.bottomExtent ?? 0),
+  );
   const minW = Math.max(MIN_RENDER_W, vbW);
   const maxW = Math.max(minW, Math.round(vbW * MAX_RENDER_SCALE));
 
@@ -202,20 +239,19 @@ export default function PortfolioWorkflow({
           <title id={titleId}>{localize(workflow.title, language)}</title>
           <desc id={descId}>{workflow.caption ? localize(workflow.caption, language) : localize(workflow.title, language)}</desc>
 
-          {workflow.edges.map((edge) => {
-            const from = boxById.get(edge.from);
-            const to = boxById.get(edge.to);
-            if (!from || !to) return null;
-            const geometry = buildEdge(from, to);
+          {builtEdges.map((item, idx) => {
+            if (!item) return null;
+            const { edge, geometry } = item;
             const tone = edge.tone ?? 'neutral';
             return (
-              <g key={`${edge.from}-${edge.to}`}>
+              <g key={`${edge.from}-${edge.to}-${idx}`}>
                 <path
                   d={geometry.d}
                   className={`${TONE_CLASS[tone]} fill-none`}
                   strokeWidth={1.75}
                   strokeLinecap="round"
                   strokeLinejoin="round"
+                  strokeDasharray={edge.dashed ? '5 4' : undefined}
                 />
                 <polygon
                   points={arrowPoints(geometry.arrow.x, geometry.arrow.y, geometry.arrow.dir)}
