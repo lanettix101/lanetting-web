@@ -28,10 +28,10 @@ export default function Footer() {
             <Telegram className="w-5 h-5" />
             <span className="text-sm">@Luiggilr</span>
           </a>
-          <a href={contactInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-text font-medium hover:text-brand-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary rounded-sm">
+          {/*<a href={contactInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-text font-medium hover:text-brand-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary rounded-sm">
             <Linkedin className="w-5 h-5" />
             <span className="text-sm">Luis Lanetti</span>
-          </a>
+          </a>*/}
         </div>
 
         <p className="text-sm text-brand-accent text-center">
