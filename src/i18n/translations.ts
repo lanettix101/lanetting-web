@@ -124,8 +124,8 @@ export const translations = {
     hero: {
       subtitle: "Ing. Luis Antonio Lanetti R.",
       command: "sudo su",
-      title: "Ingeniero de Software Full-Stack | Especialista en Aplicaciones Web y Automatización",
-      desc: "Diseño y desarrollo aplicaciones web escalables, software a medida y flujos de trabajo automatizados utilizando React, TypeScript y tecnologías backend modernas.",
+      title: "Ingeniero de Software Full-Stack | Especialista en WebDev y Automatización",
+      desc: "Diseño y desarrollo aplicaciones web escalables, software a medida y flujos de trabajo automatizados con métodos robustos y tecnologías modernas.",
       book: "Agendar una cita",
       viewServices: "Ver servicios disponibles",
       terminalAlt: "Animación de terminal con los servicios del portafolio de ingeniería de Luis Lanetti"

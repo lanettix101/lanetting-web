@@ -48,6 +48,7 @@ export interface Project {
   relatedServices: number[];
   workflow?: WorkflowSpec;
   workflows?: WorkflowSpec[];
+  featured?: boolean;
   order: number;
 }
 
@@ -101,6 +102,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://veronikaconk.vercel.app',
     contactCta: 'hire',
     relatedServices: [],
+    featured: true,
     order: 1,
   },
   { //instagram-telegram-bot
@@ -151,6 +153,7 @@ export const portfolioData: Project[] = [
     imgMobileWidth: 1439,
     githubUrl: 'https://github.com/lanettix101/instagram-telegram-bot',
     relatedServices: [],
+    featured: true,
     order: 4,
     workflow: {
       title: {
@@ -262,6 +265,7 @@ export const portfolioData: Project[] = [
     imgMobileWidth: 480,
     contactCta: 'license',
     relatedServices: [],
+    featured: true,
     order: 3,
     workflow: {
       title: {
@@ -381,6 +385,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://catastro-app.vercel.app/',
     contactCta: 'license',
     relatedServices: [],
+    featured: true,
     order: 5,
     workflow: {
       title: {
@@ -494,6 +499,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://traffic-sim-pro.vercel.app/',
     contactCta: 'hire',
     relatedServices: [],
+    featured: true,
     order: 4,
     workflow: {
       title: {
@@ -612,6 +618,7 @@ export const portfolioData: Project[] = [
     githubUrl: 'https://github.com/lanettix101/wordpress-telegram-bridge',
     contactCta: 'hire',
     relatedServices: [],
+    featured: true,
     order: 6,
     workflow: {
       title: {
@@ -741,6 +748,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://creative-pricing-calculator.vercel.app',
     contactCta: 'hire',
     relatedServices: [],
+    featured: true,
     order: 7,
     workflow: {
       title: {
@@ -853,6 +861,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://ruleta-tienda-wheat.vercel.app/',
     contactCta: 'hire',
     relatedServices: [],
+    featured: true,
     order: 8,
     workflow: {
       title: {
@@ -957,6 +966,7 @@ export const portfolioData: Project[] = [
     imgMobileWidth: 2303,
     contactCta: 'hire',
     relatedServices: [],
+    featured: true,
     order: 2,
     workflows: [
       {

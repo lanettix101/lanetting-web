@@ -17,7 +17,7 @@ export function heroVisualSource(): HeroVisualSource {
 
 export default function HeroVisual({ theme, language, ariaLabel }: HeroVisualProps) {
   if (heroVisualSource() === 'carousel') {
-    return <HeroCarousel theme={theme} language={language} ariaLabel={ariaLabel} />;
+    return <HeroCarousel language={language} ariaLabel={ariaLabel} />;
   }
   return <HeroTerminal theme={theme} language={language} ariaLabel={ariaLabel} />;
 }

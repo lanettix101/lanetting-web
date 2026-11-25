@@ -134,7 +134,7 @@
 
   @media (min-width: 769px) {
     html {
-      font-size: max(16px, min(calc(100vw / 64), 40px));
+      font-size: max(16px, min(calc(100vw / 74), 40px));
     }
   }
 

@@ -21,3 +21,7 @@ export function getServiceIdsForProject(slug: string): number[] {
 export function getProjectsForService(serviceId: number): Project[] {
   return getSortedProjects().filter((p) => p.relatedServices.includes(serviceId));
 }
+
+export function getCarouselProjects(): Project[] {
+  return getSortedProjects().filter((p) => p.featured === true);
+}

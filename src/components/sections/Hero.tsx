@@ -37,7 +37,7 @@ export default function Hero() {
             pauseDelay={150}
             className="text-xl sm:text-xl md:text-3xl lg:text-4xl font-bold text-brand-primary tracking-tight leading-tight mb-6 text-center p-2"
           />
-          <p className="text-lg md:text-xl text-brand-text/80 max-w-2xl mb-10 leading-relaxed text-center p-3">
+          <p className="text-md md:text-md text-brand-text/80 max-w-2xl mb-10 leading-relaxed text-center p-3">
             {t.hero.desc}
           </p>
 
