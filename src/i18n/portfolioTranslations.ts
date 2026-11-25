@@ -40,7 +40,7 @@ export const portfolioTranslations: { en: PortfolioStrings; es: PortfolioStrings
     title: 'My Projects',
     desc: 'Products, tools and automation I designed, built and maintain end to end.',
     metaDescription:
-      'Selected projects by Luis Lanetti: web design, automation bots and technical tooling.',
+      'Selected projects by Luis Lanetti: web development, software engineering, automation and technical tooling.',
     empty: 'No projects published yet.',
     serviceRelatedTitle: 'Related Projects',
     serviceRelatedDesc: 'Projects where this capability is already implemented, with the repository and the technical breakdown.',
@@ -78,7 +78,7 @@ export const portfolioTranslations: { en: PortfolioStrings; es: PortfolioStrings
     title: 'Conoce mis Proyectos',
     desc: 'Productos, herramientas y automatizaciones que diseñé, construí y mantengo vigentes.',
     metaDescription:
-      'Proyectos de Luis Lanetti: diseño web, bots de automatización y herramientas técnicas.',
+      'Proyectos seleccionados de Luis Lanetti: desarrollo web, ingeniería de software, automatización y herramientas técnicas.',
     empty: 'Aún no hay proyectos publicados.',
     serviceRelatedTitle: 'Proyectos Relacionados',
     serviceRelatedDesc: 'Proyectos donde esta capacidad ya está implementada, con el repositorio y el desglose técnico.',

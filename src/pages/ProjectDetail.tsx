@@ -8,6 +8,7 @@ import { useLanguage } from '../i18n/LanguageContext';
 import { portfolioTranslations } from '../i18n/portfolioTranslations';
 import { getProjectBySlug, getServiceById, getServiceIdsForProject } from '../data/projectRelations';
 import { preloadPortfolio } from '../lib/routePreload';
+import { projectSEO } from '../data/seoData';
 import { useDocumentMeta } from '../hooks/useDocumentMeta';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import NotFound from './NotFound';
@@ -24,14 +25,25 @@ export default function ProjectDetail() {
     .map((id) => getServiceById(id))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
 
+  const seo = project ? projectSEO({
+    slug: project.slug,
+    title: project.title,
+    summary: project.summary,
+    img: project.img,
+    imgWidth: project.imgWidth,
+    imgHeight: project.imgHeight,
+  }) : undefined;
+
   useDocumentMeta({
-    title: project ? project.title[language] || project.title.en : pt.detail.notFoundTitle,
-    metaDescription: project ? project.summary[language] || project.summary.en : pt.detail.notFoundDesc,
+    title: seo ? seo.title[language] : pt.detail.notFoundTitle,
+    metaDescription: seo ? seo.description[language] : pt.detail.notFoundDesc,
+    keywords: seo ? seo.keywords[language] : undefined,
     path: project ? `/portfolio/${project.slug}` : '/portfolio',
+    lang: language,
     noindex: !project,
     ogImage: project?.img,
     ogImageWidth: project?.imgWidth,
-    ogImageHeight: project ? project.imgHeight ?? Math.round((project.imgWidth * 3) / 4) : undefined,
+    ogImageHeight: project?.imgHeight,
   });
 
   if (!project) return <NotFound />;

@@ -39,6 +39,9 @@ jobs:
 
       - name: Verify privacy policy claims
         run: npm run verify:privacy
+
+      - name: Verify SEO claims
+        run: npm run verify:seo
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

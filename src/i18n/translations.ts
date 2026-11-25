@@ -4,16 +4,16 @@ export const translations = {
     hero: {
       subtitle: "Eng. Luis Antonio Lanetti R.",
       command: "sudo su",
-      title: "Systems Engineer | Automation & Technical SEO Specialist",
-      desc: "I specialize in backend infrastructure, technical SEO, and automation to build high-performance systems.",
+      title: "Full-Stack Software Engineer | Web Applications & Automation Specialist",
+      desc: "I architect and build scalable web applications, custom software, and automated workflows using React, TypeScript, and modern backend technologies.",
       book: "Book a consultation",
       viewServices: "View Engineering Services",
-      terminalAlt: "Animated terminal animation with the services of Lanetti's engineering portfolio"
+      terminalAlt: "Animated terminal animation with the services of Luis Lanetti's engineering portfolio"
     },
     timeline: {
       command: "./Professional_Journey.sh",
       title: "Professional Journey",
-      desc: "A track record of technical execution, from Linux system administration to advanced AI pipelines.",
+      desc: "A track record of technical execution, from Linux system administration and software development to advanced AI pipelines.",
       items: [
         {
           year: '2026',
@@ -124,16 +124,16 @@ export const translations = {
     hero: {
       subtitle: "Ing. Luis Antonio Lanetti R.",
       command: "sudo su",
-      title: "Ingeniero en Sistemas | Especialista en Automatización y SEO Técnico",
-      desc: "Me especializo en infraestructura backend, SEO técnico y automatización para construir sistemas de alto rendimiento.",
+      title: "Ingeniero de Software Full-Stack | Especialista en Aplicaciones Web y Automatización",
+      desc: "Diseño y desarrollo aplicaciones web escalables, software a medida y flujos de trabajo automatizados utilizando React, TypeScript y tecnologías backend modernas.",
       book: "Agendar una cita",
       viewServices: "Ver servicios disponibles",
-      terminalAlt: "Animación de terminal con los servicios del portafolio de ingeniería de Lanetti"
+      terminalAlt: "Animación de terminal con los servicios del portafolio de ingeniería de Luis Lanetti"
     },
     timeline: {
       command: "./Professional_Journey.sh",
       title: "Trayectoria profesional",
-      desc: "Un historial de ejecución técnica, desde administración de sistemas Linux hasta pipelines avanzados de IA y negocios.",
+      desc: "Un historial de ejecución técnica, desde administración de sistemas Linux y desarrollo de software hasta pipelines avanzados de IA y negocios.",
       items: [
         {
           year: '2026',

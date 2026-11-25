@@ -18,6 +18,7 @@ export default function Portfolio() {
     title: pt.title,
     metaDescription: pt.metaDescription,
     path: '/portfolio',
+    lang: language,
   });
 
   return (

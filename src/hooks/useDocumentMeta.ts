@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { SITE_URL, contactInfo } from '../data/contactInfo';
+import type { Lang } from '../data/seoData';
 
 function upsertMeta(key: 'name' | 'property', keyValue: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(`meta[${key}="${keyValue}"]`);
@@ -29,6 +30,8 @@ export interface DocumentMeta {
   title: string;
   metaDescription: string;
   path: string;
+  lang?: Lang;
+  keywords?: string;
   noindex?: boolean;
   ogImage?: string;
   ogImageWidth?: number;
@@ -39,22 +42,30 @@ export function useDocumentMeta({
   title,
   metaDescription,
   path,
+  lang = 'en',
+  keywords,
   noindex = false,
   ogImage,
   ogImageWidth,
   ogImageHeight,
 }: DocumentMeta) {
   useEffect(() => {
-    const fullTitle = `${title} | ${contactInfo.fullName}`;
+    const fullTitle = `${title} | ${contactInfo.shortName}`;
     const canonical = `${SITE_URL}${path}`;
+    const locale = lang === 'es' ? 'es_VE' : 'en_US';
 
     document.title = fullTitle;
+    document.documentElement.lang = lang;
     upsertCanonical(canonical);
     upsertMeta('name', 'robots', noindex ? 'noindex, follow' : 'index, follow');
     upsertMeta('name', 'description', metaDescription);
+    if (keywords) {
+      upsertMeta('name', 'keywords', keywords);
+    }
     upsertMeta('property', 'og:title', fullTitle);
     upsertMeta('property', 'og:description', metaDescription);
     upsertMeta('property', 'og:url', canonical);
+    upsertMeta('property', 'og:locale', locale);
     upsertMeta('name', 'twitter:title', fullTitle);
     upsertMeta('name', 'twitter:description', metaDescription);
     upsertMeta('name', 'twitter:url', canonical);
@@ -76,5 +87,5 @@ export function useDocumentMeta({
       removeMeta('property', 'og:image:height');
       removeMeta('name', 'twitter:image');
     }
-  }, [title, metaDescription, path, noindex, ogImage, ogImageWidth, ogImageHeight]);
+  }, [title, metaDescription, path, lang, keywords, noindex, ogImage, ogImageWidth, ogImageHeight]);
 }

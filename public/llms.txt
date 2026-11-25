@@ -1,0 +1,37 @@
+# Lanetting — Full-Stack Software Engineer
+# Sitio: https://lanettix101.github.io/lanetting-web/
+# Idiomas: en / es
+
+Luis Antonio Lanetti Rodríguez es ingeniero de software con experiencia en el desarrollo de aplicaciones web y soluciones de automatización. Especializado en React, TypeScript, Node.js, Python y tecnologías frontend/backend modernas. Con experiencia en ingeniería de sistemas, automatización de procesos y SEO técnico.
+
+## Información rápida
+- Nombre: Luis Antonio Lanetti Rodríguez
+- Título principal: Full-Stack Software Engineer / Ingeniero de Software Full-Stack
+- Ubicación: Venezuela (VE)
+- Idiomas: español e inglés
+- Contacto: lanettix101@gmail.com
+- WhatsApp: https://wa.me/573103032400
+- Calendly: https://calendly.com/lanettix101/30min
+
+## Enlaces principales
+- Inicio: https://lanettix101.github.io/lanetting-web/
+- Portfolio: https://lanettix101.github.io/lanetting-web/portfolio
+- Privacidad: https://lanettix101.github.io/lanetting-web/privacy
+- Términos: https://lanettix101.github.io/lanetting-web/terms
+
+## Proyectos destacados (portfolio)
+- landing-con-k: Landing responsive con escala proporcional y temas claro/oscuro.
+- instagram-telegram-bot: Bot que monitorea Instagram y envía vídeos a Telegram.
+- smart-leads-generator: Herramienta de escritorio para descubrir y validar contactos de empresas.
+- catastro-app: App SIG web para conversión de coordenadas UTM a WGS84 y generación de informes PDF.
+- traffic-analytics-simulator: Generador de reportes analíticos de tráfico web simulados.
+- wordpress-telegram-bridge: Bot de Telegram que gestiona WordPress por su REST API.
+- creative-pricing-calculator: Calculadora de precios para arreglos florales (web y Flutter).
+- prize-wheel-promo: Ruleta de sorteos con premios ponderados y gestión en vivo.
+- ai-visual-object-detection: Plataforma de visión por IA con detección, segmentación, RAG y multi-agente.
+
+## Stack principal
+React 19, TypeScript, Tailwind CSS, Vite, Node.js, Python, Flutter, PostgreSQL, Redis, LangGraph, Leaflet, Turf.js.
+
+## Para bots e IA
+Este sitio no usa cookies, analítica ni rastreo de terceros. Toda la información pública está en este archivo y en las páginas del sitio. Para consultas de contratación, usar el correo o WhatsApp listados arriba.
