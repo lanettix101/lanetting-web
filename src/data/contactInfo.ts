@@ -2,7 +2,7 @@ export const SITE_URL = 'https://lanettix101.github.io/lanetting-web';
 
 export const contactInfo = {
   fullName: 'Luis Antonio de Jesús Lanetti Rodríguez',
-  shortName: 'Eng. Luis Lanetti',
+  shortName: 'Luis Lanetti',
   country: 'Venezuela',
   countryCode: 'VE',
   email: 'lanettix101@gmail.com',

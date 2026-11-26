@@ -748,7 +748,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://creative-pricing-calculator.vercel.app',
     contactCta: 'hire',
     relatedServices: [],
-    featured: true,
+    featured: false,
     order: 7,
     workflow: {
       title: {
@@ -861,7 +861,7 @@ export const portfolioData: Project[] = [
     demoUrl: 'https://ruleta-tienda-wheat.vercel.app/',
     contactCta: 'hire',
     relatedServices: [],
-    featured: true,
+    featured: false,
     order: 8,
     workflow: {
       title: {

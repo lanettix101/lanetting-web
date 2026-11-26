@@ -10,16 +10,23 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import { getSEOByPath } from '../data/seoData';
 
-const HeroCarousel = lazy(() => import('../components/carousel/HeroCarousel'));
+const FeaturedProjectsCarousel = lazy(() => import('../components/sections/FeaturedProjectsCarousel'));
 
 function CarouselFallback() {
   return (
-    <div className="container mx-auto px-4 mb-12 md:mb-16">
-      <div
-        className="relative w-full aspect-[4/3] sm:aspect-video rounded-lg border border-brand-border bg-brand-surface"
-        aria-hidden="true"
-      />
-    </div>
+    <section className="container mx-auto mb-12 px-4 md:mb-16" aria-hidden="true">
+      <div className="grid gap-4 lg:grid-cols-[80%_minmax(0,1fr)]">
+        <div className="relative aspect-[4/3] w-full rounded-lg border border-brand-border bg-brand-surface sm:aspect-video" />
+        <div className="grid grid-cols-3 gap-3 lg:h-full lg:grid-cols-1 lg:grid-rows-3">
+          {[0, 1, 2].map((index) => (
+            <div
+              key={index}
+              className="aspect-video rounded-lg border-2 border-brand-primary bg-brand-surface lg:aspect-auto"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -56,7 +63,7 @@ export default function Home() {
     <>
       <Hero />
       <Suspense fallback={<CarouselFallback />}>
-        <HeroCarousel language={language} ariaLabel={t.portfolioCarousel.ariaLabel} />
+        <FeaturedProjectsCarousel language={language} ariaLabel={t.portfolioCarousel.ariaLabel} />
       </Suspense>
       <Timeline />
       <Services />

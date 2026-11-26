@@ -27,14 +27,14 @@ export default function Platforms() {
   return (
     <section id="platforms" className="py-12 md:py-16 bg-brand-surface border-y border-brand-border">
       <div className="container mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-10 flex flex-col items-center">
+        <div className="text-center mb-5 flex flex-col items-center">
           <ConsoleHeading command={t.platforms.command} text={t.platforms.title} className="text-xl sm:text-2xl md:text-4xl font-bold text-brand-primary mb-4" />
           <p className="text-brand-accent max-w-2xl mx-auto">
             {t.platforms.desc}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-3">
           {t.platforms.items.map((platform) => {
             const meta = platformMeta[platform.name];
             if (!meta) return null;
@@ -55,7 +55,7 @@ export default function Platforms() {
                   </div>
 
                   <div>
-                    <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center justify-between">
                       <h3 className="text-xl font-bold text-brand-primary">{platform.name}</h3>
                       <ExternalLink className="w-5 h-5 text-brand-accent group-hover:text-brand-primary transition-colors" />
                     </div>

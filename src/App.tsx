@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import ServiceDetail from './pages/ServiceDetail';
 import NotFound from './pages/NotFound';
 import WhatsAppButton from './components/ui/WhatsAppButton';
+import HeroTerminal from './components/ui/HeroTerminal';
 import { LanguageProvider } from './i18n/LanguageContext';
 
 const Privacy = lazy(() => import('./pages/Privacy'));
@@ -48,6 +49,7 @@ export default function App() {
             <AppRoutes />
           </main>
           <Footer />
+          <HeroTerminal />
           <WhatsAppButton />
         </div>
       </Router>

@@ -1,0 +1,3 @@
+export const DEV_CONSOLE_CHAR_MS = 55;
+export const DEV_CONSOLE_COMMAND_HOLD_MS = 1400;
+export const DEV_CONSOLE_RESPONSE_HOLD_MS = 3200;

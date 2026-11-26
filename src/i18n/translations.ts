@@ -7,8 +7,7 @@ export const translations = {
       title: "Full-Stack Software Engineer | Web Applications & Automation Specialist",
       desc: "I architect and build scalable web applications, custom software, and automated workflows using React, TypeScript, and modern backend technologies.",
       book: "Book a consultation",
-      viewServices: "View Engineering Services",
-      terminalAlt: "Animated terminal animation with the services of Luis Lanetti's engineering portfolio"
+      viewServices: "View Engineering Services"
     },
     timeline: {
       command: "./Professional_Journey.sh",
@@ -132,8 +131,7 @@ export const translations = {
       title: "Ingeniero de Software Full-Stack | Especialista en WebDev y Automatización",
       desc: "Diseño y desarrollo aplicaciones web escalables, software a medida y flujos de trabajo automatizados con métodos robustos y tecnologías modernas.",
       book: "Agendar una cita",
-      viewServices: "Ver servicios disponibles",
-      terminalAlt: "Animación de terminal con los servicios del portafolio de ingeniería de Luis Lanetti"
+      viewServices: "Ver servicios disponibles"
     },
     timeline: {
       command: "./Professional_Journey.sh",

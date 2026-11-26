@@ -13,7 +13,7 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="mt-16 pt-8 border-t border-brand-border">
+    <footer className="mt-5 pt-0 pb-3 border-t border-brand-border">
       <div className="container mx-auto px-4 max-w-4xl flex flex-col items-center gap-6">
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
           <a href={contactInfo.social.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-brand-text font-medium hover:text-brand-primary transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary rounded-sm">

@@ -38,7 +38,7 @@ export default function Services() {
   return (
     <section id="services" className="py-12 md:py-16">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center text-center mb-8 gap-6">
+        <div className="flex flex-col items-center text-center mb-8">
           <div className="max-w-2xl flex flex-col items-center">
             <ConsoleHeading command={t.services.command} text={t.services.title} className="text-xl sm:text-2xl md:text-4xl font-bold text-brand-primary mb-4 text-center" />
             <p className="text-brand-accent text-center">
@@ -46,7 +46,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="hidden md:flex gap-2 justify-center w-full">
+          <div className="hidden md:flex gap-5 justify-center w-full">
             <button
               onClick={() => scroll('left')}
               className="p-2 border border-brand-border rounded-md hover:bg-brand-surface text-brand-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-primary cursor-pointer transition-colors"
@@ -71,7 +71,7 @@ export default function Services() {
           onMouseLeave={() => setIsHovered(false)}
           onTouchStart={() => setIsHovered(true)}
           onTouchEnd={() => setIsHovered(false)}
-          className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 hide-scrollbar"
+          className="flex overflow-x-auto snap-x snap-mandatory gap-6 hide-scrollbar"
           style={{ scrollbarWidth: 'none' }}
         >
           <PortfolioPromoCard />
@@ -102,7 +102,7 @@ export default function Services() {
                     <h3 className="text-lg font-bold text-brand-primary mb-2 line-clamp-2 min-h-[3.5rem]">
                       {title}
                     </h3>
-                    <p className="text-brand-text/75 text-sm mb-4 line-clamp-5 text-justify">
+                    <p className="text-brand-text/75 text-sm mb-0 line-clamp-5 text-justify">
                       {shortDesc}
                     </p>
                   </div>

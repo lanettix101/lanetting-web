@@ -1,24 +1,23 @@
-import { useRef, useState } from 'react';
+import { lazy, Suspense } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { motion, useInView, useReducedMotion } from 'motion/react';
+import { motion, useReducedMotion } from 'motion/react';
 import ConsoleHeading from '../ui/ConsoleHeading';
-import HeroVisual from '../hero/HeroVisual';
 import { useLanguage } from '../../i18n/LanguageContext';
-import { useTheme } from '../../hooks/useTheme';
+
+const HeroEdgeIcons = lazy(() => import('../ui/HeroEdgeIcons'));
 
 export default function Hero() {
-  const { t, language } = useLanguage();
-  const theme = useTheme();
+  const { t } = useLanguage();
   const reducedMotion = useReducedMotion();
-  const [terminalReady, setTerminalReady] = useState(false);
-  const visualRef = useRef<HTMLDivElement>(null);
-  const visualInView = useInView(visualRef, { once: true, amount: 0.1 });
-  const showVisual = terminalReady || reducedMotion || visualInView;
 
   return (
-    <section id="hero" className="relative pt-3 pb-16 md:pt-3 md:pb-24 overflow-hidden">
-      <div className="container mx-auto px-4 flex flex-col items-center text-center">
+    <section id="hero" className="relative overflow-hidden pt-3 pb-16 md:pt-3 md:pb-24">
+      <Suspense fallback={null}>
+        <HeroEdgeIcons />
+      </Suspense>
+
+      <div className="relative z-10 container mx-auto px-4 flex flex-col items-center text-center">
         <motion.div
           className="max-w-4xl flex flex-col items-center"
           initial={reducedMotion ? false : { opacity: 0, y: 24 }}
@@ -32,7 +31,6 @@ export default function Hero() {
             as="h1"
             command={t.hero.command}
             text={t.hero.title}
-            onTypingDone={() => setTerminalReady(true)}
             charDelay={70}
             pauseDelay={150}
             className="text-xl sm:text-xl md:text-3xl lg:text-4xl font-bold text-brand-primary tracking-tight leading-tight mb-6 text-center p-2"
@@ -56,15 +54,6 @@ export default function Hero() {
               {t.hero.viewServices}
             </Link>
           </div>
-        </motion.div>
-        <motion.div
-          ref={visualRef}
-          className="mt-10 w-full"
-          initial={false}
-          animate={showVisual ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.98 }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
-        >
-          <HeroVisual theme={theme} language={language} ariaLabel={t.hero.terminalAlt} />
         </motion.div>
       </div>
     </section>
