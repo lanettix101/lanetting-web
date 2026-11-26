@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import Hero from '../components/sections/Hero';
@@ -10,9 +10,22 @@ import { useDocumentMeta } from '../hooks/useDocumentMeta';
 import { useScrollToTop } from '../hooks/useScrollToTop';
 import { getSEOByPath } from '../data/seoData';
 
+const HeroCarousel = lazy(() => import('../components/carousel/HeroCarousel'));
+
+function CarouselFallback() {
+  return (
+    <div className="container mx-auto px-4 mb-12 md:mb-16">
+      <div
+        className="relative w-full aspect-[4/3] sm:aspect-video rounded-lg border border-brand-border bg-brand-surface"
+        aria-hidden="true"
+      />
+    </div>
+  );
+}
+
 export default function Home() {
   const location = useLocation();
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
 
   const seo = getSEOByPath('/');
 
@@ -42,6 +55,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Suspense fallback={<CarouselFallback />}>
+        <HeroCarousel language={language} ariaLabel={t.portfolioCarousel.ariaLabel} />
+      </Suspense>
       <Timeline />
       <Services />
       <Platforms />

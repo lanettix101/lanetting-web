@@ -1,7 +1,9 @@
+import { lazy, Suspense } from 'react';
 import type { TerminalLanguage, TerminalThemeName } from '../terminal/heroTerminalData';
 import HeroTerminal from '../terminal/HeroTerminal';
-import HeroCarousel from '../carousel/HeroCarousel';
 import { HERO_CAROUSEL_WEBPS } from '../../data/heroCarouselConfig';
+
+const HeroCarousel = lazy(() => import('../carousel/HeroCarousel'));
 
 export type HeroVisualSource = 'terminal' | 'carousel';
 
@@ -17,7 +19,11 @@ export function heroVisualSource(): HeroVisualSource {
 
 export default function HeroVisual({ theme, language, ariaLabel }: HeroVisualProps) {
   if (heroVisualSource() === 'carousel') {
-    return <HeroCarousel language={language} ariaLabel={ariaLabel} />;
+    return (
+      <Suspense fallback={<HeroTerminal theme={theme} language={language} ariaLabel={ariaLabel} />}>
+        <HeroCarousel language={language} ariaLabel={ariaLabel} />
+      </Suspense>
+    );
   }
   return <HeroTerminal theme={theme} language={language} ariaLabel={ariaLabel} />;
 }

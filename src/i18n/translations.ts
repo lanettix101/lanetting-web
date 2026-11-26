@@ -99,6 +99,11 @@ export const translations = {
         title: "See My Projects",
         shortDesc: "Products, landing pages and automation bots I designed and built from scratch. Browse the repository, the live demo and the technical breakdown of each one."
       },
+      portfolioCarousel: {
+        ariaLabel: "Featured projects carousel",
+        prev: "Previous project",
+        next: "Next project"
+      },
     serviceDetail: {
       back: "Back to Services",
       commandPrefix: "cat service_module_v1.0_",
@@ -218,6 +223,11 @@ export const translations = {
       portfolioPromo: {
         title: "Conoce Mis Proyectos",
         shortDesc: "Productos, landing pages y bots de automatización que diseñé y construí desde cero. Revisa el código, mira demos en vivo y el desglose técnico de cada uno."
+      },
+      portfolioCarousel: {
+        ariaLabel: "Carrusel de proyectos destacados",
+        prev: "Proyecto anterior",
+        next: "Siguiente proyecto"
       },
     serviceDetail: {
       back: "Volver a Servicios",
